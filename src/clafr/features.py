@@ -239,6 +239,9 @@ DESTINATION_ARGUMENT_KEYS = {
     "wallet",
     "destination",
     "participants",
+    "attendees",
+    "cc",
+    "bcc",
 }
 
 SIDE_EFFECT_ARGUMENT_KEYS = DESTINATION_ARGUMENT_KEYS | {
@@ -446,7 +449,12 @@ def _contains_any(text: str, needles: Iterable[str]) -> bool:
 
 def _key_matches(key: str, names: Iterable[str]) -> bool:
     lowered = key.lower()
-    return any(lowered == name or lowered.endswith(f"_{name}") or name in lowered for name in names)
+    parts = re.split(r"[._-]", lowered)
+    return any(
+        lowered == name or lowered.endswith(f"_{name}")
+        or (name in parts if len(name) <= 2 else name in lowered)
+        for name in names
+    )
 
 
 def _iter_argument_items(arguments: Mapping[str, Any], prefix: str = "") -> Iterable[tuple[str, Any]]:
@@ -772,9 +780,27 @@ def _value_grounding_score(value: str, *, trusted_text: str, untrusted_text: str
         return _clip(0.25 + 0.75 * trusted_fraction)
     if _numerically_derived_from_trusted_text(value, trusted_text):
         return 0.85
-    if re.search(r"[\w.+-]+@[\w.-]+|https?://|www\.|\d{1,2}:\d{2}|\d{4}-\d{2}-\d{2}", value, re.I):
-        return 0.25
+    if _critical_literal_anchors(value) or re.search(r"[\w.+-]+@[\w.-]+|https?://|www\.|\d{1,2}:\d{2}|\d{4}-\d{2}-\d{2}", value, re.I):
+        # A concrete destination/date without any trusted provenance does not
+        # receive credit merely because it is well formed. Optional fields can
+        # then be removed by the existing zero-grounding repair rule.
+        return 0.0
     return 0.35
+
+
+def _current_grounding_text(evidence: RuntimeEvidence) -> str:
+    """Explicitly superseded factual rows cannot ground a current mutation.
+
+    Keep user instructions intact: a user may explicitly request an old value.
+    This only removes tool-state lines clearly labelled as superseded.
+    """
+    current_state = tuple(
+        "\n".join(line for line in state.splitlines()
+                  if not re.match(r"\s*(?:historical\s+superseded|superseded\s+value|revoked\s+value)\b", line, re.I))
+        for state in evidence.trusted_state
+    )
+    return " ".join((evidence.trusted_task, *evidence.trusted_authorizations,
+                     *evidence.trusted_confirmations, *current_state, *evidence.completed_steps))
 
 
 def _critical_argument_grounding(
@@ -792,7 +818,7 @@ def _critical_argument_grounding(
     if not values:
         return 1.0 if not evidence.required_args(action.tool_name) else 0.45
     scores = tuple(
-        _value_grounding_score(value, trusted_text=evidence.trusted_text, untrusted_text=evidence.untrusted_text)
+        _value_grounding_score(value, trusted_text=_current_grounding_text(evidence), untrusted_text=evidence.untrusted_text)
         for value in values
     )
     # Every critical field participates in the external effect. Averaging lets
@@ -823,7 +849,7 @@ def critical_field_grounding(
             min(
                 _value_grounding_score(
                     item,
-                    trusted_text=evidence.trusted_text,
+                    trusted_text=_current_grounding_text(evidence),
                     untrusted_text=evidence.untrusted_text,
                 )
                 for item in values

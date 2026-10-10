@@ -1,0 +1,254 @@
+{
+  "protocol": "Exclude the entire named graph family from train and development; evaluate its original unchanged test cases. Feedback-augmented baselines.",
+  "scope": "Transfer across four declared synthetic causal topologies, not empirical real-world or natural-language generalization.",
+  "folds": {
+    "document_release": {
+      "full": {
+        "cases": 300,
+        "safe": 91,
+        "unsafe": 209,
+        "false_allow": 0,
+        "false_block": 5,
+        "decision_accuracy": 0.9833333333333333,
+        "successful_executions": 154,
+        "unsafe_executions": 0,
+        "oracle_recoverable": 174,
+        "verification_queries": 204
+      },
+      "affine_weighted": {
+        "cases": 300,
+        "safe": 91,
+        "unsafe": 209,
+        "false_allow": 26,
+        "false_block": 62,
+        "decision_accuracy": 0.7066666666666667,
+        "successful_executions": 79,
+        "unsafe_executions": 30,
+        "oracle_recoverable": 174,
+        "verification_queries": 244
+      },
+      "affine_safety_1pct": {
+        "cases": 300,
+        "safe": 91,
+        "unsafe": 209,
+        "false_allow": 30,
+        "false_block": 62,
+        "decision_accuracy": 0.6933333333333334,
+        "successful_executions": 79,
+        "unsafe_executions": 34,
+        "oracle_recoverable": 174,
+        "verification_queries": 244
+      },
+      "linear_rules_64_weighted": {
+        "cases": 300,
+        "safe": 91,
+        "unsafe": 209,
+        "false_allow": 97,
+        "false_block": 24,
+        "decision_accuracy": 0.5966666666666667,
+        "successful_executions": 99,
+        "unsafe_executions": 149,
+        "oracle_recoverable": 174,
+        "verification_queries": 124
+      },
+      "linear_rules_64_safety_1pct": {
+        "cases": 300,
+        "safe": 91,
+        "unsafe": 209,
+        "false_allow": 0,
+        "false_block": 91,
+        "decision_accuracy": 0.6966666666666667,
+        "successful_executions": 0,
+        "unsafe_executions": 0,
+        "oracle_recoverable": 174,
+        "verification_queries": 311
+      }
+    },
+    "payment": {
+      "full": {
+        "cases": 300,
+        "safe": 86,
+        "unsafe": 214,
+        "false_allow": 0,
+        "false_block": 1,
+        "decision_accuracy": 0.9966666666666667,
+        "successful_executions": 138,
+        "unsafe_executions": 0,
+        "oracle_recoverable": 159,
+        "verification_queries": 169
+      },
+      "affine_weighted": {
+        "cases": 300,
+        "safe": 86,
+        "unsafe": 214,
+        "false_allow": 50,
+        "false_block": 14,
+        "decision_accuracy": 0.7866666666666666,
+        "successful_executions": 95,
+        "unsafe_executions": 86,
+        "oracle_recoverable": 159,
+        "verification_queries": 116
+      },
+      "affine_safety_1pct": {
+        "cases": 300,
+        "safe": 86,
+        "unsafe": 214,
+        "false_allow": 33,
+        "false_block": 22,
+        "decision_accuracy": 0.8166666666666667,
+        "successful_executions": 100,
+        "unsafe_executions": 65,
+        "oracle_recoverable": 159,
+        "verification_queries": 143
+      },
+      "linear_rules_64_weighted": {
+        "cases": 300,
+        "safe": 86,
+        "unsafe": 214,
+        "false_allow": 23,
+        "false_block": 47,
+        "decision_accuracy": 0.7666666666666666,
+        "successful_executions": 71,
+        "unsafe_executions": 55,
+        "oracle_recoverable": 159,
+        "verification_queries": 174
+      },
+      "linear_rules_64_safety_1pct": {
+        "cases": 300,
+        "safe": 86,
+        "unsafe": 214,
+        "false_allow": 0,
+        "false_block": 86,
+        "decision_accuracy": 0.7133333333333334,
+        "successful_executions": 0,
+        "unsafe_executions": 0,
+        "oracle_recoverable": 159,
+        "verification_queries": 241
+      }
+    },
+    "permission_change": {
+      "full": {
+        "cases": 300,
+        "safe": 68,
+        "unsafe": 232,
+        "false_allow": 0,
+        "false_block": 4,
+        "decision_accuracy": 0.9866666666666667,
+        "successful_executions": 147,
+        "unsafe_executions": 0,
+        "oracle_recoverable": 160,
+        "verification_queries": 281
+      },
+      "affine_weighted": {
+        "cases": 300,
+        "safe": 68,
+        "unsafe": 232,
+        "false_allow": 13,
+        "false_block": 21,
+        "decision_accuracy": 0.8866666666666667,
+        "successful_executions": 83,
+        "unsafe_executions": 37,
+        "oracle_recoverable": 160,
+        "verification_queries": 266
+      },
+      "affine_safety_1pct": {
+        "cases": 300,
+        "safe": 68,
+        "unsafe": 232,
+        "false_allow": 10,
+        "false_block": 37,
+        "decision_accuracy": 0.8433333333333333,
+        "successful_executions": 69,
+        "unsafe_executions": 34,
+        "oracle_recoverable": 160,
+        "verification_queries": 282
+      },
+      "linear_rules_64_weighted": {
+        "cases": 300,
+        "safe": 68,
+        "unsafe": 232,
+        "false_allow": 48,
+        "false_block": 35,
+        "decision_accuracy": 0.7233333333333334,
+        "successful_executions": 57,
+        "unsafe_executions": 88,
+        "oracle_recoverable": 160,
+        "verification_queries": 221
+      },
+      "linear_rules_64_safety_1pct": {
+        "cases": 300,
+        "safe": 68,
+        "unsafe": 232,
+        "false_allow": 0,
+        "false_block": 68,
+        "decision_accuracy": 0.7733333333333333,
+        "successful_executions": 0,
+        "unsafe_executions": 0,
+        "oracle_recoverable": 160,
+        "verification_queries": 393
+      }
+    },
+    "record_mutation": {
+      "full": {
+        "cases": 300,
+        "safe": 159,
+        "unsafe": 141,
+        "false_allow": 0,
+        "false_block": 0,
+        "decision_accuracy": 1.0,
+        "successful_executions": 216,
+        "unsafe_executions": 0,
+        "oracle_recoverable": 232,
+        "verification_queries": 122
+      },
+      "affine_weighted": {
+        "cases": 300,
+        "safe": 159,
+        "unsafe": 141,
+        "false_allow": 1,
+        "false_block": 144,
+        "decision_accuracy": 0.5166666666666666,
+        "successful_executions": 103,
+        "unsafe_executions": 1,
+        "oracle_recoverable": 232,
+        "verification_queries": 258
+      },
+      "affine_safety_1pct": {
+        "cases": 300,
+        "safe": 159,
+        "unsafe": 141,
+        "false_allow": 1,
+        "false_block": 141,
+        "decision_accuracy": 0.5266666666666666,
+        "successful_executions": 108,
+        "unsafe_executions": 1,
+        "oracle_recoverable": 232,
+        "verification_queries": 251
+      },
+      "linear_rules_64_weighted": {
+        "cases": 300,
+        "safe": 159,
+        "unsafe": 141,
+        "false_allow": 32,
+        "false_block": 91,
+        "decision_accuracy": 0.5900000000000001,
+        "successful_executions": 100,
+        "unsafe_executions": 68,
+        "oracle_recoverable": 232,
+        "verification_queries": 131
+      },
+      "linear_rules_64_safety_1pct": {
+        "cases": 300,
+        "safe": 159,
+        "unsafe": 141,
+        "false_allow": 0,
+        "false_block": 159,
+        "decision_accuracy": 0.47,
+        "successful_executions": 0,
+        "unsafe_executions": 0,
+        "oracle_recoverable": 232,
+        "verification_queries": 296
+      }
+    }
+  }
+}

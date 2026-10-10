@@ -1,0 +1,103 @@
+% Candidate method section only. Not included by the current paper.
+% The original AgentDojo/ASB results have NOT been rerun with this method.
+% Requires the existing paper's amsmath/amssymb packages.
+
+\subsection{Dependency-Conditioned Joint Risk}
+\label{sec:candidate-dependency-risk}
+
+We retain DAFR's execution-boundary placement, source-aware evidence
+projection, action--evidence representation, linear execution requirements,
+and decision--feedback loop. The candidate replacement concerns the joint-risk
+component. Instead of combining marginal risk coordinates through a norm, it
+represents the conditions under which untrusted influence can produce a
+specific external effect.
+
+For the proposed action $a_t$, let $G_t$ be a source-tagged effect-dependency
+graph. A path connects source influence to an effect-bearing argument and the
+resulting external effect. The graph preserves the original argument field,
+value, source identity, and state revision. Trusted authorization covers a
+path only when its issuer, effect, field, value, and revision match the proposed
+action. Let $\mathcal A_t$ contain the paths without matching authorization.
+Untrusted text cannot establish authorization merely by claiming approval.
+
+Each primitive event $X_e\in\{0,1\}$ denotes a specified condition necessary
+for an unauthorized path to activate. Its meaning must be defined by the
+environment model, rather than inferred from the numerical value of an
+unrelated grounding or similarity score. For a path $\pi$, all its required
+events must occur. The action-level unauthorized-influence event is
+\begin{equation}
+ U_t=\bigvee_{\pi\in\mathcal A_t}\bigwedge_{e\in\pi}(X_e=1).
+ \label{eq:candidate-unauthorized-event}
+\end{equation}
+An empty active-path set gives $U_t=0$. The same primitive event may occur in
+several paths; these paths must not be treated as independent failures.
+
+For a declared primitive-event model with probabilities $p_{t,e}$ and
+independent primitive events, inclusion--exclusion gives
+\begin{equation}
+ \Pr(U_t)=
+ \sum_{\emptyset\ne S\subseteq\mathcal A_t}
+ (-1)^{|S|+1}\prod_{e\in\bigcup_{\pi\in S}\pi}p_{t,e}.
+ \label{eq:candidate-joint-probability}
+\end{equation}
+Taking the union of event identifiers handles dependence induced by shared
+events. This assumption does not handle arbitrary dependence between distinct
+primitive events. Such dependence requires a separately specified joint-event
+model; the independent-event formula is not applicable by default.
+
+Let $s_t\geq0$ be the declared consequence severity and $b_t\geq0$ the
+permitted expected-unauthorized-loss budget. The joint-risk margin is
+\begin{equation}
+ m_t^{\mathrm{dep}}=b_t-s_t\Pr(U_t).
+ \label{eq:candidate-dependency-margin}
+\end{equation}
+This model assumes a common action-level severity whenever any unauthorized
+path activates. It does not sum separate path losses. Where consequences
+differ by outcome, the loss model must instead specify those outcomes and
+compute their expected loss explicitly.
+
+The feasible set retains the individual execution requirements:
+\begin{equation}
+ \mathcal F_t^{\mathrm{dep}}=
+ \left(\bigcap_{j\in\mathcal H_t}\mathcal P_j\right)
+ \cap\{z\mid m_t^{\mathrm{dep}}(z)\geq0\}.
+ \label{eq:candidate-feasible-set}
+\end{equation}
+Schema checks, grounding, task support, prerequisites, and authorization
+requirements remain active. The joint margin does not replace these checks.
+New verified evidence may change the action--evidence coordinates, graph,
+active path set, or budget. Every revised proposal is checked again before
+execution.
+
+\paragraph{Uncertainty and interpretation.}
+If independently justified intervals $[\ell_{t,e},u_{t,e}]$ cover the true
+primitive probabilities, the monotonicity of the event in
+Eq.~\eqref{eq:candidate-unauthorized-event} permits evaluation at the upper
+endpoints. The resulting expected-loss bound is conditional on interval
+coverage and the declared event model. LLM confidence, provenance scores,
+and grounding scores are not calibrated event probabilities by themselves.
+The current controlled implementation receives declared measurements and
+explicit trace records; real-world probability estimation and automatic
+dependency extraction remain to be established.
+
+\paragraph{Geometry and computational cost.}
+For a fixed graph and authorization context, the joint probability is a
+multilinear polynomial in the primitive probabilities. Its budget sublevel
+set can be nonconvex. Consequently, the original norm-region convexity
+statement and general convex-region reasoning do not apply to this candidate.
+The decision is evaluated directly, and feedback requests verified evidence
+or scoped authorization rather than projecting to a convex feasible set.
+For $K$ active paths and $n$ distinct primitive events, direct
+inclusion--exclusion costs $O(2^K n)$, in addition to the linear checks and
+graph construction. The current implementation evaluates small graphs; a
+general linear-time or large-graph scalability claim is unsupported.
+
+\paragraph{Scope of the candidate replacement.}
+The existing AgentDojo and ASB main-table results belong to the original
+halfspace-plus-risk-cone implementation. They are not evidence for this
+replacement. Controlled risk-form comparisons fix evidence, scoped
+authorization, uncertainty handling, verification order, and query budgets,
+and replace only the joint-risk evaluator. Both a union-of-path causal world
+and a quadratic-budget control world are retained, because the appropriate
+risk law depends on the environment and policy semantics. Changing the main
+method requires corresponding end-to-end results and component ablations.

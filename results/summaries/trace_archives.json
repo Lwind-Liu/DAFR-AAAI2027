@@ -1,0 +1,30 @@
+[
+  {
+    "path": "results/summaries/geometry_capacity_native_dafr_v1/native_rows.jsonl",
+    "archive": "results/summaries/geometry_capacity_native_dafr_v1/native_rows.jsonl.gz",
+    "bytes": 39159936,
+    "sha256": "fca0ce8f58a4300d9844a422e2336dbaa940033e1166c7f0dbd5f2d3b2a1a17d",
+    "compressed_bytes": 554366
+  },
+  {
+    "path": "results/summaries/paper_geometry_synthetic_v1/test_rows.jsonl",
+    "archive": "results/summaries/paper_geometry_synthetic_v1/test_rows.jsonl.gz",
+    "bytes": 131918291,
+    "sha256": "8114fc4743ea546733b6ed017aa605b55c6e59d65d38ebaf7d058e956fefb1be",
+    "compressed_bytes": 6212559
+  },
+  {
+    "path": "results/summaries/paper_geometry_synthetic_v2/test_rows.jsonl",
+    "archive": "results/summaries/paper_geometry_synthetic_v2/test_rows.jsonl.gz",
+    "bytes": 53123769,
+    "sha256": "951cea7e52fe98c68d9d424cd2c1f03dce9782e1e28eaf3e8882f9ebf8b3a8d5",
+    "compressed_bytes": 4099919
+  },
+  {
+    "path": "results/summaries/relational_dafr_complete_v1/test_rows.jsonl",
+    "archive": "results/summaries/relational_dafr_complete_v1/test_rows.jsonl.gz",
+    "bytes": 20053756,
+    "sha256": "3e953eaa6f54869bb2a63e7c23ae3b651e25d6fa256894e1f183ade792eb11cf",
+    "compressed_bytes": 273189
+  }
+]

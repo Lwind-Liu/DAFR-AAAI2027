@@ -1,0 +1,209 @@
+{
+  "checks": "Frozen source/data hashes, split separation, replayed outputs, equal search grammar, exact controls, every linear batch decision matched native primitives.",
+  "candidate_metrics": {
+    "geometry": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 0,
+      "false_block": 0,
+      "affected_groups": 0
+    },
+    "nonlinear_arithmetic": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 0,
+      "false_block": 0,
+      "affected_groups": 0
+    },
+    "learned_linear_weighted": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 120,
+      "false_block": 2411,
+      "affected_groups": 110
+    },
+    "learned_linear_safety_1pct": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 37,
+      "false_block": 3528,
+      "affected_groups": 111
+    },
+    "linear_1_planes_weighted": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 134,
+      "false_block": 1771,
+      "affected_groups": 107
+    },
+    "linear_1_planes_safety_1pct": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 0,
+      "false_block": 4364,
+      "affected_groups": 111
+    },
+    "linear_4_planes_weighted": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 24,
+      "false_block": 587,
+      "affected_groups": 103
+    },
+    "linear_4_planes_safety_1pct": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 62,
+      "false_block": 331,
+      "affected_groups": 97
+    },
+    "linear_16_planes_weighted": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 12,
+      "false_block": 97,
+      "affected_groups": 75
+    },
+    "linear_16_planes_safety_1pct": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 32,
+      "false_block": 48,
+      "affected_groups": 59
+    },
+    "linear_64_planes_weighted": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 1,
+      "false_block": 62,
+      "affected_groups": 51
+    },
+    "linear_64_planes_safety_1pct": {
+      "candidates": 24586,
+      "safe_candidates": 15603,
+      "unsafe_candidates": 8983,
+      "false_allow": 35,
+      "false_block": 0,
+      "affected_groups": 28
+    }
+  },
+  "witnesses": [
+    {
+      "id": "edge_controller/test/0062/concurrent_load",
+      "arm": "linear_64_planes_safety_1pct",
+      "original": [
+        0.2147430955008449,
+        0.08284727742493304,
+        1.5566319560783017
+      ],
+      "edited": [
+        0.17394190735568438,
+        0.06710629471419577,
+        1.2608718844234246
+      ],
+      "execution": {
+        "safe": false,
+        "success": false,
+        "goal_met": true,
+        "temperature": 46.132778706766416,
+        "limit": 46.05538725195831,
+        "violations": [
+          "temperature"
+        ],
+        "after": {
+          "background": [
+            0.3195351220217928,
+            0.35149972425494636,
+            0.31778550554239815
+          ],
+          "cooling_credit": 0.6420859849080655,
+          "version": 64
+        }
+      },
+      "linear_margin": 0.0011586412093813614,
+      "geometry_allowed": false
+    },
+    {
+      "id": "edge_controller/test/0064/no_cooling",
+      "arm": "linear_64_planes_safety_1pct",
+      "original": [
+        0.2723178464082608,
+        0.450726757221296,
+        0.7709206280470504
+      ],
+      "edited": [
+        0.25597877562376514,
+        0.42368315178801824,
+        0.7246653903642274
+      ],
+      "execution": {
+        "safe": false,
+        "success": false,
+        "goal_met": true,
+        "temperature": 31.63709431038696,
+        "limit": 31.61764909163857,
+        "violations": [
+          "temperature"
+        ],
+        "after": {
+          "background": [
+            0.010140737450878179,
+            0.022868295427318164,
+            0.07203156640456675
+          ],
+          "cooling_credit": 0,
+          "version": 66
+        }
+      },
+      "linear_margin": 0.001637810474172996,
+      "geometry_allowed": false
+    },
+    {
+      "id": "edge_controller/test/0064/locked",
+      "arm": "linear_64_planes_safety_1pct",
+      "original": [
+        0.2723178464082608,
+        0.450726757221296,
+        0.7709206280470504
+      ],
+      "edited": [
+        0.2668714894800956,
+        0.450726757221296,
+        0.7555022154861094
+      ],
+      "execution": {
+        "safe": false,
+        "success": false,
+        "goal_met": true,
+        "temperature": 32.18507222561986,
+        "limit": 32.153352591208396,
+        "violations": [
+          "temperature"
+        ],
+        "after": {
+          "background": [
+            0.010140737450878179,
+            0.022868295427318164,
+            0.07203156640456675
+          ],
+          "cooling_credit": 0.04598337700479398,
+          "version": 66
+        }
+      },
+      "linear_margin": 0.0004871559607098064,
+      "geometry_allowed": false
+    }
+  ],
+  "caveat": "Candidates within each base group are correlated; counts are descriptive, not independent sample sizes. Audit does not recalibrate models."
+}

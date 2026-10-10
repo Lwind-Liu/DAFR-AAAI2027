@@ -150,8 +150,16 @@ class ConfidenceLiftedActionSelector:
         repaired_arguments = {
             key: value for key, value in action.arguments.items() if key not in removable
         }
-        # A locator-only call is usually a no-op or an underspecified mutation.
-        if not any(key not in required for key in repaired_arguments):
+        # Required fields can contain the actual effect (email body, transfer
+        # amount, record title). Requiring an optional field to survive wrongly
+        # discards complete repaired calls. Only reject genuine locator-only
+        # remainders; the selector still validates grounding and schema below.
+        locator_keys = {
+            "id", "record_id", "file_id", "task_id", "event_id", "user_id",
+            "recipient", "recipients", "to", "email", "user_email", "channel",
+            "account", "iban", "url", "destination",
+        }
+        if not repaired_arguments or all(str(key).lower() in locator_keys for key in repaired_arguments):
             return None
         repaired = ToolAction(
             id=f"{action.id}:repair",

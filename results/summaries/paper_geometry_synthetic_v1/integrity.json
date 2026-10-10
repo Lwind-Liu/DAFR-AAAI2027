@@ -1,0 +1,10 @@
+{
+  "group_splits_disjoint": true,
+  "full_exact_against_independent_simulator": true,
+  "full_maximal_within_shared_revision_grammar": true,
+  "no_feedback_preserves_initial_decision": true,
+  "sample_count": 6480,
+  "base_groups": 360,
+  "all_cases_retained": true,
+  "rows": 28080
+}

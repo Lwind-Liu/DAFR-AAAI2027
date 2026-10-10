@@ -1,0 +1,991 @@
+{
+  "scope": "Paper-aligned four-module synthetic adapter using unchanged native FeasibleRegion/LinearFacet/RiskBudgetCone. Not production NLP/LLM DAFR.",
+  "quadratic": {
+    "full": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 998,
+      "unsafe_admissions": 0,
+      "recoverable": 998,
+      "revision_checks": 15878
+    },
+    "no_projection": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 0,
+      "false_block": 275,
+      "successful_tasks": 499,
+      "unsafe_admissions": 0,
+      "recoverable": 998,
+      "revision_checks": 7939
+    },
+    "no_lifting": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 937,
+      "false_block": 2,
+      "successful_tasks": 562,
+      "unsafe_admissions": 1181,
+      "recoverable": 998,
+      "revision_checks": 6363
+    },
+    "no_geometry": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 1250,
+      "false_block": 0,
+      "successful_tasks": 550,
+      "unsafe_admissions": 1250,
+      "recoverable": 998,
+      "revision_checks": 0
+    },
+    "no_feedback": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 550,
+      "unsafe_admissions": 0,
+      "recoverable": 998,
+      "revision_checks": 0
+    },
+    "learned_linear_weighted": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 2,
+      "false_block": 102,
+      "successful_tasks": 892,
+      "unsafe_admissions": 44,
+      "recoverable": 998,
+      "revision_checks": 19378
+    },
+    "learned_linear_safety_1pct": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 0,
+      "false_block": 198,
+      "successful_tasks": 788,
+      "unsafe_admissions": 4,
+      "recoverable": 998,
+      "revision_checks": 25240
+    },
+    "linear_4_planes_weighted": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 6,
+      "false_block": 20,
+      "successful_tasks": 948,
+      "unsafe_admissions": 44,
+      "recoverable": 998,
+      "revision_checks": 16512
+    },
+    "linear_4_planes_safety_1pct": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 6,
+      "false_block": 18,
+      "successful_tasks": 948,
+      "unsafe_admissions": 44,
+      "recoverable": 998,
+      "revision_checks": 16504
+    },
+    "linear_16_planes_weighted": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 4,
+      "false_block": 2,
+      "successful_tasks": 942,
+      "unsafe_admissions": 56,
+      "recoverable": 998,
+      "revision_checks": 15908
+    },
+    "linear_16_planes_safety_1pct": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 4,
+      "false_block": 2,
+      "successful_tasks": 922,
+      "unsafe_admissions": 76,
+      "recoverable": 998,
+      "revision_checks": 15850
+    },
+    "linear_64_planes_weighted": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 0,
+      "false_block": 4,
+      "successful_tasks": 998,
+      "unsafe_admissions": 0,
+      "recoverable": 998,
+      "revision_checks": 16000
+    },
+    "linear_64_planes_safety_1pct": {
+      "cases": 1800,
+      "safe_original": 550,
+      "false_allow": 4,
+      "false_block": 0,
+      "successful_tasks": 926,
+      "unsafe_admissions": 72,
+      "recoverable": 998,
+      "revision_checks": 15806
+    }
+  },
+  "linear_control": {
+    "full": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    },
+    "no_projection": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 14,
+      "successful_tasks": 48,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 3423
+    },
+    "no_lifting": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 137,
+      "false_block": 0,
+      "successful_tasks": 28,
+      "unsafe_admissions": 287,
+      "recoverable": 96,
+      "revision_checks": 4263
+    },
+    "no_geometry": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 332,
+      "false_block": 0,
+      "successful_tasks": 28,
+      "unsafe_admissions": 332,
+      "recoverable": 96,
+      "revision_checks": 0
+    },
+    "no_feedback": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 28,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 0
+    },
+    "learned_linear_weighted": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    },
+    "learned_linear_safety_1pct": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    },
+    "linear_4_planes_weighted": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    },
+    "linear_4_planes_safety_1pct": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    },
+    "linear_16_planes_weighted": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    },
+    "linear_16_planes_safety_1pct": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    },
+    "linear_64_planes_weighted": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    },
+    "linear_64_planes_safety_1pct": {
+      "cases": 360,
+      "safe_original": 28,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 96,
+      "unsafe_admissions": 0,
+      "recoverable": 96,
+      "revision_checks": 6846
+    }
+  },
+  "all": {
+    "full": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 1094,
+      "unsafe_admissions": 0,
+      "recoverable": 1094,
+      "revision_checks": 22724
+    },
+    "no_projection": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 0,
+      "false_block": 289,
+      "successful_tasks": 547,
+      "unsafe_admissions": 0,
+      "recoverable": 1094,
+      "revision_checks": 11362
+    },
+    "no_lifting": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 1074,
+      "false_block": 2,
+      "successful_tasks": 590,
+      "unsafe_admissions": 1468,
+      "recoverable": 1094,
+      "revision_checks": 10626
+    },
+    "no_geometry": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 1582,
+      "false_block": 0,
+      "successful_tasks": 578,
+      "unsafe_admissions": 1582,
+      "recoverable": 1094,
+      "revision_checks": 0
+    },
+    "no_feedback": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 578,
+      "unsafe_admissions": 0,
+      "recoverable": 1094,
+      "revision_checks": 0
+    },
+    "learned_linear_weighted": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 2,
+      "false_block": 102,
+      "successful_tasks": 988,
+      "unsafe_admissions": 44,
+      "recoverable": 1094,
+      "revision_checks": 26224
+    },
+    "learned_linear_safety_1pct": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 0,
+      "false_block": 198,
+      "successful_tasks": 884,
+      "unsafe_admissions": 4,
+      "recoverable": 1094,
+      "revision_checks": 32086
+    },
+    "linear_4_planes_weighted": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 6,
+      "false_block": 20,
+      "successful_tasks": 1044,
+      "unsafe_admissions": 44,
+      "recoverable": 1094,
+      "revision_checks": 23358
+    },
+    "linear_4_planes_safety_1pct": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 6,
+      "false_block": 18,
+      "successful_tasks": 1044,
+      "unsafe_admissions": 44,
+      "recoverable": 1094,
+      "revision_checks": 23350
+    },
+    "linear_16_planes_weighted": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 4,
+      "false_block": 2,
+      "successful_tasks": 1038,
+      "unsafe_admissions": 56,
+      "recoverable": 1094,
+      "revision_checks": 22754
+    },
+    "linear_16_planes_safety_1pct": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 4,
+      "false_block": 2,
+      "successful_tasks": 1018,
+      "unsafe_admissions": 76,
+      "recoverable": 1094,
+      "revision_checks": 22696
+    },
+    "linear_64_planes_weighted": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 0,
+      "false_block": 4,
+      "successful_tasks": 1094,
+      "unsafe_admissions": 0,
+      "recoverable": 1094,
+      "revision_checks": 22846
+    },
+    "linear_64_planes_safety_1pct": {
+      "cases": 2160,
+      "safe_original": 578,
+      "false_allow": 4,
+      "false_block": 0,
+      "successful_tasks": 1022,
+      "unsafe_admissions": 72,
+      "recoverable": 1094,
+      "revision_checks": 22652
+    }
+  },
+  "evidence_slices": {
+    "known_target": {
+      "full": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 547,
+        "unsafe_admissions": 0,
+        "recoverable": 547,
+        "revision_checks": 11362
+      },
+      "no_projection": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 547,
+        "unsafe_admissions": 0,
+        "recoverable": 547,
+        "revision_checks": 11362
+      },
+      "no_lifting": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 262,
+        "false_block": 1,
+        "successful_tasks": 295,
+        "unsafe_admissions": 391,
+        "recoverable": 547,
+        "revision_checks": 3542
+      },
+      "no_geometry": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 431,
+        "false_block": 0,
+        "successful_tasks": 289,
+        "unsafe_admissions": 431,
+        "recoverable": 547,
+        "revision_checks": 0
+      },
+      "no_feedback": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 289,
+        "unsafe_admissions": 0,
+        "recoverable": 547,
+        "revision_checks": 0
+      },
+      "learned_linear_weighted": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 1,
+        "false_block": 51,
+        "successful_tasks": 494,
+        "unsafe_admissions": 22,
+        "recoverable": 547,
+        "revision_checks": 13112
+      },
+      "learned_linear_safety_1pct": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 99,
+        "successful_tasks": 442,
+        "unsafe_admissions": 2,
+        "recoverable": 547,
+        "revision_checks": 16043
+      },
+      "linear_4_planes_weighted": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 3,
+        "false_block": 10,
+        "successful_tasks": 522,
+        "unsafe_admissions": 22,
+        "recoverable": 547,
+        "revision_checks": 11679
+      },
+      "linear_4_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 3,
+        "false_block": 9,
+        "successful_tasks": 522,
+        "unsafe_admissions": 22,
+        "recoverable": 547,
+        "revision_checks": 11675
+      },
+      "linear_16_planes_weighted": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 2,
+        "false_block": 1,
+        "successful_tasks": 519,
+        "unsafe_admissions": 28,
+        "recoverable": 547,
+        "revision_checks": 11377
+      },
+      "linear_16_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 2,
+        "false_block": 1,
+        "successful_tasks": 509,
+        "unsafe_admissions": 38,
+        "recoverable": 547,
+        "revision_checks": 11348
+      },
+      "linear_64_planes_weighted": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 2,
+        "successful_tasks": 547,
+        "unsafe_admissions": 0,
+        "recoverable": 547,
+        "revision_checks": 11423
+      },
+      "linear_64_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 2,
+        "false_block": 0,
+        "successful_tasks": 511,
+        "unsafe_admissions": 36,
+        "recoverable": 547,
+        "revision_checks": 11326
+      }
+    },
+    "lookup_target": {
+      "full": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 547,
+        "unsafe_admissions": 0,
+        "recoverable": 547,
+        "revision_checks": 11362
+      },
+      "no_projection": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 289,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 547,
+        "revision_checks": 0
+      },
+      "no_lifting": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 262,
+        "false_block": 1,
+        "successful_tasks": 295,
+        "unsafe_admissions": 391,
+        "recoverable": 547,
+        "revision_checks": 3542
+      },
+      "no_geometry": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 431,
+        "false_block": 0,
+        "successful_tasks": 289,
+        "unsafe_admissions": 431,
+        "recoverable": 547,
+        "revision_checks": 0
+      },
+      "no_feedback": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 289,
+        "unsafe_admissions": 0,
+        "recoverable": 547,
+        "revision_checks": 0
+      },
+      "learned_linear_weighted": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 1,
+        "false_block": 51,
+        "successful_tasks": 494,
+        "unsafe_admissions": 22,
+        "recoverable": 547,
+        "revision_checks": 13112
+      },
+      "learned_linear_safety_1pct": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 99,
+        "successful_tasks": 442,
+        "unsafe_admissions": 2,
+        "recoverable": 547,
+        "revision_checks": 16043
+      },
+      "linear_4_planes_weighted": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 3,
+        "false_block": 10,
+        "successful_tasks": 522,
+        "unsafe_admissions": 22,
+        "recoverable": 547,
+        "revision_checks": 11679
+      },
+      "linear_4_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 3,
+        "false_block": 9,
+        "successful_tasks": 522,
+        "unsafe_admissions": 22,
+        "recoverable": 547,
+        "revision_checks": 11675
+      },
+      "linear_16_planes_weighted": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 2,
+        "false_block": 1,
+        "successful_tasks": 519,
+        "unsafe_admissions": 28,
+        "recoverable": 547,
+        "revision_checks": 11377
+      },
+      "linear_16_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 2,
+        "false_block": 1,
+        "successful_tasks": 509,
+        "unsafe_admissions": 38,
+        "recoverable": 547,
+        "revision_checks": 11348
+      },
+      "linear_64_planes_weighted": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 0,
+        "false_block": 2,
+        "successful_tasks": 547,
+        "unsafe_admissions": 0,
+        "recoverable": 547,
+        "revision_checks": 11423
+      },
+      "linear_64_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 289,
+        "false_allow": 2,
+        "false_block": 0,
+        "successful_tasks": 511,
+        "unsafe_admissions": 36,
+        "recoverable": 547,
+        "revision_checks": 11326
+      }
+    },
+    "injected_target": {
+      "full": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "no_projection": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "no_lifting": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 550,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 686,
+        "recoverable": 0,
+        "revision_checks": 3542
+      },
+      "no_geometry": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 720,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 720,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "no_feedback": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "learned_linear_weighted": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "learned_linear_safety_1pct": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "linear_4_planes_weighted": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "linear_4_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "linear_16_planes_weighted": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "linear_16_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "linear_64_planes_weighted": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "linear_64_planes_safety_1pct": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      }
+    }
+  },
+  "paired_intervals": {
+    "learned_linear_safety_1pct": {
+      "success_rate": {
+        "full_minus_arm": 0.11666666666666665,
+        "paired_group_95pct": [
+          0.09555555555555552,
+          0.1377777777777777
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.0022222222222222222,
+        "paired_group_95pct": [
+          -0.006666666666666667,
+          0.0
+        ]
+      }
+    },
+    "learned_linear_weighted": {
+      "success_rate": {
+        "full_minus_arm": 0.05888888888888888,
+        "paired_group_95pct": [
+          0.042222222222222223,
+          0.07666666666666663
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.024444444444444446,
+        "paired_group_95pct": [
+          -0.03888888888888889,
+          -0.01111111111111111
+        ]
+      }
+    },
+    "linear_16_planes_safety_1pct": {
+      "success_rate": {
+        "full_minus_arm": 0.042222222222222223,
+        "paired_group_95pct": [
+          0.02666666666666666,
+          0.05891666666666676
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.042222222222222223,
+        "paired_group_95pct": [
+          -0.05891666666666672,
+          -0.026666666666666665
+        ]
+      }
+    },
+    "linear_16_planes_weighted": {
+      "success_rate": {
+        "full_minus_arm": 0.031111111111111107,
+        "paired_group_95pct": [
+          0.016666666666666666,
+          0.04777777777777777
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.03111111111111111,
+        "paired_group_95pct": [
+          -0.04777777777777779,
+          -0.016666666666666666
+        ]
+      }
+    },
+    "linear_4_planes_safety_1pct": {
+      "success_rate": {
+        "full_minus_arm": 0.027777777777777776,
+        "paired_group_95pct": [
+          0.015555555555555555,
+          0.041111111111111105
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.024444444444444446,
+        "paired_group_95pct": [
+          -0.03666666666666667,
+          -0.013333333333333332
+        ]
+      }
+    },
+    "linear_4_planes_weighted": {
+      "success_rate": {
+        "full_minus_arm": 0.027777777777777776,
+        "paired_group_95pct": [
+          0.015555555555555555,
+          0.041111111111111105
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.024444444444444446,
+        "paired_group_95pct": [
+          -0.03666666666666667,
+          -0.013333333333333332
+        ]
+      }
+    },
+    "linear_64_planes_safety_1pct": {
+      "success_rate": {
+        "full_minus_arm": 0.039999999999999994,
+        "paired_group_95pct": [
+          0.02666666666666666,
+          0.05333333333333332
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.04,
+        "paired_group_95pct": [
+          -0.05333333333333337,
+          -0.026666666666666665
+        ]
+      }
+    },
+    "linear_64_planes_weighted": {
+      "success_rate": {
+        "full_minus_arm": 0.0,
+        "paired_group_95pct": [
+          0.0,
+          0.0
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": 0.0,
+        "paired_group_95pct": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "no_feedback": {
+      "success_rate": {
+        "full_minus_arm": 0.24888888888888885,
+        "paired_group_95pct": [
+          0.21777777777777757,
+          0.27999999999999975
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": 0.0,
+        "paired_group_95pct": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "no_geometry": {
+      "success_rate": {
+        "full_minus_arm": 0.24888888888888885,
+        "paired_group_95pct": [
+          0.21777777777777757,
+          0.27999999999999975
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.6944444444444445,
+        "paired_group_95pct": [
+          -0.7366666666666659,
+          -0.65
+        ]
+      }
+    },
+    "no_lifting": {
+      "success_rate": {
+        "full_minus_arm": 0.2422222222222222,
+        "paired_group_95pct": [
+          0.21219444444444424,
+          0.2744444444444442
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.6561111111111111,
+        "paired_group_95pct": [
+          -0.6983333333333328,
+          -0.6122222222222222
+        ]
+      }
+    },
+    "no_projection": {
+      "success_rate": {
+        "full_minus_arm": 0.2772222222222222,
+        "paired_group_95pct": [
+          0.26388888888888845,
+          0.2905555555555553
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": 0.0,
+        "paired_group_95pct": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}

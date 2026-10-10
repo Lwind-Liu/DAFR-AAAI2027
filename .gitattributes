@@ -1,0 +1,15 @@
+# Preserve bytes of frozen experiment inputs and hashed source files.
+/data/geometry_capacity_v1/*.jsonl -text
+/data/paper_geometry_synthetic_v1/*.jsonl -text
+/data/paper_geometry_synthetic_v2/*.jsonl -text
+/data/relational_dafr_complete_v1/*.jsonl -text
+/scripts/run_geometry_capacity_benchmark.py -text
+/scripts/run_paper_geometry_synthetic.py -text
+/src/clafr/geometry.py -text
+/src/clafr/schemas.py -text
+/src/geometry_capacity/__init__.py -text
+/src/geometry_capacity/backends.py -text
+/src/geometry_capacity/paper_pipeline.py -text
+/src/geometry_capacity/paper_scenes.py -text
+/src/geometry_capacity/scenes.py -text
+/src/geometry_capacity/simulator.py -text

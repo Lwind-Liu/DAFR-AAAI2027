@@ -1,0 +1,77 @@
+{
+  "seed": 20261017,
+  "risk_dimensions": 6,
+  "counts": {
+    "train": 2160,
+    "dev": 2160,
+    "test": 2160
+  },
+  "arms": {
+    "full": {},
+    "no_projection": {
+      "projection": false
+    },
+    "no_lifting": {
+      "lifting": false
+    },
+    "no_geometry": {
+      "geometry": false
+    },
+    "no_feedback": {
+      "feedback": false
+    },
+    "simple_linear_rule": {
+      "representation": "affine",
+      "model": {
+        "weights": [
+          4.828090370393229,
+          3.4772799210014966,
+          4.031155040046127,
+          3.5759308203891558,
+          3.071943607745462,
+          3.2453472555989378,
+          -8.101528392831552
+        ],
+        "bias": -8.787636878328954,
+        "threshold": -1.5292239572415642
+      }
+    }
+  },
+  "scope": "Paper-aligned four-module synthetic adapter using unchanged native FeasibleRegion/LinearFacet/RiskBudgetCone. Not production NLP/LLM DAFR.",
+  "rules": [
+    "All generated samples retained, including ties and failures; no result-dependent export gate.",
+    "Group all physical and evidence counterfactuals before splitting.",
+    "Linear baselines receive identical lifting, trusted evidence, support facets and feedback candidate grammar.",
+    "Linear weights/normals trained on training; thresholds calibrated on development only.",
+    "Removing geometry removes all geometric constraints; removing feedback preserves initial decisions.",
+    "Raw-observation fallback under no projection has confidence .65 versus required .8; this is an explicit adapter assumption.",
+    "Current verified-state observations precede the proposed write; feedback revises load without changing target, locks or throughput floor.",
+    "Quadratic thermal model is declared and uncalibrated; linear-law controls are separately reported.",
+    "Unsafe admission means forwarding an unsafe action. Atomic simulator rejection prevents unsafe physical commits.",
+    "Exact nonlinear arithmetic is equivalent to the cone; no claim against equally expressive nonlinear rules."
+  ],
+  "development_history": "Exploratory six-channel extension of the retained 3-D diagnostic. Final user-requested comparison is one affine rule plus the four paper-module ablations. No seed search or sample filtering.",
+  "source_sha256": {
+    "scripts\\run_paper_geometry_synthetic.py": "7df1029be3133cdd874fd9741c0a0d5735cc46df62b3aac7b390dec3e05f2c4b",
+    "scripts\\run_geometry_capacity_benchmark.py": "a124ba0cf58a953fc9914e6f20d7a1d9ad867c33d2c637d52df4b99f05baa918",
+    "src\\geometry_capacity\\__init__.py": "3d087223276bcdee38cfe394670f751f200e5a9ed66151e75c43b051ec0fe548",
+    "src\\geometry_capacity\\backends.py": "f99d437c61b8be76022d8674a16534c69f5791a0933232b96a6f934d95672da5",
+    "src\\geometry_capacity\\paper_pipeline.py": "42ffbebcffb3d3c25c20b9b5014e46d43fa9e8a6e80f3bb3f73c9738d38138c3",
+    "src\\geometry_capacity\\paper_scenes.py": "c0966a71cf6a486d3290d7077a66ea0c028fb57d35d942e14014a321d99508b4",
+    "src\\geometry_capacity\\scenes.py": "81360db442cdacb5b3266ee52f7929042142470b17ed4f84e72d9addf3aec844",
+    "src\\geometry_capacity\\simulator.py": "c5ccd32f1576e4fa986a42955f711ce03a50602ce12ede6f456cdaa2131ca867",
+    "src\\clafr\\geometry.py": "b3f13333991f2983c0f68c87920711ce1a50bc57624c9a9329f25e02cb5db479",
+    "src\\clafr\\schemas.py": "8a44784b8c89e2b5fc150d86ef1b9e3c9622cdf4b6d99c093762b42585dd0604"
+  },
+  "data_sha256": {
+    "dev_evaluator.jsonl": "acc8ab6c9fb08faf28e625f805c4472c4a62e6d525e832481bb7bc892854cdac",
+    "dev_inputs.jsonl": "5a8ebabbf8eb1348be36e22d38a78d4c5d40be28c8bdfb883e1f5258dd82b57b",
+    "dev_labels.jsonl": "f2cabb2e97d573a2a53debb96a8eb83d9274b57c97bcf04fa5ad73799039f883",
+    "test_evaluator.jsonl": "2ac36d1ad1d3cabc7988c6f07230b48fa240c41f4d13679481a540e4e2233bc9",
+    "test_inputs.jsonl": "f624a5c695bfc14e25c7c74b92b6c2987d858feddafabfa403b00a39b0a2aee0",
+    "test_labels.jsonl": "073341db6474d011c7dadab7c410bad556dfbf97a4f3bd3cda5d6eb47c760a70",
+    "train_evaluator.jsonl": "865fd1d1a448c295b6a39c4ee33813e7ccff529821a9a0709849ef41c91bdb70",
+    "train_inputs.jsonl": "3a1b5a61252fe32a5b37d2fc61a2ff87237ed3737dbc137beb1a64d424a578fa",
+    "train_labels.jsonl": "4bd206619ec8588b524e3cf995c0401ab7bc2ed1ff210e0226eeccc71f2ca87c"
+  }
+}

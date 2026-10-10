@@ -1,0 +1,544 @@
+{
+  "scope": "Unmodified production executor module-factorial replay on frozen proposals; no new LLM planner or post-feedback replanning.",
+  "data_sha256": "e9240e1d374f0f8098d119643fcb4097c6aa2911a97e28c2eaf78438ee941488",
+  "source_sha256": {
+    "scripts\\run_geometry_capacity_native_dafr.py": "2b8871a0432a6a9984416f79cfaa0bdc8368b1f6fe464e04e23fd43e4c2af863",
+    "src\\clafr\\features.py": "7641918ecc16bfd5882472dba86aa8c96b79cf27ea45c6942545e522b0a24715",
+    "src\\clafr\\compiler.py": "da6a99669c0ba5fb0657ae7177b0649a38649b0259ce8a9af37f43641f99a192",
+    "src\\clafr\\selector.py": "98d63fdde2af097028429f2047ed7b9af848f0c76ea6452a259189249834cf24",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\clafr_defense.py": "d36b737331d545cdf07b14d09a09b0c1d6d5b676893318b500c95dc47678e07a"
+  },
+  "arms": {
+    "full": {
+      "enable_evidence_projection": true,
+      "enable_action_evidence_lifting": true,
+      "enable_dynamic_geometry": true,
+      "enable_decision_repair": true
+    },
+    "off_4": {
+      "enable_evidence_projection": true,
+      "enable_action_evidence_lifting": true,
+      "enable_dynamic_geometry": true,
+      "enable_decision_repair": false
+    },
+    "off_3": {
+      "enable_evidence_projection": true,
+      "enable_action_evidence_lifting": true,
+      "enable_dynamic_geometry": false,
+      "enable_decision_repair": true
+    },
+    "off_3_4": {
+      "enable_evidence_projection": true,
+      "enable_action_evidence_lifting": true,
+      "enable_dynamic_geometry": false,
+      "enable_decision_repair": false
+    },
+    "off_2": {
+      "enable_evidence_projection": true,
+      "enable_action_evidence_lifting": false,
+      "enable_dynamic_geometry": true,
+      "enable_decision_repair": true
+    },
+    "off_2_4": {
+      "enable_evidence_projection": true,
+      "enable_action_evidence_lifting": false,
+      "enable_dynamic_geometry": true,
+      "enable_decision_repair": false
+    },
+    "off_2_3": {
+      "enable_evidence_projection": true,
+      "enable_action_evidence_lifting": false,
+      "enable_dynamic_geometry": false,
+      "enable_decision_repair": true
+    },
+    "off_2_3_4": {
+      "enable_evidence_projection": true,
+      "enable_action_evidence_lifting": false,
+      "enable_dynamic_geometry": false,
+      "enable_decision_repair": false
+    },
+    "off_1": {
+      "enable_evidence_projection": false,
+      "enable_action_evidence_lifting": true,
+      "enable_dynamic_geometry": true,
+      "enable_decision_repair": true
+    },
+    "off_1_4": {
+      "enable_evidence_projection": false,
+      "enable_action_evidence_lifting": true,
+      "enable_dynamic_geometry": true,
+      "enable_decision_repair": false
+    },
+    "off_1_3": {
+      "enable_evidence_projection": false,
+      "enable_action_evidence_lifting": true,
+      "enable_dynamic_geometry": false,
+      "enable_decision_repair": true
+    },
+    "off_1_3_4": {
+      "enable_evidence_projection": false,
+      "enable_action_evidence_lifting": true,
+      "enable_dynamic_geometry": false,
+      "enable_decision_repair": false
+    },
+    "off_1_2": {
+      "enable_evidence_projection": false,
+      "enable_action_evidence_lifting": false,
+      "enable_dynamic_geometry": true,
+      "enable_decision_repair": true
+    },
+    "off_1_2_4": {
+      "enable_evidence_projection": false,
+      "enable_action_evidence_lifting": false,
+      "enable_dynamic_geometry": true,
+      "enable_decision_repair": false
+    },
+    "off_1_2_3": {
+      "enable_evidence_projection": false,
+      "enable_action_evidence_lifting": false,
+      "enable_dynamic_geometry": false,
+      "enable_decision_repair": true
+    },
+    "off_1_2_3_4": {
+      "enable_evidence_projection": false,
+      "enable_action_evidence_lifting": false,
+      "enable_dynamic_geometry": false,
+      "enable_decision_repair": false
+    },
+    "halfspace_only": {
+      "geometry_profile": "halfspace_only"
+    },
+    "cone_only": {
+      "geometry_profile": "cone_only"
+    }
+  },
+  "quadratic": {
+    "full": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_4": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_3": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_3_4": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_2": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_2_4": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_2_3": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_2_3_4": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_4": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_3": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_3_4": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_2": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_2_4": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_2_3": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_2_3_4": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "halfspace_only": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "cone_only": {
+      "cases": 600,
+      "safe_original": 247,
+      "unsafe_original": 353,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 353,
+      "successful": 247,
+      "changed": 0,
+      "read_blocked": 0
+    }
+  },
+  "linear_control": {
+    "full": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_4": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_3": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_3_4": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_2": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_2_4": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_2_3": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_2_3_4": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_4": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_3": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_3_4": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_2": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_2_4": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_2_3": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "off_1_2_3_4": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "halfspace_only": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    },
+    "cone_only": {
+      "cases": 120,
+      "safe_original": 10,
+      "unsafe_original": 110,
+      "safe_blocked": 0,
+      "unsafe_forwarded": 110,
+      "successful": 10,
+      "changed": 0,
+      "read_blocked": 0
+    }
+  },
+  "oracle_recoverable_quadratic": 481,
+  "full_feature_names": [
+    "action_scope_match",
+    "argument_provenance_trusted",
+    "argument_provenance_untrusted",
+    "argument_trusted_provenance",
+    "completion_sufficiency",
+    "confidence",
+    "critical_argument_grounding",
+    "data_sensitivity",
+    "effect_class",
+    "entity_grounding_confidence",
+    "external_destination_risk",
+    "financial_risk",
+    "irreversible_risk",
+    "object_uniqueness",
+    "overreach_risk",
+    "prerequisite_support",
+    "privacy_egress",
+    "privacy_risk",
+    "read_before_write",
+    "redaction_present",
+    "schema_format_validity",
+    "scope_precision",
+    "sensitive_argument_risk",
+    "side_effect_risk",
+    "sink_externality",
+    "source_channel_risk",
+    "source_grounding",
+    "state_cleanliness_cost",
+    "state_freshness",
+    "state_grounding",
+    "state_read_necessity",
+    "task_alignment",
+    "tool_affordance_match",
+    "tool_schema_completeness",
+    "tool_source_risk",
+    "trusted_authorization",
+    "trusted_confirmation",
+    "trusted_intent_alignment",
+    "trusted_intent_support",
+    "uncertainty",
+    "untrusted_context_exposure",
+    "untrusted_control_signal",
+    "untrusted_instruction_alignment",
+    "write_authorization_strength",
+    "write_risk"
+  ],
+  "full_constraint_counts": {
+    "schema_complete": 600,
+    "trusted_action_support": 600,
+    "state_cleanliness": 600,
+    "entity_grounding_required": 600,
+    "critical_side_effect_grounding": 600,
+    "critical_field_grounding_floor": 600,
+    "irreversible_effect_authorization": 600,
+    "confidence_floor": 600,
+    "untrusted_tool_source_requires_authorization": 600,
+    "trusted_over_untrusted_direction": 600,
+    "untrusted_control_budget": 600,
+    "privacy_destination_budget": 600,
+    "financial_exposure_budget": 600,
+    "state_write_budget": 600
+  },
+  "interpretation": "Unsafe forwarded calls are rejected by simulator, not unsafe environment commits. No native capacity cone or numerical scaling repair is added. Failed domain coverage cannot substantiate full-method superiority."
+}

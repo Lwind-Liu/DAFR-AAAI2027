@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrr}
+\toprule
+Configuration & Task $\uparrow$ & UAR $\downarrow$\\
+\midrule
+DAFR (synthetic adapter) & 52.0 & 0.0 \\
+w/o Evidence Projection & 26.0 & 0.0 \\
+w/o Action--Evidence Lifting & 29.9 & 68.6 \\
+w/o Geometric Constraints & 29.4 & 70.6 \\
+w/o Decision \& Feedback & 29.4 & 0.0 \\
+\bottomrule
+\end{tabular}
+\caption{Single-module ablations on the same 1,800 quadratic test episodes. Values are percentages. Each row changes only the specified module of the synthetic implementation.}
+\label{tab:synthetic-module-ablation}
+\end{table}

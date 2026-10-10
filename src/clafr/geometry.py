@@ -26,6 +26,13 @@ def _norm(weights: Mapping[str, float]) -> float:
     return value if value > 1e-12 else 1.0
 
 
+def _stable_slack(bound: float, value: float) -> float:
+    """Snap only machine-roundoff at a boundary, consistently for both shapes."""
+    slack = float(bound) - float(value)
+    scale = max(1.0, abs(float(bound)), abs(float(value)))
+    return 0.0 if abs(slack) <= 16 * math.ulp(scale) else slack
+
+
 @dataclass(frozen=True, slots=True)
 class LinearFacet:
     """A linear facet expressed as w^T z <= bound."""
@@ -41,7 +48,7 @@ class LinearFacet:
 
     def margin(self, vector: FeatureVector) -> ConstraintMargin:
         value = _dot(self.weights, vector)
-        slack = float(self.bound) - value
+        slack = _stable_slack(self.bound, value)
         return ConstraintMargin(
             constraint_id=self.id,
             source=self.source,
@@ -84,7 +91,7 @@ class RiskBudgetCone:
     def margin(self, vector: FeatureVector) -> ConstraintMargin:
         weights = {**self.risk_weights, **self.credit_weights}
         value = self.value(vector)
-        slack = float(self.bound) - value
+        slack = _stable_slack(self.bound, value)
         return ConstraintMargin(
             constraint_id=self.id,
             source=self.source,

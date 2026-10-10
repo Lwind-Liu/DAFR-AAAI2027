@@ -1,0 +1,159 @@
+% Standalone section fragment; uses the main paper's booktabs package.
+% No existing AgentDojo/ASB numbers are reassigned or rerun.
+\section{Controlled Synthetic Geometry Study}
+\label{sec:synthetic-geometry}
+
+We supplement the benchmark results with a controlled study of the joint-risk
+representation. The comparison holds evidence projection, action--evidence
+lifting, individual support constraints, and feedback fixed, and replaces
+only the curved joint budget with one affine risk rule. Its weights are
+trained on the training set and its threshold is selected on the development
+set. No nonlinear feature expansion is given to the affine rule.
+
+\subsection{Synthetic Dataset}
+
+\paragraph{Environment and data.}
+We construct six-channel tool-action environments with declared quadratic
+dissipation: current is determined by a channel-mixing matrix, the proposed
+allocation, and current background load. A temperature limit depends on
+available capacity and observed cooling support. An independent simulator
+computes temperature from raw arguments and state, without reading controller
+coordinates or margins. This is a synthetic, uncalibrated engineering model,
+not measured hardware or a sampled production workload.
+For allocation $q$, the current in channel $j$ is
+\begin{equation}
+ I_j(q)=B_j+\sum_{i=1}^{6}A_{ji}q_i,
+\end{equation}
+where $A$ is the channel-mixing matrix and $B$ is the observed background
+load. The simulator computes
+\begin{equation}
+ T(q)=T_{\mathrm{amb}}+\gamma\sum_{j=1}^{6}I_j(q)^2,
+\end{equation}
+with limit $T_{\max}=T_{\mathrm{amb}}+\gamma(K+C)^2$, where $K$ is base
+capacity and $C$ is current cooling support. These raw-state equations
+determine the labels; they imply a curved capacity boundary. A matched
+linear-law control replaces both quadratic terms with their linear forms.
+
+The generator varies diagonal mixing coefficients in $[0.65,1.3]$,
+off-diagonal coefficients in $[0.03,0.15]$, background load in $[0,0.15]$,
+base capacity in $[0.9,1.3]$, and initial cooling support in $[0,0.7]$.
+Broad proposals, near-capacity proposals, and axis-concentrated proposals
+occur equally often among base instances. The throughput floor is sampled
+between 45\% and 80\% of the original proposal's throughput. The state
+counterfactuals subsequently modify cooling, background load, or locked
+allocations without changing the task identity.
+
+The dataset contains 6,480 episodes from 360 base instances. Each instance
+has six physical counterfactuals (natural state, no cooling, extra cooling,
+concurrent load, a locked channel, and a linear-law control), crossed with
+three evidence settings (user-specified target, verified-lookup target, and
+an untrusted redirection). Entire base instances are assigned to training,
+development, or test, giving 2,160 episodes per split. All generated episodes
+are retained. The 1,800 quadratic test episodes and 360 linear controls are
+reported separately. The six-channel extension follows an exploratory
+three-channel diagnostic; no external preregistration is claimed.
+
+\paragraph{Shared execution protocol.}
+A domain-specific deterministic adapter maps verified lookup records and
+tool arguments to the paper's action--evidence coordinates. The unchanged
+native geometric evaluator instantiates the support halfspaces and joint
+norm budget. This experiment is a domain instantiation of the paper's
+decision equations, not a rerun of the production natural-language encoder
+or an LLM planner. Both comparison arms share a finite revision grammar:
+unlocked allocations are jointly scaled from 100\% to 0\% in one-percentage-point
+steps, while locked allocations remain fixed. Candidates violating the
+allocation caps or throughput floor are excluded. The target identifier
+cannot be changed by load revision. No controller receives simulator labels
+when constructing or selecting candidates.
+
+\paragraph{Metrics.}
+Task success (Task) requires both safe execution and the throughput goal.
+The unsafe admission rate (UAR) measures whether the controller forwards an unsafe physical
+setting or a wrong-target action. It is not benchmark ASR or an unsafe-commit
+rate: the independent physical simulator atomically rejects unsafe settings.
+
+\subsection{Joint Geometry versus a Simple Linear Rule}
+
+The linear comparator replaces only the joint budget by the single rule
+$w^\top r+w_c c+b\leq\tau$, with the same channel-risk coordinates $r$
+and cooling-support coordinate $c$. All target, grounding, and prerequisite
+constraints remain unchanged. Weights are fitted on training data; the
+development threshold minimizes five times the unsafe false-allow rate
+plus the safe false-block rate. The quadratic test set is used only after
+these parameters are frozen.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrr}
+\toprule
+Configuration & Task $\uparrow$ & UAR $\downarrow$\\
+\midrule
+DAFR (synthetic adapter) & 52.0 & 0.0 \\
+Simple linear rule & 42.6 & 2.0 \\
+\bottomrule
+\end{tabular}
+\caption{Joint geometry versus a simple linear rule on 1,800 quadratic test episodes. Values are percentages. Both methods use the same synthetic adapter, support constraints, evidence, and revision grammar.}
+\label{tab:synthetic-geometry}
+\end{table}
+
+Table~\ref{tab:synthetic-geometry} shows that the joint region safely completes 936 episodes with zero unsafe
+admissions, compared with 766 completions and
+36 unsafe admissions for the affine rule.
+The task-success difference is 9.44 percentage points
+(paired base-instance bootstrap, 4,000 resamples; 95\% interval
+[7.56, 11.44]). The interval is exploratory and is not adjusted for multiple
+comparisons.
+
+
+On the 360 linear-law control episodes, the full method and the simple linear
+rule both complete 28 tasks with zero unsafe admissions. The evidence
+therefore supports the contribution of the curved budget relative to this
+simple linear representation under the declared coupled process. It does
+not establish superiority over equivalent nonlinear arithmetic, arbitrary
+rule systems, or real-world distributions.
+
+\subsection{Module Ablations}
+
+We remove one module at a time while preserving the remaining configuration.
+Without Evidence Projection, raw observations remain available with the
+declared fallback confidence 0.65, below the critical grounding requirement
+0.8. This tests the synthetic adapter's verified-state projection, rather
+than the performance of an arbitrary natural-language parser.
+Without Action--Evidence Lifting, schema/action-only coordinates replace
+provenance and cross-channel relations. Without Geometric Constraints,
+schema validity remains active but all geometric filters are removed.
+Without Decision \& Feedback, the initial decision is unchanged and
+load revision is disabled.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrr}
+\toprule
+Configuration & Task $\uparrow$ & UAR $\downarrow$\\
+\midrule
+DAFR (synthetic adapter) & 52.0 & 0.0 \\
+w/o Evidence Projection & 26.0 & 0.0 \\
+w/o Action--Evidence Lifting & 29.9 & 68.6 \\
+w/o Geometric Constraints & 29.4 & 70.6 \\
+w/o Decision \& Feedback & 29.4 & 0.0 \\
+\bottomrule
+\end{tabular}
+\caption{Single-module ablations on the same 1,800 quadratic test episodes. Values are percentages. Each row changes only the specified module of the synthetic implementation.}
+\label{tab:synthetic-module-ablation}
+\end{table}
+
+Table~\ref{tab:synthetic-module-ablation} separates the module effects.
+Removing projection reduces safe completions from 936
+to 468: lookup-established targets no longer
+meet the grounding threshold. Removing feedback reduces completions to
+530, losing 406
+tasks recoverable by load revision. Removing lifting yields
+1235 unsafe admissions because action-only
+coordinates omit target provenance and coupled state relations. Removing
+geometric constraints yields 1270 unsafe admissions.
+These results concern the paper-aligned synthetic implementation; they
+supplement the existing benchmark ablation without replacing it.

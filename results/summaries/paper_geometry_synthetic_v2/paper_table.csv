@@ -1,0 +1,7 @@
+﻿method,cases,initial_accuracy_pct,task_success_pct,unsafe_admission_pct,successful_tasks,unsafe_admissions,false_allow,false_block
+DAFR (synthetic adapter),1800,100.0,52.0,0.0,936,0,0,0
+Simple linear rule,1800,91.11111111111111,42.55555555555556,2.0,766,36,8,152
+w/o Evidence Projection,1800,85.27777777777777,26.0,0.0,468,0,0,265
+w/o Action--Evidence Lifting,1800,41.72222222222223,29.88888888888889,68.61111111111111,538,1235,1047,2
+w/o Geometric Constraints,1800,29.44444444444444,29.444444444444443,70.55555555555556,530,1270,1270,0
+w/o Decision \& Feedback,1800,100.0,29.444444444444443,0.0,530,0,0,0

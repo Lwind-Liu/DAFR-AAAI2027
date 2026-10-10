@@ -2,6 +2,7 @@
 .env.*
 !.env.example
 .venv/
+.venv-capacity/
 venv/
 __pycache__/
 *.py[cod]
@@ -24,3 +25,9 @@ dist/
 # Local experiment reruns.
 results/runs/
 outputs/
+
+# Large experiment traces are versioned as lossless .jsonl.gz archives.
+/results/summaries/geometry_capacity_native_dafr_v1/native_rows.jsonl
+/results/summaries/paper_geometry_synthetic_v1/test_rows.jsonl
+/results/summaries/paper_geometry_synthetic_v2/test_rows.jsonl
+/results/summaries/relational_dafr_complete_v1/test_rows.jsonl

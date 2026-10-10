@@ -1,0 +1,210 @@
+{
+  "points": [
+    {
+      "name": "safe_A",
+      "context": {
+        "events": {
+          "e0": {
+            "probability": 0.9
+          },
+          "e1": {
+            "probability": 0.1
+          }
+        },
+        "paths": [
+          {
+            "field": "destination",
+            "events": [
+              "e0",
+              "e1"
+            ]
+          }
+        ],
+        "action": {
+          "effect": "generic_effect",
+          "arguments": {
+            "destination": "value"
+          }
+        },
+        "grants": [],
+        "revision": 2,
+        "severity": 1.0,
+        "budget": 0.15
+      },
+      "features": [
+        0.9,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.15
+      ],
+      "independent_expected_loss": 0.09000000000000001,
+      "safe": true
+    },
+    {
+      "name": "safe_B",
+      "context": {
+        "events": {
+          "e0": {
+            "probability": 0.1
+          },
+          "e1": {
+            "probability": 0.9
+          }
+        },
+        "paths": [
+          {
+            "field": "destination",
+            "events": [
+              "e0",
+              "e1"
+            ]
+          }
+        ],
+        "action": {
+          "effect": "generic_effect",
+          "arguments": {
+            "destination": "value"
+          }
+        },
+        "grants": [],
+        "revision": 2,
+        "severity": 1.0,
+        "budget": 0.15
+      },
+      "features": [
+        0.1,
+        0.9,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.15
+      ],
+      "independent_expected_loss": 0.09000000000000001,
+      "safe": true
+    },
+    {
+      "name": "unsafe_midpoint",
+      "context": {
+        "events": {
+          "e0": {
+            "probability": 0.5
+          },
+          "e1": {
+            "probability": 0.5
+          }
+        },
+        "paths": [
+          {
+            "field": "destination",
+            "events": [
+              "e0",
+              "e1"
+            ]
+          }
+        ],
+        "action": {
+          "effect": "generic_effect",
+          "arguments": {
+            "destination": "value"
+          }
+        },
+        "grants": [],
+        "revision": 2,
+        "severity": 1.0,
+        "budget": 0.15
+      },
+      "features": [
+        0.5,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.15
+      ],
+      "independent_expected_loss": 0.25,
+      "safe": false
+    }
+  ],
+  "claim": "A convex halfspace intersection accepting both safe points necessarily accepts their unsafe feature midpoint.",
+  "limitation": "Does not exclude disjunctive linear-rule approximations, nonlinear lifting, or alternative risk laws."
+}

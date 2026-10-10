@@ -1,0 +1,46 @@
+{
+  "scope": "Risk forms only, shared causal-path lifting and provenance/repair; cone is the native RiskBudgetCone implementation with a NEW adapter, not frozen old 45-D production policy.",
+  "seed": 20261014,
+  "counts": {
+    "train": 2400,
+    "dev": 1200,
+    "test": 1200
+  },
+  "fitted_cone": {
+    "weights": [
+      1.9003915112766159,
+      1.9527372759565473,
+      2.799120547303185,
+      1.0
+    ],
+    "thresholds": {
+      "weighted": 1.6243654317166814,
+      "safety_1pct": 1.6762480114004914
+    },
+    "optimization": {
+      "converged": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 26
+    }
+  },
+  "worlds": [
+    "Independently enumerated union-of-path causal risk",
+    "Independent quadratic cone-policy control"
+  ],
+  "sources": {
+    "scripts\\compare_joint_risk_versions.py": "bbe8ab0c7abf1e18f9a5191051fd96c495c799d36db874dc0c5cc12052429a0b",
+    "src\\clafr\\geometry.py": "b3f13333991f2983c0f68c87920711ce1a50bc57624c9a9329f25e02cb5db479",
+    "src\\relational_dafr\\__init__.py": "b8a1dcb6a7823e08e7180d75927ff88f4224b68297b860da50d9d7ad9ce0fe23",
+    "src\\relational_dafr\\controller.py": "5f1984dfe57b0a8d23b6d64e83e9ec9601f9d1594b1f84af2d5b76208c43c859",
+    "src\\relational_dafr\\episodes.py": "28b3e410853835ef4accc343beaca90de7dbe8b44ab3bad1ac7e2286d706be79",
+    "src\\relational_dafr\\pipeline.py": "a29b6906f193027aea9e57d5245b9b5155e343b46e17289f9a13dcd368a4942c",
+    "src\\relational_dafr\\scenarios.py": "8e5dc4753c28b76b232237bf8b6fea086f774cb4d05f8f89076d5776018ab98e",
+    "src\\relational_dafr\\worlds.py": "1a177c19a2c46894a497e8f48f4e59e210e38cf6192099eca0386278dd03c44e"
+  },
+  "limitations": [
+    "Synthetic declared probabilities and explicit traces, no empirical calibration.",
+    "Union world intentionally matches the new risk law; cone control matches the old form.",
+    "Both arms share nonlinear path lifting; this is a favorable adaptation for the cone.",
+    "Controls diagnose model assumptions, not real-world superiority or universal geometry superiority."
+  ]
+}

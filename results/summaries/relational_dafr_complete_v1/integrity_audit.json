@@ -1,0 +1,14 @@
+{
+  "hashes_valid": true,
+  "public_inputs_and_evaluator_separate": true,
+  "labels_recomputed_from_independent_worlds": true,
+  "group_splits_disjoint": true,
+  "split_counts": {
+    "train": 2400,
+    "dev": 1200,
+    "test": 1200
+  },
+  "variants_per_group": 5,
+  "no_sample_filtering": true,
+  "audit_source_sha256": "556bdf36abc92c88134f37de86590c1cca401716fc8260f4868602c09006e683"
+}

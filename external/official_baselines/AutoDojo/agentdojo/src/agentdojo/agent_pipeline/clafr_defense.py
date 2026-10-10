@@ -68,7 +68,7 @@ STOP_TERMS = {
 SIDE_EFFECT_AUTHORIZATION_RE = re.compile(
     r"\b(?:send|post|update|change|modify|edit|adjust|delete|remove|transfer|pay|payment|"
     r"book|reserve|purchase|invite|add|create|submit|cancel|refund|reimburse|return|"
-    r"reply|respond|message|email|forward|share|tell|notify)\b",
+    r"reply|respond|forward|share|tell|notify)\b",
     re.I,
 )
 
@@ -97,7 +97,14 @@ def _trusted_task_scope_text(messages: Sequence[ChatMessage], *, project_tool_st
 
 def _trusted_authorization_texts(trusted_scope: str) -> tuple[str, ...]:
     chunks = [chunk.strip() for chunk in re.split(r"\n{2,}|\n(?=\s*[-*\d])", trusted_scope) if chunk.strip()]
-    authorized = tuple(chunk[:4000] for chunk in chunks if SIDE_EFFECT_AUTHORIZATION_RE.search(chunk))
+    # Email/message are also object nouns in read-only requests. Their mere
+    # occurrence must not mint authorization for unrelated tool effects.
+    communication_verb = re.compile(
+        r"(?:^|[.!?]\s+|\bplease\s+|\bthen\s+|\balso\s+)(?:email|message)\s+"
+        r"(?!(?:from|about|content|inbox|received|arrived|says)\b)", re.I,
+    )
+    authorized = tuple(chunk[:4000] for chunk in chunks
+                       if SIDE_EFFECT_AUTHORIZATION_RE.search(chunk) or communication_verb.search(chunk))
     return authorized
 
 

@@ -1,0 +1,410 @@
+{
+  "union_world": {
+    "test": {
+      "new_union_surface": {
+        "cases": 1200,
+        "initial_errors": 12,
+        "safe_executions": 635,
+        "unsafe_executions": 0,
+        "verification_queries": 830
+      },
+      "old_cone_equal_weights": {
+        "cases": 1200,
+        "initial_errors": 33,
+        "safe_executions": 623,
+        "unsafe_executions": 37,
+        "verification_queries": 785
+      },
+      "old_cone_fitted_weighted": {
+        "cases": 1200,
+        "initial_errors": 45,
+        "safe_executions": 594,
+        "unsafe_executions": 9,
+        "verification_queries": 850
+      },
+      "old_cone_fitted_safety_1pct": {
+        "cases": 1200,
+        "initial_errors": 42,
+        "safe_executions": 605,
+        "unsafe_executions": 15,
+        "verification_queries": 833
+      }
+    },
+    "by_domain": {
+      "document_release": {
+        "new_union_surface": {
+          "cases": 300,
+          "initial_errors": 0,
+          "safe_executions": 185,
+          "unsafe_executions": 0,
+          "verification_queries": 186
+        },
+        "old_cone_equal_weights": {
+          "cases": 300,
+          "initial_errors": 16,
+          "safe_executions": 173,
+          "unsafe_executions": 16,
+          "verification_queries": 170
+        },
+        "old_cone_fitted_weighted": {
+          "cases": 300,
+          "initial_errors": 13,
+          "safe_executions": 166,
+          "unsafe_executions": 4,
+          "verification_queries": 194
+        },
+        "old_cone_fitted_safety_1pct": {
+          "cases": 300,
+          "initial_errors": 11,
+          "safe_executions": 171,
+          "unsafe_executions": 8,
+          "verification_queries": 184
+        }
+      },
+      "payment": {
+        "new_union_surface": {
+          "cases": 300,
+          "initial_errors": 4,
+          "safe_executions": 137,
+          "unsafe_executions": 0,
+          "verification_queries": 157
+        },
+        "old_cone_equal_weights": {
+          "cases": 300,
+          "initial_errors": 0,
+          "safe_executions": 141,
+          "unsafe_executions": 0,
+          "verification_queries": 153
+        },
+        "old_cone_fitted_weighted": {
+          "cases": 300,
+          "initial_errors": 8,
+          "safe_executions": 133,
+          "unsafe_executions": 0,
+          "verification_queries": 162
+        },
+        "old_cone_fitted_safety_1pct": {
+          "cases": 300,
+          "initial_errors": 5,
+          "safe_executions": 140,
+          "unsafe_executions": 0,
+          "verification_queries": 157
+        }
+      },
+      "permission_change": {
+        "new_union_surface": {
+          "cases": 300,
+          "initial_errors": 8,
+          "safe_executions": 118,
+          "unsafe_executions": 0,
+          "verification_queries": 297
+        },
+        "old_cone_equal_weights": {
+          "cases": 300,
+          "initial_errors": 17,
+          "safe_executions": 114,
+          "unsafe_executions": 21,
+          "verification_queries": 272
+        },
+        "old_cone_fitted_weighted": {
+          "cases": 300,
+          "initial_errors": 18,
+          "safe_executions": 109,
+          "unsafe_executions": 5,
+          "verification_queries": 303
+        },
+        "old_cone_fitted_safety_1pct": {
+          "cases": 300,
+          "initial_errors": 20,
+          "safe_executions": 108,
+          "unsafe_executions": 7,
+          "verification_queries": 301
+        }
+      },
+      "record_mutation": {
+        "new_union_surface": {
+          "cases": 300,
+          "initial_errors": 0,
+          "safe_executions": 195,
+          "unsafe_executions": 0,
+          "verification_queries": 190
+        },
+        "old_cone_equal_weights": {
+          "cases": 300,
+          "initial_errors": 0,
+          "safe_executions": 195,
+          "unsafe_executions": 0,
+          "verification_queries": 190
+        },
+        "old_cone_fitted_weighted": {
+          "cases": 300,
+          "initial_errors": 6,
+          "safe_executions": 186,
+          "unsafe_executions": 0,
+          "verification_queries": 191
+        },
+        "old_cone_fitted_safety_1pct": {
+          "cases": 300,
+          "initial_errors": 6,
+          "safe_executions": 186,
+          "unsafe_executions": 0,
+          "verification_queries": 191
+        }
+      }
+    },
+    "paired_intervals": {
+      "old_cone_equal_weights": {
+        "safe_execution_rate": {
+          "new_minus_old": 0.01,
+          "group_bootstrap_95pct": [
+            -0.005833333333333334,
+            0.0275
+          ]
+        },
+        "unsafe_execution_rate": {
+          "new_minus_old": -0.030833333333333334,
+          "group_bootstrap_95pct": [
+            -0.051666666666666666,
+            -0.013333333333333334
+          ]
+        }
+      },
+      "old_cone_fitted_safety_1pct": {
+        "safe_execution_rate": {
+          "new_minus_old": 0.025,
+          "group_bootstrap_95pct": [
+            0.006666666666666666,
+            0.04583333333333333
+          ]
+        },
+        "unsafe_execution_rate": {
+          "new_minus_old": -0.0125,
+          "group_bootstrap_95pct": [
+            -0.02666666666666667,
+            -0.0016666666666666668
+          ]
+        }
+      },
+      "old_cone_fitted_weighted": {
+        "safe_execution_rate": {
+          "new_minus_old": 0.034166666666666665,
+          "group_bootstrap_95pct": [
+            0.013333333333333334,
+            0.058333333333333334
+          ]
+        },
+        "unsafe_execution_rate": {
+          "new_minus_old": -0.007500000000000001,
+          "group_bootstrap_95pct": [
+            -0.019166666666666665,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "cone_policy_control": {
+    "test": {
+      "new_union_surface": {
+        "cases": 1200,
+        "initial_errors": 57,
+        "safe_executions": 635,
+        "unsafe_executions": 0,
+        "verification_queries": 830
+      },
+      "old_cone_equal_weights": {
+        "cases": 1200,
+        "initial_errors": 12,
+        "safe_executions": 660,
+        "unsafe_executions": 0,
+        "verification_queries": 785
+      },
+      "old_cone_fitted_weighted": {
+        "cases": 1200,
+        "initial_errors": 80,
+        "safe_executions": 603,
+        "unsafe_executions": 0,
+        "verification_queries": 850
+      },
+      "old_cone_fitted_safety_1pct": {
+        "cases": 1200,
+        "initial_errors": 65,
+        "safe_executions": 620,
+        "unsafe_executions": 0,
+        "verification_queries": 833
+      }
+    },
+    "by_domain": {
+      "document_release": {
+        "new_union_surface": {
+          "cases": 300,
+          "initial_errors": 24,
+          "safe_executions": 185,
+          "unsafe_executions": 0,
+          "verification_queries": 186
+        },
+        "old_cone_equal_weights": {
+          "cases": 300,
+          "initial_errors": 8,
+          "safe_executions": 189,
+          "unsafe_executions": 0,
+          "verification_queries": 170
+        },
+        "old_cone_fitted_weighted": {
+          "cases": 300,
+          "initial_errors": 29,
+          "safe_executions": 170,
+          "unsafe_executions": 0,
+          "verification_queries": 194
+        },
+        "old_cone_fitted_safety_1pct": {
+          "cases": 300,
+          "initial_errors": 19,
+          "safe_executions": 179,
+          "unsafe_executions": 0,
+          "verification_queries": 184
+        }
+      },
+      "payment": {
+        "new_union_surface": {
+          "cases": 300,
+          "initial_errors": 4,
+          "safe_executions": 137,
+          "unsafe_executions": 0,
+          "verification_queries": 157
+        },
+        "old_cone_equal_weights": {
+          "cases": 300,
+          "initial_errors": 0,
+          "safe_executions": 141,
+          "unsafe_executions": 0,
+          "verification_queries": 153
+        },
+        "old_cone_fitted_weighted": {
+          "cases": 300,
+          "initial_errors": 8,
+          "safe_executions": 133,
+          "unsafe_executions": 0,
+          "verification_queries": 162
+        },
+        "old_cone_fitted_safety_1pct": {
+          "cases": 300,
+          "initial_errors": 5,
+          "safe_executions": 140,
+          "unsafe_executions": 0,
+          "verification_queries": 157
+        }
+      },
+      "permission_change": {
+        "new_union_surface": {
+          "cases": 300,
+          "initial_errors": 29,
+          "safe_executions": 118,
+          "unsafe_executions": 0,
+          "verification_queries": 297
+        },
+        "old_cone_equal_weights": {
+          "cases": 300,
+          "initial_errors": 4,
+          "safe_executions": 135,
+          "unsafe_executions": 0,
+          "verification_queries": 272
+        },
+        "old_cone_fitted_weighted": {
+          "cases": 300,
+          "initial_errors": 37,
+          "safe_executions": 114,
+          "unsafe_executions": 0,
+          "verification_queries": 303
+        },
+        "old_cone_fitted_safety_1pct": {
+          "cases": 300,
+          "initial_errors": 35,
+          "safe_executions": 115,
+          "unsafe_executions": 0,
+          "verification_queries": 301
+        }
+      },
+      "record_mutation": {
+        "new_union_surface": {
+          "cases": 300,
+          "initial_errors": 0,
+          "safe_executions": 195,
+          "unsafe_executions": 0,
+          "verification_queries": 190
+        },
+        "old_cone_equal_weights": {
+          "cases": 300,
+          "initial_errors": 0,
+          "safe_executions": 195,
+          "unsafe_executions": 0,
+          "verification_queries": 190
+        },
+        "old_cone_fitted_weighted": {
+          "cases": 300,
+          "initial_errors": 6,
+          "safe_executions": 186,
+          "unsafe_executions": 0,
+          "verification_queries": 191
+        },
+        "old_cone_fitted_safety_1pct": {
+          "cases": 300,
+          "initial_errors": 6,
+          "safe_executions": 186,
+          "unsafe_executions": 0,
+          "verification_queries": 191
+        }
+      }
+    },
+    "paired_intervals": {
+      "old_cone_equal_weights": {
+        "safe_execution_rate": {
+          "new_minus_old": -0.020833333333333332,
+          "group_bootstrap_95pct": [
+            -0.0375,
+            -0.006666666666666667
+          ]
+        },
+        "unsafe_execution_rate": {
+          "new_minus_old": 0.0,
+          "group_bootstrap_95pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "old_cone_fitted_safety_1pct": {
+        "safe_execution_rate": {
+          "new_minus_old": 0.0125,
+          "group_bootstrap_95pct": [
+            -0.0075000000000000015,
+            0.034166666666666665
+          ]
+        },
+        "unsafe_execution_rate": {
+          "new_minus_old": 0.0,
+          "group_bootstrap_95pct": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "old_cone_fitted_weighted": {
+        "safe_execution_rate": {
+          "new_minus_old": 0.02666666666666667,
+          "group_bootstrap_95pct": [
+            0.0033333333333333335,
+            0.051666666666666666
+          ]
+        },
+        "unsafe_execution_rate": {
+          "new_minus_old": 0.0,
+          "group_bootstrap_95pct": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

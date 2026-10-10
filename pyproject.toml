@@ -15,6 +15,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
 semantic = ["scikit-learn", "sentence-transformers"]
+relational-benchmark = ["scikit-learn>=1.4"]
 
 [project.scripts]
 geoconstraints-demo = "geoconstraints.cli:main"

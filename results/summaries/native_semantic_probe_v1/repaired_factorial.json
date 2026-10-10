@@ -1,0 +1,145 @@
+{
+  "scope": "Exploratory native semantic tool replay; independent grant ledger; no new LLM calls.",
+  "source_sha256": {
+    "scripts\\probe_native_semantic_geometry.py": "bd35843bce8220f4b3c7daab508093d888d4cc2e309572bf08055416eb53ba10",
+    "src\\clafr\\features.py": "4c7ca3ad634e16eff8b15fc65f87ab2a58bd29ddb2ae61bd0e13e84d2c4bda1a",
+    "src\\clafr\\selector.py": "e183d5da83530e63159a5bc6b001094f16bae30eba1c3f9fb7510ca68b1a0cf4",
+    "src\\clafr\\compiler.py": "da6a99669c0ba5fb0657ae7177b0649a38649b0259ce8a9af37f43641f99a192"
+  },
+  "cases": 2160,
+  "groups": 240,
+  "arms": {
+    "full": {
+      "forwarded": 1200,
+      "success": 1200,
+      "unsafe_forwarded": 0,
+      "safe_blocked": 0,
+      "changed": 480
+    },
+    "halfspace_only": {
+      "forwarded": 1200,
+      "success": 1200,
+      "unsafe_forwarded": 0,
+      "safe_blocked": 0,
+      "changed": 480
+    },
+    "cone_only": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "no_evidence": {
+      "forwarded": 1200,
+      "success": 1200,
+      "unsafe_forwarded": 0,
+      "safe_blocked": 0,
+      "changed": 480
+    },
+    "no_lifting": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "no_geometry": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "no_repair": {
+      "forwarded": 720,
+      "success": 720,
+      "unsafe_forwarded": 0,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_3_4": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_2_4": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_2_3": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_2_3_4": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_1_4": {
+      "forwarded": 720,
+      "success": 720,
+      "unsafe_forwarded": 0,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_1_3": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_1_3_4": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_1_2": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_1_2_4": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_1_2_3": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    },
+    "off_1_2_3_4": {
+      "forwarded": 1920,
+      "success": 720,
+      "unsafe_forwarded": 1200,
+      "safe_blocked": 0,
+      "changed": 0
+    }
+  },
+  "cone_unique_cases": 0,
+  "cone_unique_examples": [],
+  "masking": {},
+  "failures": [],
+  "dataset_gate_passed": false,
+  "retention": "No candidate dataset exported. Failed candidates are not retained as positive evidence."
+}

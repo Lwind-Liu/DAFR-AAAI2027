@@ -1,0 +1,34 @@
+{
+  "scope": "Minimal declared causal expected-loss model. It is not empirical phishing risk estimation or a full DAFR dataset.",
+  "budget": 0.15,
+  "cases": [
+    {
+      "name": "source_high_effect_low",
+      "source_probability": 0.9,
+      "financial_effect": 0.1,
+      "expected_unauthorized_loss": 0.09,
+      "safe": true
+    },
+    {
+      "name": "source_low_effect_high",
+      "source_probability": 0.1,
+      "financial_effect": 0.9,
+      "expected_unauthorized_loss": 0.09,
+      "safe": true
+    },
+    {
+      "name": "both_moderate",
+      "source_probability": 0.5,
+      "financial_effect": 0.5,
+      "expected_unauthorized_loss": 0.25,
+      "safe": false
+    }
+  ],
+  "product_quadratic_eigenvalues": [
+    -0.5,
+    0.5
+  ],
+  "conclusion": "The raw two-coordinate safe set is nonconvex: two safe endpoints have an unsafe midpoint. Any single convex feasible region, including an intersection of halfspaces or standard PSD second-order-cone constraints, that includes both endpoints must also include this midpoint.",
+  "implication": "A convex curve alone cannot express all conjunctive joint-risk semantics. Conditional policy regions, disjunctions, or nonlinear relational lifting may be required. If lifting supplies a product to all baselines, a linear threshold on that feature can implement this toy policy exactly; geometry must be evaluated for an additional benefit.",
+  "alternative": "Other independent safety laws can yield convex curved feasible sets. This three-case diagnosis does not prove all joint-risk policies nonconvex, nor rule out benefits from dynamic geometry."
+}

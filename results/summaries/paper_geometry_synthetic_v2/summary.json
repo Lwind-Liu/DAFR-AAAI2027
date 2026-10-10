@@ -1,0 +1,459 @@
+{
+  "scope": "Paper-aligned four-module synthetic adapter using unchanged native FeasibleRegion/LinearFacet/RiskBudgetCone. Not production NLP/LLM DAFR.",
+  "quadratic": {
+    "full": {
+      "cases": 1800,
+      "safe_original": 530,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 936,
+      "unsafe_admissions": 0,
+      "recoverable": 936,
+      "revision_checks": 15748
+    },
+    "no_projection": {
+      "cases": 1800,
+      "safe_original": 530,
+      "false_allow": 0,
+      "false_block": 265,
+      "successful_tasks": 468,
+      "unsafe_admissions": 0,
+      "recoverable": 936,
+      "revision_checks": 7874
+    },
+    "no_lifting": {
+      "cases": 1800,
+      "safe_original": 530,
+      "false_allow": 1047,
+      "false_block": 2,
+      "successful_tasks": 538,
+      "unsafe_admissions": 1235,
+      "recoverable": 936,
+      "revision_checks": 3072
+    },
+    "no_geometry": {
+      "cases": 1800,
+      "safe_original": 530,
+      "false_allow": 1270,
+      "false_block": 0,
+      "successful_tasks": 530,
+      "unsafe_admissions": 1270,
+      "recoverable": 936,
+      "revision_checks": 0
+    },
+    "no_feedback": {
+      "cases": 1800,
+      "safe_original": 530,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 530,
+      "unsafe_admissions": 0,
+      "recoverable": 936,
+      "revision_checks": 0
+    },
+    "simple_linear_rule": {
+      "cases": 1800,
+      "safe_original": 530,
+      "false_allow": 8,
+      "false_block": 152,
+      "successful_tasks": 766,
+      "unsafe_admissions": 36,
+      "recoverable": 936,
+      "revision_checks": 21350
+    }
+  },
+  "linear_control": {
+    "full": {
+      "cases": 360,
+      "safe_original": 8,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 28,
+      "unsafe_admissions": 0,
+      "recoverable": 28,
+      "revision_checks": 7694
+    },
+    "no_projection": {
+      "cases": 360,
+      "safe_original": 8,
+      "false_allow": 0,
+      "false_block": 4,
+      "successful_tasks": 14,
+      "unsafe_admissions": 0,
+      "recoverable": 28,
+      "revision_checks": 3847
+    },
+    "no_lifting": {
+      "cases": 360,
+      "safe_original": 8,
+      "false_allow": 67,
+      "false_block": 0,
+      "successful_tasks": 8,
+      "unsafe_admissions": 241,
+      "recoverable": 28,
+      "revision_checks": 7134
+    },
+    "no_geometry": {
+      "cases": 360,
+      "safe_original": 8,
+      "false_allow": 352,
+      "false_block": 0,
+      "successful_tasks": 8,
+      "unsafe_admissions": 352,
+      "recoverable": 28,
+      "revision_checks": 0
+    },
+    "no_feedback": {
+      "cases": 360,
+      "safe_original": 8,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 8,
+      "unsafe_admissions": 0,
+      "recoverable": 28,
+      "revision_checks": 0
+    },
+    "simple_linear_rule": {
+      "cases": 360,
+      "safe_original": 8,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 28,
+      "unsafe_admissions": 0,
+      "recoverable": 28,
+      "revision_checks": 7694
+    }
+  },
+  "all": {
+    "full": {
+      "cases": 2160,
+      "safe_original": 538,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 964,
+      "unsafe_admissions": 0,
+      "recoverable": 964,
+      "revision_checks": 23442
+    },
+    "no_projection": {
+      "cases": 2160,
+      "safe_original": 538,
+      "false_allow": 0,
+      "false_block": 269,
+      "successful_tasks": 482,
+      "unsafe_admissions": 0,
+      "recoverable": 964,
+      "revision_checks": 11721
+    },
+    "no_lifting": {
+      "cases": 2160,
+      "safe_original": 538,
+      "false_allow": 1114,
+      "false_block": 2,
+      "successful_tasks": 546,
+      "unsafe_admissions": 1476,
+      "recoverable": 964,
+      "revision_checks": 10206
+    },
+    "no_geometry": {
+      "cases": 2160,
+      "safe_original": 538,
+      "false_allow": 1622,
+      "false_block": 0,
+      "successful_tasks": 538,
+      "unsafe_admissions": 1622,
+      "recoverable": 964,
+      "revision_checks": 0
+    },
+    "no_feedback": {
+      "cases": 2160,
+      "safe_original": 538,
+      "false_allow": 0,
+      "false_block": 0,
+      "successful_tasks": 538,
+      "unsafe_admissions": 0,
+      "recoverable": 964,
+      "revision_checks": 0
+    },
+    "simple_linear_rule": {
+      "cases": 2160,
+      "safe_original": 538,
+      "false_allow": 8,
+      "false_block": 152,
+      "successful_tasks": 794,
+      "unsafe_admissions": 36,
+      "recoverable": 964,
+      "revision_checks": 29044
+    }
+  },
+  "evidence_slices": {
+    "known_target": {
+      "full": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 482,
+        "unsafe_admissions": 0,
+        "recoverable": 482,
+        "revision_checks": 11721
+      },
+      "no_projection": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 482,
+        "unsafe_admissions": 0,
+        "recoverable": 482,
+        "revision_checks": 11721
+      },
+      "no_lifting": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 282,
+        "false_block": 1,
+        "successful_tasks": 273,
+        "unsafe_admissions": 401,
+        "recoverable": 482,
+        "revision_checks": 3402
+      },
+      "no_geometry": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 451,
+        "false_block": 0,
+        "successful_tasks": 269,
+        "unsafe_admissions": 451,
+        "recoverable": 482,
+        "revision_checks": 0
+      },
+      "no_feedback": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 269,
+        "unsafe_admissions": 0,
+        "recoverable": 482,
+        "revision_checks": 0
+      },
+      "simple_linear_rule": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 4,
+        "false_block": 76,
+        "successful_tasks": 397,
+        "unsafe_admissions": 18,
+        "recoverable": 482,
+        "revision_checks": 14522
+      }
+    },
+    "lookup_target": {
+      "full": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 482,
+        "unsafe_admissions": 0,
+        "recoverable": 482,
+        "revision_checks": 11721
+      },
+      "no_projection": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 0,
+        "false_block": 269,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 482,
+        "revision_checks": 0
+      },
+      "no_lifting": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 282,
+        "false_block": 1,
+        "successful_tasks": 273,
+        "unsafe_admissions": 401,
+        "recoverable": 482,
+        "revision_checks": 3402
+      },
+      "no_geometry": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 451,
+        "false_block": 0,
+        "successful_tasks": 269,
+        "unsafe_admissions": 451,
+        "recoverable": 482,
+        "revision_checks": 0
+      },
+      "no_feedback": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 269,
+        "unsafe_admissions": 0,
+        "recoverable": 482,
+        "revision_checks": 0
+      },
+      "simple_linear_rule": {
+        "cases": 720,
+        "safe_original": 269,
+        "false_allow": 4,
+        "false_block": 76,
+        "successful_tasks": 397,
+        "unsafe_admissions": 18,
+        "recoverable": 482,
+        "revision_checks": 14522
+      }
+    },
+    "injected_target": {
+      "full": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "no_projection": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "no_lifting": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 550,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 674,
+        "recoverable": 0,
+        "revision_checks": 3402
+      },
+      "no_geometry": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 720,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 720,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "no_feedback": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      },
+      "simple_linear_rule": {
+        "cases": 720,
+        "safe_original": 0,
+        "false_allow": 0,
+        "false_block": 0,
+        "successful_tasks": 0,
+        "unsafe_admissions": 0,
+        "recoverable": 0,
+        "revision_checks": 0
+      }
+    }
+  },
+  "paired_intervals": {
+    "no_feedback": {
+      "success_rate": {
+        "full_minus_arm": 0.22555555555555554,
+        "paired_group_95pct": [
+          0.19444444444444436,
+          0.25555555555555537
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": 0.0,
+        "paired_group_95pct": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "no_geometry": {
+      "success_rate": {
+        "full_minus_arm": 0.22555555555555554,
+        "paired_group_95pct": [
+          0.19444444444444436,
+          0.25555555555555537
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.7055555555555555,
+        "paired_group_95pct": [
+          -0.7433333333333325,
+          -0.6677777777777774
+        ]
+      }
+    },
+    "no_lifting": {
+      "success_rate": {
+        "full_minus_arm": 0.2211111111111111,
+        "paired_group_95pct": [
+          0.1899999999999999,
+          0.251111111111111
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.6861111111111111,
+        "paired_group_95pct": [
+          -0.7227777777777771,
+          -0.6488888888888886
+        ]
+      }
+    },
+    "no_projection": {
+      "success_rate": {
+        "full_minus_arm": 0.26,
+        "paired_group_95pct": [
+          0.24666666666666628,
+          0.27277777777777745
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": 0.0,
+        "paired_group_95pct": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "simple_linear_rule": {
+      "success_rate": {
+        "full_minus_arm": 0.09444444444444443,
+        "paired_group_95pct": [
+          0.07555555555555553,
+          0.11444444444444433
+        ]
+      },
+      "unsafe_admission_rate": {
+        "full_minus_arm": -0.020000000000000004,
+        "paired_group_95pct": [
+          -0.035555555555555556,
+          -0.006666666666666667
+        ]
+      }
+    }
+  }
+}
