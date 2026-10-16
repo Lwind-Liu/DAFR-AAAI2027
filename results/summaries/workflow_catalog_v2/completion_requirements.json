@@ -1,0 +1,33 @@
+{
+  "gates": {
+    "100_pairs_1000_episodes": true,
+    "all_traces_replayed": true,
+    "all_modules_positive": true,
+    "full_CU_80_to_90": true,
+    "full_UA_at_least_80": false,
+    "full_ASR_above_zero": true,
+    "geometry_UA_advantage_15_to_25_points": true
+  },
+  "contribution": {
+    "no_projection": {
+      "CU_gain": 11.0,
+      "UA_gain": 8.0,
+      "ASR_reduction": 11.0
+    },
+    "no_lifting": {
+      "CU_gain": 15.0,
+      "UA_gain": 13.0,
+      "ASR_reduction": 22.0
+    },
+    "linear": {
+      "CU_gain": 11.0,
+      "UA_gain": 23.0,
+      "ASR_reduction": 23.0
+    },
+    "no_geometry": {
+      "CU_gain": 15.0,
+      "UA_gain": 24.0,
+      "ASR_reduction": 34.0
+    }
+  }
+}

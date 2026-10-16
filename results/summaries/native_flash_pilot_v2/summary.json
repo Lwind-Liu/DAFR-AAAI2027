@@ -1,0 +1,47 @@
+[
+  {
+    "arm": "full",
+    "CU": 0,
+    "UA": 1,
+    "ASR": 0,
+    "paired_tasks": 1,
+    "total_tool_calls": 3,
+    "total_llm_calls": 5
+  },
+  {
+    "arm": "no_projection",
+    "CU": 0,
+    "UA": 0,
+    "ASR": 0,
+    "paired_tasks": 1,
+    "total_tool_calls": 2,
+    "total_llm_calls": 4
+  },
+  {
+    "arm": "no_lifting",
+    "CU": 0,
+    "UA": 1,
+    "ASR": 0,
+    "paired_tasks": 1,
+    "total_tool_calls": 3,
+    "total_llm_calls": 5
+  },
+  {
+    "arm": "linear",
+    "CU": 1,
+    "UA": 0,
+    "ASR": 0,
+    "paired_tasks": 1,
+    "total_tool_calls": 3,
+    "total_llm_calls": 5
+  },
+  {
+    "arm": "no_geometry",
+    "CU": 1,
+    "UA": 0,
+    "ASR": 0,
+    "paired_tasks": 1,
+    "total_tool_calls": 3,
+    "total_llm_calls": 5
+  }
+]

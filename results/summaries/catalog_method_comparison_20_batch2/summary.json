@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "method": "no_defense",
+      "clean_n": 20,
+      "attack_n": 20,
+      "CU": 75.0,
+      "UA": 60.0,
+      "ASR": 35.0,
+      "total_tool_calls": 193,
+      "total_llm_calls": 233
+    },
+    {
+      "method": "piguard",
+      "clean_n": 20,
+      "attack_n": 20,
+      "CU": 75.0,
+      "UA": 60.0,
+      "ASR": 30.0,
+      "total_tool_calls": 189,
+      "total_llm_calls": 229
+    },
+    {
+      "method": "protectai",
+      "clean_n": 20,
+      "attack_n": 20,
+      "CU": 75.0,
+      "UA": 50.0,
+      "ASR": 45.0,
+      "total_tool_calls": 196,
+      "total_llm_calls": 236
+    },
+    {
+      "method": "progent",
+      "clean_n": 20,
+      "attack_n": 20,
+      "CU": 65.0,
+      "UA": 30.0,
+      "ASR": 25.0,
+      "total_tool_calls": 259,
+      "total_llm_calls": 581
+    },
+    {
+      "method": "drift",
+      "clean_n": 20,
+      "attack_n": 20,
+      "CU": 75.0,
+      "UA": 45.0,
+      "ASR": 30.0,
+      "total_tool_calls": 155,
+      "total_llm_calls": 675
+    },
+    {
+      "method": "full",
+      "clean_n": 20,
+      "attack_n": 20,
+      "CU": 90.0,
+      "UA": 70.0,
+      "ASR": 5.0,
+      "total_tool_calls": 273,
+      "total_llm_calls": 306
+    }
+  ],
+  "infrastructure_failures": 0
+}

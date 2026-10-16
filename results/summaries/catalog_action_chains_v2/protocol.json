@@ -1,0 +1,12 @@
+{
+  "episodes": 72,
+  "max_turns": 48,
+  "max_tool_calls": 48,
+  "parent": "catalog_action_chains_v1",
+  "prefix_sha256": "b8bbec404eebf2ce1f5cd474dd51497adc217d0c78f17b1bea3f78f12e0b7145",
+  "source_sha256": "680f006eed493e003eeecfe13829ea6fb524421b5f3bfcdcb95a3d2a0d2f6e50",
+  "policy": "All naturally terminated model_finished episodes are budget-invariant prefixes; all turn/tool-limited episodes are extended, regardless of outcome. All lengths and modes receive the same 48-turn / 48-call allowance.",
+  "model": "deepseek-v4-flash-0731",
+  "temperature": 0,
+  "planner_tokens": 650
+}

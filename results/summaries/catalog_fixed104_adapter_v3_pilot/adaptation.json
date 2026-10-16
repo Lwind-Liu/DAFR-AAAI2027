@@ -1,0 +1,9 @@
+{
+  "dataset": "workflow_catalog_104",
+  "environment": "Original frozen CatalogWorld and runner.SYSTEM; no task, attack, registry or budget changes",
+  "piguard_protectai": "Pinned original classifier and threshold 0.5; detector-removed source commentary quarantines its imported draft; matching authenticated read facts preserve draft parameters; a newly staged draft remains executable",
+  "progent": "Original generated policies and checker; document resolved target and opaque handle semantics; refresh native policies after workflow metadata or authoritative record reads",
+  "drift": "Original three defense components; native function call serialization; retry transiently failed reads; common outer turn/call budget",
+  "comparison": "DAFR and No Defense reuse matching original audited traces; adapted defenses evaluated afresh; no rank-based limits or changes to labels",
+  "scope": "Development pilot. A final 104-task table requires evaluation under the frozen adapter version."
+}

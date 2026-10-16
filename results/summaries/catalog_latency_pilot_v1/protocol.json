@@ -1,0 +1,29 @@
+{
+  "episodes": 24,
+  "ids": [
+    "CAT-001-ac8aa168-clean",
+    "CAT-001-ac8aa168-attack",
+    "CAT-017-55c76caa-clean",
+    "CAT-017-55c76caa-attack"
+  ],
+  "methods": [
+    "no_defense",
+    "piguard",
+    "protectai",
+    "progent",
+    "drift",
+    "full"
+  ],
+  "model": "deepseek-v4-flash-0731",
+  "temperature": 0,
+  "max_turns": 12,
+  "max_tool_calls": 32,
+  "planner_tokens": 650,
+  "defense_tokens": 2048,
+  "concurrency": 1,
+  "seed": 2026101319,
+  "timing": "End-to-end episode including planner, defense, verification and tools. Model weights loaded and local detector inference warmed before measurements.",
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "adapter_sha256": "9d143eab96cd0448d3ba3348ca998fc23cd785e57cd60d5156d6744343ba7d73",
+  "source_sha256": "ea3664f56be6a8c9798f95dd51bb9d8402ae2a87fb79de864dc6545c9ee8cf84"
+}

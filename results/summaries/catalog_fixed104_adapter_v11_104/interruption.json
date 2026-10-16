@@ -1,0 +1,16 @@
+{
+  "reason": "Provider returns AccessDenied.Unpurchased for deepseek-v4-flash-0731",
+  "confirmed_http_status": 403,
+  "valid_episodes": 945,
+  "remaining_episodes": 303,
+  "remaining_by_method": {
+    "progent": 135,
+    "drift": 168
+  },
+  "provider_failures_excluded": true,
+  "client_sha256_before": "9e66060b6973847e3dadbcbdbbc4bdbdbe41ed17ae50769598c034a2bc8e5a99",
+  "client_sha256_after": "a8765af5ed157dd9df64561aa0b7334dd311a0ce5f533cb8bf1f4b52f03caf35",
+  "client_change": "Latch HTTP401/402/403 across a batch; preserve successful-request model, tools, temperature, token limits and response processing.",
+  "estimated_successful_response_token_cost_cny": 18.367203,
+  "legacy_estimate_includes_failed_request_reservations": true
+}

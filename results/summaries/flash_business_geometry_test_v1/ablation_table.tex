@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Configuration & S-TSR $\uparrow$ & UC $\downarrow$ & FB $\downarrow$ & VQ $\downarrow$ \\
+\midrule
+Full upgraded DAFR & 100.0 & 0 & 0 & 1.18 \\
+w/o Evidence Projection & 81.2 & 27 & 0 & 0.81 \\
+w/o Action--Evidence Lifting & 100.0 & 0 & 48 & 1.85 \\
+w/o Geometric Constraints & 41.0 & 85 & 0 & 0.00 \\
+w/o Decision and Feedback & 41.0 & 0 & 0 & 0.00 \\
+\bottomrule
+\end{tabular}
+\caption{Module ablations under the same model, tools, preflight lifecycle and query budget.}
+\label{tab:flash-geometry-ablation}
+\end{table}

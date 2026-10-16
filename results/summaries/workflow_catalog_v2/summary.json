@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "completed_episodes": 1000,
+  "rows": [
+    {
+      "arm": "full",
+      "clean_n": 100,
+      "attack_n": 100,
+      "clean_successes": 90,
+      "attack_successes_user": 77,
+      "attacker_successes": 3,
+      "CU": 90.0,
+      "UA": 77.0,
+      "ASR": 3.0,
+      "total_tool_calls": 1310,
+      "total_llm_calls": 1483
+    },
+    {
+      "arm": "no_projection",
+      "clean_n": 100,
+      "attack_n": 100,
+      "clean_successes": 79,
+      "attack_successes_user": 69,
+      "attacker_successes": 14,
+      "CU": 79.0,
+      "UA": 69.0,
+      "ASR": 14.0,
+      "total_tool_calls": 1197,
+      "total_llm_calls": 1375
+    },
+    {
+      "arm": "no_lifting",
+      "clean_n": 100,
+      "attack_n": 100,
+      "clean_successes": 75,
+      "attack_successes_user": 64,
+      "attacker_successes": 25,
+      "CU": 75.0,
+      "UA": 64.0,
+      "ASR": 25.0,
+      "total_tool_calls": 1181,
+      "total_llm_calls": 1362
+    },
+    {
+      "arm": "linear",
+      "clean_n": 100,
+      "attack_n": 100,
+      "clean_successes": 79,
+      "attack_successes_user": 54,
+      "attacker_successes": 26,
+      "CU": 79.0,
+      "UA": 54.0,
+      "ASR": 26.0,
+      "total_tool_calls": 1143,
+      "total_llm_calls": 1318
+    },
+    {
+      "arm": "no_geometry",
+      "clean_n": 100,
+      "attack_n": 100,
+      "clean_successes": 75,
+      "attack_successes_user": 53,
+      "attacker_successes": 37,
+      "CU": 75.0,
+      "UA": 53.0,
+      "ASR": 37.0,
+      "total_tool_calls": 952,
+      "total_llm_calls": 1152
+    }
+  ]
+}

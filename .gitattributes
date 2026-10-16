@@ -13,3 +13,65 @@
 /src/geometry_capacity/paper_scenes.py -text
 /src/geometry_capacity/scenes.py -text
 /src/geometry_capacity/simulator.py -text
+
+# Preserve frozen Flash experiment source/data bytes.
+/data/flash_agent_geometry_pilot_v1/*.jsonl -text
+/data/flash_agent_geometry_pilot_v2/*.jsonl -text
+/data/flash_agent_geometry_test_v1/*.jsonl -text
+/data/flash_business_geometry_pilot_v1/*.jsonl -text
+/data/flash_business_geometry_test_v1/*.jsonl -text
+/results/summaries/flash*/source_snapshot/** -text
+/scripts/run_flash_agent_geometry.py -text
+/scripts/run_flash_business_geometry.py -text
+/src/relational_dafr/agent_world.py -text
+/src/relational_dafr/business_world.py -text
+/src/relational_dafr/controller.py -text
+/src/relational_dafr/worlds.py -text
+
+# Preserve oracle-boundary stress experiment bytes.
+/scripts/run_flash_boundary_geometry.py -text
+/src/relational_dafr/boundary_world.py -text
+/data/flash_boundary_geometry_test_v1/*.jsonl -text
+
+# Preserve frozen known-failure regression experiment bytes.
+/scripts/run_flash_failure_neighbors.py -text
+/src/relational_dafr/failure_neighbors.py -text
+/results/summaries/flash_business_geometry_test_v1/frozen_protocol.json -text
+/data/flash_failure_neighbors_v1/*.jsonl -text
+
+# Preserve combined 172-task dataset bytes.
+/data/flash_business_geometry_combined_v1/*.jsonl -text
+/scripts/merge_flash_business_geometry.py -text
+
+# Preserve frozen module-ablation source bytes.
+/scripts/run_flash_module_ablation.py -text
+/src/relational_dafr/module_ablation.py -text
+
+# Preserve whole-region replacement source bytes.
+/scripts/run_flash_whole_region_ablation.py -text
+/src/relational_dafr/whole_region_ablation.py -text
+
+# Preserve fixed operational-extension experiment bytes.
+/scripts/run_flash_operational_extension.py -text
+/src/relational_dafr/operational_failures.py -text
+/data/flash_operational_extension_v1/*.jsonl -text
+/data/flash_business_geometry_final_v4/*.jsonl -text
+
+# Preserve the source snapshots used for the frozen baseline comparison.
+/scripts/run_flash_other_methods.py -text
+/results/summaries/flash_other_methods*/runner_snapshot.py -text
+/external/official_baselines/AutoDojo/agentdojo/src/agentdojo/agent_pipeline/filter_defenses/piguard_defense.py -text
+/external/official_baselines/AutoDojo/agentdojo/src/agentdojo/agent_pipeline/filter_defenses/protectai_defense.py -text
+/external/official_baselines/AutoDojo/agentdojo/src/agentdojo/agent_pipeline/progent_defense/secagent/*.py -text
+/external/official_baselines/AutoDojo/agentdojo/src/agentdojo/agent_pipeline/drift_defense/drift_llm.py -text
+/external/official_baselines/AutoDojo/agentdojo/src/agentdojo/agent_pipeline/drift_defense/drift_prompts.py -text
+/external/official_baselines/AutoDojo/agentdojo/src/agentdojo/agent_pipeline/drift_defense/drift_client.py -text
+
+# Keep new archived experiment files byte-identical across clones.
+/data/workflow_catalog_104/** -text
+/data/workflow_catalog_104_protocol_v1/** -text
+/results/summaries/** -text
+/scripts/** -text
+/src/workflow_benchmark/** -text
+/src/heterogeneous_benchmark/** -text
+/paper/writer_bundle_20261016/** -text

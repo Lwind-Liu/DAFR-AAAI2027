@@ -1,0 +1,59 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "Method": "No Defense",
+      "Episodes": 10,
+      "Mean seconds": 11.645273290009936,
+      "Std seconds": 1.8328609199991122,
+      "Median seconds": 11.056437600025674,
+      "Mean LLM calls": 5.7,
+      "Mean tool calls": 4.7
+    },
+    {
+      "Method": "PIGuard",
+      "Episodes": 10,
+      "Mean seconds": 15.142063280002912,
+      "Std seconds": 4.35980222287276,
+      "Median seconds": 13.11111689999234,
+      "Mean LLM calls": 7.2,
+      "Mean tool calls": 6.2
+    },
+    {
+      "Method": "ProtectAI",
+      "Episodes": 10,
+      "Mean seconds": 13.581928439991316,
+      "Std seconds": 3.1566698224819216,
+      "Median seconds": 11.705577499989886,
+      "Mean LLM calls": 6.8,
+      "Mean tool calls": 5.8
+    },
+    {
+      "Method": "Progent",
+      "Episodes": 10,
+      "Mean seconds": 34.412633810011904,
+      "Std seconds": 4.0150893302508495,
+      "Median seconds": 34.8401847500063,
+      "Mean LLM calls": 12.5,
+      "Mean tool calls": 4.7
+    },
+    {
+      "Method": "DRIFT",
+      "Episodes": 10,
+      "Mean seconds": 36.453785930003505,
+      "Std seconds": 13.019612188587939,
+      "Median seconds": 34.257964949996676,
+      "Mean LLM calls": 19.2,
+      "Mean tool calls": 3.6
+    },
+    {
+      "Method": "DAFR",
+      "Episodes": 10,
+      "Mean seconds": 13.368799490004312,
+      "Std seconds": 3.3471778675499415,
+      "Median seconds": 12.093829449993791,
+      "Mean LLM calls": 6.4,
+      "Mean tool calls": 5.4
+    }
+  ]
+}

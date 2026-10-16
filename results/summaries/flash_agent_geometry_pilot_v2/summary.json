@@ -1,0 +1,252 @@
+{
+  "arms": {
+    "full_surface": {
+      "cases": 18,
+      "safe_successes": 18,
+      "unsafe_commits": 0,
+      "task_completions": 18,
+      "mean_verifications": 1.5555555555555556,
+      "api_failures": 0
+    },
+    "simple_linear": {
+      "cases": 18,
+      "safe_successes": 15,
+      "unsafe_commits": 0,
+      "task_completions": 15,
+      "mean_verifications": 1.7777777777777777,
+      "api_failures": 0
+    },
+    "no_projection": {
+      "cases": 18,
+      "safe_successes": 13,
+      "unsafe_commits": 5,
+      "task_completions": 18,
+      "mean_verifications": 1.0,
+      "api_failures": 0
+    },
+    "no_lifting": {
+      "cases": 18,
+      "safe_successes": 18,
+      "unsafe_commits": 0,
+      "task_completions": 18,
+      "mean_verifications": 1.5555555555555556,
+      "api_failures": 0
+    },
+    "no_geometry": {
+      "cases": 18,
+      "safe_successes": 4,
+      "unsafe_commits": 14,
+      "task_completions": 18,
+      "mean_verifications": 0.0,
+      "api_failures": 0
+    },
+    "no_feedback": {
+      "cases": 18,
+      "safe_successes": 4,
+      "unsafe_commits": 0,
+      "task_completions": 4,
+      "mean_verifications": 0.0,
+      "api_failures": 0
+    }
+  },
+  "per_domain": {
+    "calendar": {
+      "full_surface": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "simple_linear": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_projection": {
+        "safe_successes": 2,
+        "cases": 3
+      },
+      "no_lifting": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_geometry": {
+        "safe_successes": 2,
+        "cases": 3
+      },
+      "no_feedback": {
+        "safe_successes": 2,
+        "cases": 3
+      }
+    },
+    "cloud": {
+      "full_surface": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "simple_linear": {
+        "safe_successes": 2,
+        "cases": 3
+      },
+      "no_projection": {
+        "safe_successes": 2,
+        "cases": 3
+      },
+      "no_lifting": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 3
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 3
+      }
+    },
+    "crm": {
+      "full_surface": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "simple_linear": {
+        "safe_successes": 1,
+        "cases": 3
+      },
+      "no_projection": {
+        "safe_successes": 2,
+        "cases": 3
+      },
+      "no_lifting": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 3
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 3
+      }
+    },
+    "documents": {
+      "full_surface": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "simple_linear": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_projection": {
+        "safe_successes": 2,
+        "cases": 3
+      },
+      "no_lifting": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 3
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 3
+      }
+    },
+    "email": {
+      "full_surface": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "simple_linear": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_projection": {
+        "safe_successes": 2,
+        "cases": 3
+      },
+      "no_lifting": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 3
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 3
+      }
+    },
+    "payment": {
+      "full_surface": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "simple_linear": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_projection": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_lifting": {
+        "safe_successes": 3,
+        "cases": 3
+      },
+      "no_geometry": {
+        "safe_successes": 2,
+        "cases": 3
+      },
+      "no_feedback": {
+        "safe_successes": 2,
+        "cases": 3
+      }
+    }
+  },
+  "intervals": {
+    "simple_linear": {
+      "paired_cases": 18,
+      "success_gain": 0.16666666666666666,
+      "paired_bootstrap_95pct": [
+        0.0,
+        0.3333333333333333
+      ]
+    },
+    "no_projection": {
+      "paired_cases": 18,
+      "success_gain": 0.2777777777777778,
+      "paired_bootstrap_95pct": [
+        0.1111111111111111,
+        0.5
+      ]
+    },
+    "no_lifting": {
+      "paired_cases": 18,
+      "success_gain": 0.0,
+      "paired_bootstrap_95pct": [
+        0.0,
+        0.0
+      ]
+    },
+    "no_geometry": {
+      "paired_cases": 18,
+      "success_gain": 0.7777777777777778,
+      "paired_bootstrap_95pct": [
+        0.5555555555555556,
+        0.9444444444444444
+      ]
+    },
+    "no_feedback": {
+      "paired_cases": 18,
+      "success_gain": 0.7777777777777778,
+      "paired_bootstrap_95pct": [
+        0.5555555555555556,
+        0.9444444444444444
+      ]
+    }
+  }
+}

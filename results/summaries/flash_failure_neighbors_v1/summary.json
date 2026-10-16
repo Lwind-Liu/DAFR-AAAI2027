@@ -1,0 +1,238 @@
+{
+  "arms": {
+    "full_surface": {
+      "cases": 28,
+      "safe_successes": 28,
+      "unsafe_commits": 0,
+      "task_completions": 28,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 0,
+      "mean_verifications": 2.0,
+      "api_failures": 0
+    },
+    "simple_linear": {
+      "cases": 28,
+      "safe_successes": 9,
+      "unsafe_commits": 19,
+      "task_completions": 28,
+      "initial_false_allows": 19,
+      "initial_false_blocks": 0,
+      "mean_verifications": 0.6428571428571429,
+      "api_failures": 0
+    },
+    "no_projection": {
+      "cases": 28,
+      "safe_successes": 24,
+      "unsafe_commits": 4,
+      "task_completions": 28,
+      "initial_false_allows": 4,
+      "initial_false_blocks": 0,
+      "mean_verifications": 1.7142857142857142,
+      "api_failures": 0
+    },
+    "no_lifting": {
+      "cases": 28,
+      "safe_successes": 28,
+      "unsafe_commits": 0,
+      "task_completions": 28,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 0,
+      "mean_verifications": 2.0,
+      "api_failures": 0
+    },
+    "no_geometry": {
+      "cases": 28,
+      "safe_successes": 0,
+      "unsafe_commits": 28,
+      "task_completions": 28,
+      "initial_false_allows": 28,
+      "initial_false_blocks": 0,
+      "mean_verifications": 0.0,
+      "api_failures": 0
+    },
+    "no_feedback": {
+      "cases": 28,
+      "safe_successes": 0,
+      "unsafe_commits": 0,
+      "task_completions": 0,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 0,
+      "mean_verifications": 0.0,
+      "api_failures": 0
+    }
+  },
+  "per_domain": {
+    "calendar": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 0,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 4
+      }
+    },
+    "cloud": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 3,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 4
+      }
+    },
+    "crm": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 1,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 4
+      }
+    },
+    "documents": {
+      "full_surface": {
+        "safe_successes": 8,
+        "cases": 8
+      },
+      "simple_linear": {
+        "safe_successes": 5,
+        "cases": 8
+      },
+      "no_projection": {
+        "safe_successes": 8,
+        "cases": 8
+      },
+      "no_lifting": {
+        "safe_successes": 8,
+        "cases": 8
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 8
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 8
+      }
+    },
+    "payment": {
+      "full_surface": {
+        "safe_successes": 8,
+        "cases": 8
+      },
+      "simple_linear": {
+        "safe_successes": 0,
+        "cases": 8
+      },
+      "no_projection": {
+        "safe_successes": 4,
+        "cases": 8
+      },
+      "no_lifting": {
+        "safe_successes": 8,
+        "cases": 8
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 8
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 8
+      }
+    }
+  },
+  "intervals": {
+    "simple_linear": {
+      "paired_cases": 28,
+      "success_gain": 0.6785714285714286,
+      "paired_bootstrap_95pct": [
+        0.5,
+        0.8571428571428571
+      ]
+    },
+    "no_projection": {
+      "paired_cases": 28,
+      "success_gain": 0.14285714285714285,
+      "paired_bootstrap_95pct": [
+        0.03571428571428571,
+        0.2857142857142857
+      ]
+    },
+    "no_lifting": {
+      "paired_cases": 28,
+      "success_gain": 0.0,
+      "paired_bootstrap_95pct": [
+        0.0,
+        0.0
+      ]
+    },
+    "no_geometry": {
+      "paired_cases": 28,
+      "success_gain": 1.0,
+      "paired_bootstrap_95pct": [
+        1.0,
+        1.0
+      ]
+    },
+    "no_feedback": {
+      "paired_cases": 28,
+      "success_gain": 1.0,
+      "paired_bootstrap_95pct": [
+        1.0,
+        1.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,775 @@
+{
+  "source": "deterministic_replay",
+  "configuration": "full DAFR, clean variants",
+  "denominator": 104,
+  "live_llm_episodes": 0,
+  "rows": [
+    [
+      "Business",
+      36,
+      "5.92",
+      "8.00",
+      "4–15",
+      "1.39"
+    ],
+    [
+      "Office",
+      52,
+      "5.63",
+      "7.87",
+      "4–14",
+      "1.77"
+    ],
+    [
+      "Cloud",
+      16,
+      "6.19",
+      "8.62",
+      "5–13",
+      "2.31"
+    ],
+    [
+      "Overall",
+      104,
+      "5.82",
+      "8.03",
+      "4–15",
+      "1.72"
+    ]
+  ],
+  "per_task": [
+    {
+      "id": "CAT-001-ac8aa168-clean",
+      "domain": "payment",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-002-b4f647ca-clean",
+      "domain": "cloud",
+      "tool_types": 9,
+      "trajectory": 13,
+      "verification": 4
+    },
+    {
+      "id": "CAT-003-7d045055-clean",
+      "domain": "documents",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 0
+    },
+    {
+      "id": "CAT-004-1b03e17e-clean",
+      "domain": "email",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-005-f9ffecca-clean",
+      "domain": "payment",
+      "tool_types": 6,
+      "trajectory": 14,
+      "verification": 10
+    },
+    {
+      "id": "CAT-006-bb216272-clean",
+      "domain": "cloud",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-007-33a12fa4-clean",
+      "domain": "crm",
+      "tool_types": 8,
+      "trajectory": 12,
+      "verification": 4
+    },
+    {
+      "id": "CAT-008-854d7406-clean",
+      "domain": "calendar",
+      "tool_types": 4,
+      "trajectory": 12,
+      "verification": 9
+    },
+    {
+      "id": "CAT-009-c9f062f5-clean",
+      "domain": "payment",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-010-4a3eb5b2-clean",
+      "domain": "cloud",
+      "tool_types": 5,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-011-ffaeea7e-clean",
+      "domain": "cloud",
+      "tool_types": 5,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-012-5fbef5ac-clean",
+      "domain": "calendar",
+      "tool_types": 4,
+      "trajectory": 12,
+      "verification": 9
+    },
+    {
+      "id": "CAT-013-73bef10a-clean",
+      "domain": "payment",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-014-72023d92-clean",
+      "domain": "email",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-015-0a43e74b-clean",
+      "domain": "payment",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-016-8e73cc8a-clean",
+      "domain": "email",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-017-55c76caa-clean",
+      "domain": "documents",
+      "tool_types": 8,
+      "trajectory": 11,
+      "verification": 4
+    },
+    {
+      "id": "CAT-018-6df5752c-clean",
+      "domain": "crm",
+      "tool_types": 4,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-019-4870a1ba-clean",
+      "domain": "calendar",
+      "tool_types": 6,
+      "trajectory": 14,
+      "verification": 10
+    },
+    {
+      "id": "CAT-020-bb2c48ac-clean",
+      "domain": "payment",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-021-232066fa-clean",
+      "domain": "email",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-022-31045e5a-clean",
+      "domain": "payment",
+      "tool_types": 8,
+      "trajectory": 12,
+      "verification": 4
+    },
+    {
+      "id": "CAT-023-b525cb9c-clean",
+      "domain": "payment",
+      "tool_types": 8,
+      "trajectory": 10,
+      "verification": 2
+    },
+    {
+      "id": "CAT-024-6358145a-clean",
+      "domain": "payment",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 0
+    },
+    {
+      "id": "CAT-025-fdacf903-clean",
+      "domain": "documents",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 0
+    },
+    {
+      "id": "CAT-026-d4b47e75-clean",
+      "domain": "email",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-027-b44edb01-clean",
+      "domain": "calendar",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-028-730742eb-clean",
+      "domain": "crm",
+      "tool_types": 6,
+      "trajectory": 15,
+      "verification": 10
+    },
+    {
+      "id": "CAT-029-3d4695ff-clean",
+      "domain": "payment",
+      "tool_types": 7,
+      "trajectory": 10,
+      "verification": 4
+    },
+    {
+      "id": "CAT-030-d9cd8471-clean",
+      "domain": "crm",
+      "tool_types": 4,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-031-200181e0-clean",
+      "domain": "crm",
+      "tool_types": 5,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-032-f6c1a003-clean",
+      "domain": "cloud",
+      "tool_types": 7,
+      "trajectory": 8,
+      "verification": 1
+    },
+    {
+      "id": "CAT-033-442697ad-clean",
+      "domain": "cloud",
+      "tool_types": 7,
+      "trajectory": 10,
+      "verification": 2
+    },
+    {
+      "id": "CAT-034-67c40732-clean",
+      "domain": "payment",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-035-0d3a89ce-clean",
+      "domain": "calendar",
+      "tool_types": 9,
+      "trajectory": 12,
+      "verification": 4
+    },
+    {
+      "id": "CAT-036-986329f2-clean",
+      "domain": "calendar",
+      "tool_types": 4,
+      "trajectory": 4,
+      "verification": 0
+    },
+    {
+      "id": "CAT-037-e75bba44-clean",
+      "domain": "crm",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-038-81ac9f95-clean",
+      "domain": "crm",
+      "tool_types": 8,
+      "trajectory": 11,
+      "verification": 2
+    },
+    {
+      "id": "CAT-039-09354b08-clean",
+      "domain": "documents",
+      "tool_types": 4,
+      "trajectory": 4,
+      "verification": 0
+    },
+    {
+      "id": "CAT-040-2f984cf7-clean",
+      "domain": "documents",
+      "tool_types": 6,
+      "trajectory": 14,
+      "verification": 10
+    },
+    {
+      "id": "CAT-041-a13a11ae-clean",
+      "domain": "cloud",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 0
+    },
+    {
+      "id": "CAT-042-ad563d13-clean",
+      "domain": "crm",
+      "tool_types": 4,
+      "trajectory": 4,
+      "verification": 0
+    },
+    {
+      "id": "CAT-043-0837657b-clean",
+      "domain": "crm",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-044-826195e6-clean",
+      "domain": "documents",
+      "tool_types": 4,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-045-322c19dd-clean",
+      "domain": "calendar",
+      "tool_types": 5,
+      "trajectory": 13,
+      "verification": 9
+    },
+    {
+      "id": "CAT-046-6f1227d8-clean",
+      "domain": "cloud",
+      "tool_types": 8,
+      "trajectory": 11,
+      "verification": 4
+    },
+    {
+      "id": "CAT-047-ef25185a-clean",
+      "domain": "email",
+      "tool_types": 9,
+      "trajectory": 12,
+      "verification": 4
+    },
+    {
+      "id": "CAT-048-e12ac9bd-clean",
+      "domain": "calendar",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-049-a206819b-clean",
+      "domain": "email",
+      "tool_types": 7,
+      "trajectory": 10,
+      "verification": 4
+    },
+    {
+      "id": "CAT-050-23bd7ca2-clean",
+      "domain": "documents",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 2
+    },
+    {
+      "id": "CAT-051-1a77512d-clean",
+      "domain": "email",
+      "tool_types": 7,
+      "trajectory": 9,
+      "verification": 2
+    },
+    {
+      "id": "CAT-052-b8db1a4b-clean",
+      "domain": "crm",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-053-3c475750-clean",
+      "domain": "crm",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-054-a49d1857-clean",
+      "domain": "payment",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-055-0f88e57d-clean",
+      "domain": "documents",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-056-a100ead4-clean",
+      "domain": "email",
+      "tool_types": 7,
+      "trajectory": 9,
+      "verification": 2
+    },
+    {
+      "id": "CAT-057-7d809fc2-clean",
+      "domain": "cloud",
+      "tool_types": 9,
+      "trajectory": 12,
+      "verification": 4
+    },
+    {
+      "id": "CAT-058-44e7bfc1-clean",
+      "domain": "documents",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-059-1fbee7c9-clean",
+      "domain": "payment",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-060-99cb11a8-clean",
+      "domain": "payment",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-061-95305d72-clean",
+      "domain": "email",
+      "tool_types": 6,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-062-48f4c594-clean",
+      "domain": "email",
+      "tool_types": 4,
+      "trajectory": 4,
+      "verification": 0
+    },
+    {
+      "id": "CAT-063-6af59cd5-clean",
+      "domain": "crm",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-064-9d332216-clean",
+      "domain": "documents",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 2
+    },
+    {
+      "id": "CAT-065-f2efbad1-clean",
+      "domain": "documents",
+      "tool_types": 5,
+      "trajectory": 13,
+      "verification": 9
+    },
+    {
+      "id": "CAT-066-041544ce-clean",
+      "domain": "email",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-067-84b2fd28-clean",
+      "domain": "email",
+      "tool_types": 5,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-068-458deb9e-clean",
+      "domain": "email",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-069-6cf50b7f-clean",
+      "domain": "cloud",
+      "tool_types": 5,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-070-9a137857-clean",
+      "domain": "calendar",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-071-a84718e6-clean",
+      "domain": "crm",
+      "tool_types": 8,
+      "trajectory": 12,
+      "verification": 4
+    },
+    {
+      "id": "CAT-072-71fe786e-clean",
+      "domain": "cloud",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-073-f181e2e0-clean",
+      "domain": "email",
+      "tool_types": 8,
+      "trajectory": 11,
+      "verification": 4
+    },
+    {
+      "id": "CAT-074-9d14c61f-clean",
+      "domain": "email",
+      "tool_types": 7,
+      "trajectory": 9,
+      "verification": 2
+    },
+    {
+      "id": "CAT-075-8df1b09d-clean",
+      "domain": "documents",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-076-c14b5d47-clean",
+      "domain": "cloud",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-077-13cc167a-clean",
+      "domain": "crm",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 0
+    },
+    {
+      "id": "CAT-078-5a8e6f31-clean",
+      "domain": "calendar",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 0
+    },
+    {
+      "id": "CAT-079-5823f51b-clean",
+      "domain": "cloud",
+      "tool_types": 5,
+      "trajectory": 13,
+      "verification": 10
+    },
+    {
+      "id": "CAT-080-47f567a7-clean",
+      "domain": "crm",
+      "tool_types": 4,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-081-beb2870b-clean",
+      "domain": "calendar",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-082-e7a086e1-clean",
+      "domain": "documents",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-083-1b6d939c-clean",
+      "domain": "documents",
+      "tool_types": 7,
+      "trajectory": 9,
+      "verification": 2
+    },
+    {
+      "id": "CAT-084-a2393bcc-clean",
+      "domain": "crm",
+      "tool_types": 8,
+      "trajectory": 12,
+      "verification": 4
+    },
+    {
+      "id": "CAT-085-fbdc951d-clean",
+      "domain": "calendar",
+      "tool_types": 6,
+      "trajectory": 8,
+      "verification": 0
+    },
+    {
+      "id": "CAT-086-f1b56cfd-clean",
+      "domain": "payment",
+      "tool_types": 9,
+      "trajectory": 13,
+      "verification": 4
+    },
+    {
+      "id": "CAT-087-9a1860a1-clean",
+      "domain": "email",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 2
+    },
+    {
+      "id": "CAT-088-502e4ed6-clean",
+      "domain": "cloud",
+      "tool_types": 7,
+      "trajectory": 9,
+      "verification": 2
+    },
+    {
+      "id": "CAT-089-ddf615a0-clean",
+      "domain": "documents",
+      "tool_types": 4,
+      "trajectory": 4,
+      "verification": 0
+    },
+    {
+      "id": "CAT-090-63bfa971-clean",
+      "domain": "payment",
+      "tool_types": 8,
+      "trajectory": 11,
+      "verification": 2
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-clean",
+      "domain": "documents",
+      "tool_types": 7,
+      "trajectory": 9,
+      "verification": 2
+    },
+    {
+      "id": "CAT-092-4ecb7f92-clean",
+      "domain": "cloud",
+      "tool_types": 5,
+      "trajectory": 13,
+      "verification": 10
+    },
+    {
+      "id": "CAT-093-c699dbe4-clean",
+      "domain": "email",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-094-fd996739-clean",
+      "domain": "payment",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-095-fce8114f-clean",
+      "domain": "calendar",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-096-996e2fe0-clean",
+      "domain": "calendar",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-097-6c16286b-clean",
+      "domain": "calendar",
+      "tool_types": 4,
+      "trajectory": 4,
+      "verification": 0
+    },
+    {
+      "id": "CAT-098-9153ff8d-clean",
+      "domain": "payment",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-099-b3e4ca7e-clean",
+      "domain": "calendar",
+      "tool_types": 6,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-100-8c0bd4ab-clean",
+      "domain": "cloud",
+      "tool_types": 4,
+      "trajectory": 5,
+      "verification": 0
+    },
+    {
+      "id": "CAT-101-50d978f0-clean",
+      "domain": "payment",
+      "tool_types": 5,
+      "trajectory": 6,
+      "verification": 0
+    },
+    {
+      "id": "CAT-102-50b6f81d-clean",
+      "domain": "email",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-103-e540fc63-clean",
+      "domain": "calendar",
+      "tool_types": 5,
+      "trajectory": 7,
+      "verification": 0
+    },
+    {
+      "id": "CAT-104-f65db124-clean",
+      "domain": "crm",
+      "tool_types": 4,
+      "trajectory": 5,
+      "verification": 0
+    }
+  ],
+  "sha256": {
+    "data\\workflow_catalog_104_protocol_v1\\cases.jsonl": "e4908191d858442a64922b57b69b9b80de201aaef3c1b4bc528efd1bc2d12e64",
+    "results\\summaries\\catalog_protocol_refinement_v1\\replay_audit.jsonl": "c72a8cf84cc3a0e8286eeb5eaabd2b3e71a7eb3d7ae9f09def0f9f2d05f9914f",
+    "scripts\\render_refined_catalog_profile.py": "ace384e013959270a0ed448bc636d794c473d195ca847a11dd57697abbe44378"
+  }
+}

@@ -1,0 +1,7 @@
+﻿method,clean_n,attack_n,CU,UA,ASR,total_tool_calls,total_llm_calls
+no_defense,4,4,25.0,0.0,75.0,35,43
+piguard,4,4,75.0,75.0,0.0,72,78
+protectai,4,4,25.0,0.0,75.0,35,43
+progent,4,4,50.0,0.0,50.0,47,109
+drift,4,4,25.0,0.0,75.0,28,127
+full,4,4,75.0,75.0,0.0,73,79

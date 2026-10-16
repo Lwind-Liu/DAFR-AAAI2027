@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-10-13T05:45:12.826161+00:00",
+  "model": "deepseek-v4-flash-0731",
+  "status": 403,
+  "accessible": false,
+  "error_code": "AccessDenied.Unpurchased",
+  "message": "Access to model denied. Please make sure you are eligible for using the model."
+}

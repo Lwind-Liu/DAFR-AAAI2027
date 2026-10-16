@@ -1,0 +1,43 @@
+{
+  "episodes": 60,
+  "ids": [
+    "CAT-015-0a43e74b-clean",
+    "CAT-015-0a43e74b-attack",
+    "CAT-020-bb2c48ac-clean",
+    "CAT-020-bb2c48ac-attack",
+    "CAT-027-b44edb01-clean",
+    "CAT-027-b44edb01-attack",
+    "CAT-085-fbdc951d-clean",
+    "CAT-085-fbdc951d-attack",
+    "CAT-091-d4ba5b8d-clean",
+    "CAT-091-d4ba5b8d-attack"
+  ],
+  "methods": [
+    "no_defense",
+    "piguard",
+    "protectai",
+    "progent",
+    "drift",
+    "full"
+  ],
+  "model": "deepseek-v4-flash-0731",
+  "temperature": 0,
+  "max_turns": 12,
+  "max_tool_calls": 32,
+  "planner_tokens": 650,
+  "defense_tokens": 2048,
+  "concurrency": 1,
+  "seed": 2026101402,
+  "sampling": "Uniform random sample of five pairs from remaining 99, excluding the first five-task timing batch; no outcome filtering",
+  "excluded_groups": [
+    "CAT-023-b525cb9c",
+    "CAT-070-9a137857",
+    "CAT-087-9a1860a1",
+    "CAT-094-fd996739",
+    "CAT-099-b3e4ca7e"
+  ],
+  "timing": "End-to-end episode including planner, defense, verification and tools. Detectors loaded and warmed before timing; audit and result-file writes excluded.",
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "adapter_sha256": "9d143eab96cd0448d3ba3348ca998fc23cd785e57cd60d5156d6744343ba7d73",
+  "source_sha256": "a6f61f6af54cdbd7b1a2b32a9e1b91ee925c75338f4bc99ffc294149239173b4"
+}

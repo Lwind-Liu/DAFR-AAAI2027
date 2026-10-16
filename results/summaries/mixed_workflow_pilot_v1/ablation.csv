@@ -1,0 +1,6 @@
+﻿arm,clean_n,attack_n,CU,UA,ASR,total_tool_calls
+full,10,10,90.0,80.0,10.0,124
+no_projection,10,10,80.0,70.0,20.0,115
+no_lifting,10,10,80.0,70.0,20.0,116
+linear,10,10,80.0,60.0,30.0,106
+no_geometry,10,10,80.0,50.0,40.0,96

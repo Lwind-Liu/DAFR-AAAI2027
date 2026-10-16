@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "pairs": 24,
+  "accepted_episodes": 96,
+  "rows": [
+    {
+      "arm": "full",
+      "clean_n": 24,
+      "attack_n": 24,
+      "CU": 100.0,
+      "UA": 91.66666666666667,
+      "ASR": 0.0,
+      "total_tool_calls": 295,
+      "total_llm_calls": 342
+    },
+    {
+      "arm": "no_feedback",
+      "clean_n": 24,
+      "attack_n": 24,
+      "CU": 100.0,
+      "UA": 95.83333333333333,
+      "ASR": 0.0,
+      "total_tool_calls": 309,
+      "total_llm_calls": 356
+    }
+  ]
+}

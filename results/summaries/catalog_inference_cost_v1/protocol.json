@@ -1,0 +1,7 @@
+{
+  "episodes": 1248,
+  "unit": "One clean or attacked episode; 208 episodes per method.",
+  "token_scope": "All recorded successful LLM calls, including policy generation and validation; local detector compute is not token usage.",
+  "latency": "No cross-method latency comparison: baseline rows do not store elapsed time and runs used different concurrency.",
+  "failed_api_requests": "Excluded; this is accepted-execution inference usage, not billing."
+}

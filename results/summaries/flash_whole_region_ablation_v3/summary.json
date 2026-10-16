@@ -1,0 +1,49 @@
+{
+  "arms": {
+    "full_surface": {
+      "cases": 172,
+      "safe_successes": 172,
+      "unsafe_commits": 0,
+      "verification_queries": 152,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_projection": {
+      "cases": 172,
+      "safe_successes": 141,
+      "unsafe_commits": 31,
+      "verification_queries": 105,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_lifting": {
+      "cases": 172,
+      "safe_successes": 109,
+      "unsafe_commits": 63,
+      "verification_queries": 132,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "linear_region": {
+      "cases": 172,
+      "safe_successes": 90,
+      "unsafe_commits": 82,
+      "verification_queries": 73,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_geometric_region": {
+      "cases": 172,
+      "safe_successes": 59,
+      "unsafe_commits": 113,
+      "verification_queries": 0,
+      "termination_counts": {
+        "committed": 172
+      }
+    }
+  }
+}

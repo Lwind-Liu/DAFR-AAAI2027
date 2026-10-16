@@ -1,0 +1,29 @@
+% XeLaTeX; editable table.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}\pagestyle{empty}
+\begin{document}\begin{table}[ht]\centering
+{\large Overview of the Evaluated ASB Subset}\par\medskip
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular*}{.98\linewidth}{@{\extracolsep{\fill}}lccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Tasks} & \multicolumn{2}{c}{Avg. Calls} \\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+Domain & Tools & User & Attack & Clean & Attack \\
+\midrule
+Finance & 3 & 5 & 20 & — & 2.40 \\
+Legal & 3 & 5 & 20 & — & 2.60 \\
+Medical & 3 & 5 & 20 & — & 2.10 \\
+Education & 3 & 5 & 20 & — & 1.95 \\
+Psychology & 3 & 5 & 20 & — & 1.80 \\
+E-commerce & 3 & 5 & 20 & — & 2.40 \\
+Aerospace & 3 & 5 & 20 & — & 2.65 \\
+Academic Search & 3 & 6 & 24 & — & 2.75 \\
+Autonomous Driving & 3 & 5 & 20 & — & 2.60 \\
+System Administration & 3 & 5 & 20 & — & 2.60 \\
+\midrule
+Overall & 3.00 & 51 & 204 & — & 2.39 \\
+\bottomrule\end{tabular*}
+\caption{ToolSafe-ASB 实际评测子集概览，模型为 DeepSeek V4 Flash。User 为不同用户任务数，Attack 为实际评测的任务—攻击组合数。Avg. Calls 为完整 DAFR 的平均工具调用请求数，计入被防御层拦截的请求及成功、失败执行，按执行记录平均；Clean 与 Attack 分别统计干净和攻击条件。每个攻击执行提供两个正常工具与一个攻击工具，Tools 为单次执行可见工具数。归档包含 204 次攻击执行，未提供对应干净执行，故 Clean 标为“—”。}
+\end{table}\end{document}

@@ -1,0 +1,33 @@
+% Compile with XeLaTeX. All statistics are computed from the frozen 104-task dataset.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}
+\pagestyle{empty}
+\begin{document}
+\begin{table}[ht]
+\centering
+{\large Overview of the Synthetic Tool-Agent Dataset}\par\medskip
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{Dataset Size} & \multicolumn{3}{c}{Scenario Properties} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-6}
+Domain & Tasks & Scenarios & Signed & Stale & Retry \\
+\midrule
+Finance and CRM & 36 & 72 & 24 & 7 & 24 \\
+Office Collaboration & 52 & 104 & 32 & 13 & 36 \\
+Cloud Operations & 16 & 32 & 8 & 5 & 10 \\
+\midrule
+\textbf{Overall} & \textbf{104} & \textbf{208} & \textbf{64} & \textbf{25} & \textbf{70} \\
+\bottomrule
+\end{tabular*}
+\caption{合成工具调用数据集按业务归为三类：财务与客户管理包括付款、客户信息更新；办公协作包括邮件发送、文档授权和日程安排；云端运维包括云端部署。Tasks 为用户任务数，Scenarios 为干净与攻击配对版本的总数，共 104 个任务、208 个场景。}
+\label{tab:synthetic-dataset-profile}
+\begin{minipage}{\linewidth}\small
+三类业务共用 6 个工具接口；每个任务包含目标对象与操作内容两条记录，执行后检查业务状态、请求收尾及无关资源保护。
+
+场景属性按用户任务计数，可重叠：Signed 为初始记录带有签名快照；Stale 为缓存值与当前权威值不一致；Retry 为核验服务存在暂时不可用设置，核验时可能需要重试。后三列统计场景配置，不代表实际运行中的失败或重试次数。
+\end{minipage}
+\end{table}
+\end{document}

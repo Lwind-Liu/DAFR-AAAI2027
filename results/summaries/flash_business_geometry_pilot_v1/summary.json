@@ -1,0 +1,264 @@
+{
+  "arms": {
+    "full_surface": {
+      "cases": 24,
+      "safe_successes": 24,
+      "unsafe_commits": 0,
+      "task_completions": 24,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 0,
+      "mean_verifications": 1.5,
+      "api_failures": 0
+    },
+    "simple_linear": {
+      "cases": 24,
+      "safe_successes": 23,
+      "unsafe_commits": 1,
+      "task_completions": 24,
+      "initial_false_allows": 1,
+      "initial_false_blocks": 4,
+      "mean_verifications": 1.75,
+      "api_failures": 0
+    },
+    "no_projection": {
+      "cases": 24,
+      "safe_successes": 19,
+      "unsafe_commits": 5,
+      "task_completions": 24,
+      "initial_false_allows": 5,
+      "initial_false_blocks": 0,
+      "mean_verifications": 1.0833333333333333,
+      "api_failures": 0
+    },
+    "no_lifting": {
+      "cases": 24,
+      "safe_successes": 24,
+      "unsafe_commits": 0,
+      "task_completions": 24,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 4,
+      "mean_verifications": 1.8333333333333333,
+      "api_failures": 0
+    },
+    "no_geometry": {
+      "cases": 24,
+      "safe_successes": 6,
+      "unsafe_commits": 18,
+      "task_completions": 24,
+      "initial_false_allows": 18,
+      "initial_false_blocks": 0,
+      "mean_verifications": 0.0,
+      "api_failures": 0
+    },
+    "no_feedback": {
+      "cases": 24,
+      "safe_successes": 6,
+      "unsafe_commits": 0,
+      "task_completions": 6,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 0,
+      "mean_verifications": 0.0,
+      "api_failures": 0
+    }
+  },
+  "per_domain": {
+    "calendar": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 3,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 4
+      }
+    },
+    "cloud": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 3,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 4
+      }
+    },
+    "crm": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 3,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 3,
+        "cases": 4
+      }
+    },
+    "documents": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 3,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 3,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 2,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 2,
+        "cases": 4
+      }
+    },
+    "email": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 3,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 0,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 0,
+        "cases": 4
+      }
+    },
+    "payment": {
+      "full_surface": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "simple_linear": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_projection": {
+        "safe_successes": 3,
+        "cases": 4
+      },
+      "no_lifting": {
+        "safe_successes": 4,
+        "cases": 4
+      },
+      "no_geometry": {
+        "safe_successes": 1,
+        "cases": 4
+      },
+      "no_feedback": {
+        "safe_successes": 1,
+        "cases": 4
+      }
+    }
+  },
+  "intervals": {
+    "simple_linear": {
+      "paired_cases": 24,
+      "success_gain": 0.041666666666666664,
+      "paired_bootstrap_95pct": [
+        0.0,
+        0.125
+      ]
+    },
+    "no_projection": {
+      "paired_cases": 24,
+      "success_gain": 0.20833333333333334,
+      "paired_bootstrap_95pct": [
+        0.041666666666666664,
+        0.375
+      ]
+    },
+    "no_lifting": {
+      "paired_cases": 24,
+      "success_gain": 0.0,
+      "paired_bootstrap_95pct": [
+        0.0,
+        0.0
+      ]
+    },
+    "no_geometry": {
+      "paired_cases": 24,
+      "success_gain": 0.75,
+      "paired_bootstrap_95pct": [
+        0.5833333333333334,
+        0.9166666666666666
+      ]
+    },
+    "no_feedback": {
+      "paired_cases": 24,
+      "success_gain": 0.75,
+      "paired_bootstrap_95pct": [
+        0.5833333333333334,
+        0.9166666666666666
+      ]
+    }
+  }
+}

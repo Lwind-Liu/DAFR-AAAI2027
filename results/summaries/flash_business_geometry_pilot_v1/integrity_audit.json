@@ -1,0 +1,9 @@
+{
+  "episodes": 24,
+  "runs": 144,
+  "unique_runs": 144,
+  "split_overlap": false,
+  "source_and_data_hashes_checked": true,
+  "all_state_mutations_replayed": true,
+  "errors": []
+}

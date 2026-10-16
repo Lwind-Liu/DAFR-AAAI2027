@@ -1,0 +1,19 @@
+{
+  "prompt_tokens": 287365,
+  "completion_tokens": 30061,
+  "requests": 329,
+  "failed_requests": 0,
+  "conservative_cost_cny": 1.222827,
+  "budget_cny": 2.0,
+  "balance_after": {
+    "is_available": true,
+    "balance_infos": [
+      {
+        "currency": "CNY",
+        "total_balance": "19.97",
+        "granted_balance": "0.00",
+        "topped_up_balance": "19.97"
+      }
+    ]
+  }
+}

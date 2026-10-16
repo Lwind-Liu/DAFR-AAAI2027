@@ -1,0 +1,20 @@
+% XeLaTeX; editable table.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}\pagestyle{empty}
+\begin{document}\begin{table}[ht]\centering
+{\large Overview of the Evaluated Datasets}\par\medskip
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular*}{.98\linewidth}{@{\extracolsep{\fill}}lccccccc@{}}
+\toprule
+ & & & \multicolumn{3}{c}{Tasks} & \multicolumn{2}{c}{Reference Statistics} \\
+\cmidrule(lr){4-6}\cmidrule(l){7-8}
+Benchmark & Domains & Avg. Tools & User & Injection* & Pairs & Avg. Traj. & Avg. App. \\
+\midrule
+AgentDojo & 4 & 18.35 & 71 & 35 & 585 & 4.01 & 1.37 \\
+ASB & 10 & 3.00 & 51 & 40 & 204 & — & — \\
+Synthetic & 6 & 6.00 & 104 & 3 & 104 & — & — \\
+\bottomrule\end{tabular*}
+\caption{三套数据集在本文实际评测范围内的概览。Domains 为环境或代理类别数；Avg. Tools 为每个用户任务可见的平均工具数，按用户任务加权，ASB 包含每次执行注入的一个攻击工具。User 为不同用户任务数；Injection* 为独立攻击任务或模板数；Pairs 为实际评测的任务—攻击组合数。Avg. Traj. 为每个用户任务的参考工具调用步数；Avg. App. 为参考轨迹涉及的不同应用/服务数。* AgentDojo、ASB 按环境/代理内的攻击任务 ID 去重；Synthetic 按三类攻击模板去重，并实例化为 104 个攻击场景，因此该列不直接比较攻击丰富度。参考统计取 AgentDojo 官方 ground_truth，应用/服务按工具所属客户端模块区分，均按用户任务平均。ASB 与合成数据尚无对应标准参考序列和应用映射，标为“—”。各行均为本文实际评测范围。}
+\end{table}\end{document}

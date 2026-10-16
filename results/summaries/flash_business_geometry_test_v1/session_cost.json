@@ -1,0 +1,7 @@
+{
+  "initial_observed_balance_cny": 19.97,
+  "last_observed_balance_cny": 12.33,
+  "observed_total_spend_cny": 7.64,
+  "reported_topup_cny": 20,
+  "note": "Balance delta across all pilots and tests, as of the last successful API balance query."
+}

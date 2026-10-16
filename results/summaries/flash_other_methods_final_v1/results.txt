@@ -1,0 +1,8 @@
+196 fixed tasks; six domains; DeepSeek Flash.
+Method | Safe task success | Unsafe executions
+No Defense | 33.2% | 131
+PIGuard | 33.2% | 131
+ProtectAI | 21.4% | 149
+Progent | 33.2% | 131
+DRIFT | 32.7% | 129
+DAFR | 96.9% | 0

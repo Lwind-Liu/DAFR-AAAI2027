@@ -1,0 +1,46 @@
+{
+  "replayed_episodes": 10,
+  "errors": 0,
+  "checked": [
+    [
+      "clean",
+      "full"
+    ],
+    [
+      "clean",
+      "no_projection"
+    ],
+    [
+      "clean",
+      "linear"
+    ],
+    [
+      "clean",
+      "no_lifting"
+    ],
+    [
+      "clean",
+      "no_geometry"
+    ],
+    [
+      "attack",
+      "full"
+    ],
+    [
+      "attack",
+      "no_projection"
+    ],
+    [
+      "attack",
+      "no_lifting"
+    ],
+    [
+      "attack",
+      "linear"
+    ],
+    [
+      "attack",
+      "no_geometry"
+    ]
+  ]
+}

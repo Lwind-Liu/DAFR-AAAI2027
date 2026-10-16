@@ -1,0 +1,12 @@
+{
+  "cases": 18,
+  "paired_episodes": 36,
+  "api_requests": 0,
+  "selection": "Matched safe task completion by DAFR, with No Defense losing task completion or security.",
+  "agentdojo": 5,
+  "asb": 7,
+  "synthetic": 6,
+  "synthetic_episodes_replayed": 12,
+  "raw_sources_sha256": "Per-case in cases.json",
+  "excluded": "AgentDojo examples with effectively identical key action arguments despite differing stored utility were not included."
+}

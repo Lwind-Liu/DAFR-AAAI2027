@@ -1,0 +1,8 @@
+{
+  "prompt_tokens": 29941,
+  "completion_tokens": 2992,
+  "requests": 36,
+  "failed_requests": 0,
+  "conservative_cost_cny": 0.09599772,
+  "budget_cny": 15.0
+}

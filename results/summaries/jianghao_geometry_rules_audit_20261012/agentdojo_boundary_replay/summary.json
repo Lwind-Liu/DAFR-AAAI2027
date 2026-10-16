@@ -1,0 +1,47 @@
+{
+  "api_calls": 0,
+  "certificate_rows": 610,
+  "external_tool_executions": 0,
+  "geometry_allow": 546,
+  "geometry_block_or_clarify": 64,
+  "geometry_vs_equivalent_predicate_disagreements": 0,
+  "saved_rows": 614,
+  "schema": "agentdojo-geometry-boundary-replay-v1",
+  "scope": "saved AgentDojo action/evidence boundaries; no new planner or external execution",
+  "source": "results\\summaries\\agentdojo_mapper_boundary_replay_v1\\rows.jsonl",
+  "top_blocking_facets": [
+    [
+      "critical_field_grounding_floor",
+      43
+    ],
+    [
+      "trusted_over_untrusted_direction",
+      36
+    ],
+    [
+      "trusted_action_support",
+      1
+    ],
+    [
+      "state_cleanliness",
+      1
+    ],
+    [
+      "entity_grounding_required",
+      1
+    ],
+    [
+      "critical_side_effect_grounding",
+      1
+    ],
+    [
+      "irreversible_effect_authorization",
+      1
+    ],
+    [
+      "untrusted_control_budget",
+      1
+    ]
+  ],
+  "valid_rows": 610
+}

@@ -1,0 +1,7 @@
+Configuration,CU (%),UA (%),ASR (%),Total LLM calls
+No Defense,100.0,100.0,61.3,406
+PIGuard,100.0,100.0,61.3,410
+ProtectAI,68.1,68.5,58.9,416
+Progent,100.0,100.0,61.3,1025
+DRIFT,97.2,99.2,60.5,2384
+DAFR,93.1,99.2,0.0,690

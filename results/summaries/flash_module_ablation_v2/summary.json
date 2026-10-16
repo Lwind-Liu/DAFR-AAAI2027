@@ -1,0 +1,82 @@
+{
+  "arms": {
+    "full_surface": {
+      "cases": 172,
+      "safe_successes": 172,
+      "unsafe_commits": 0,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 152,
+      "mean_verifications": 0.8837209302325582,
+      "model_requests": 585,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "simple_linear": {
+      "cases": 172,
+      "safe_successes": 124,
+      "unsafe_commits": 48,
+      "task_completions": 172,
+      "initial_false_blocks": 36,
+      "verification_queries": 185,
+      "mean_verifications": 1.0755813953488371,
+      "model_requests": 603,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_projection": {
+      "cases": 172,
+      "safe_successes": 141,
+      "unsafe_commits": 31,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 105,
+      "mean_verifications": 0.6104651162790697,
+      "model_requests": 517,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_lifting": {
+      "cases": 172,
+      "safe_successes": 109,
+      "unsafe_commits": 63,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 132,
+      "mean_verifications": 0.7674418604651163,
+      "model_requests": 585,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_geometry": {
+      "cases": 172,
+      "safe_successes": 59,
+      "unsafe_commits": 113,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 0,
+      "mean_verifications": 0.0,
+      "model_requests": 356,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_feedback": {
+      "cases": 172,
+      "safe_successes": 172,
+      "unsafe_commits": 0,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 226,
+      "mean_verifications": 1.313953488372093,
+      "model_requests": 576,
+      "termination_counts": {
+        "committed": 172
+      }
+    }
+  }
+}

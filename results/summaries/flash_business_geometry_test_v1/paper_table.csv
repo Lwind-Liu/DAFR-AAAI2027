@@ -1,0 +1,7 @@
+arm,cases,safe_success_pct,unsafe_commits,initial_false_blocks,mean_verifications
+full_surface,144,100.0,0,0,1.1805555555555556
+simple_linear,144,95.13888888888889,7,36,1.5833333333333333
+no_projection,144,81.25,27,0,0.8055555555555556
+no_lifting,144,100.0,0,48,1.8472222222222223
+no_geometry,144,40.97222222222222,85,0,0.0
+no_feedback,144,40.97222222222222,0,0,0.0

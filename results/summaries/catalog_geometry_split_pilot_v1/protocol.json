@@ -1,0 +1,39 @@
+{
+  "pairs": 8,
+  "arms": [
+    "full",
+    "no_halfspaces",
+    "no_joint_surface"
+  ],
+  "new_executions": 32,
+  "model": "deepseek-v4-flash-0731",
+  "temperature": 0,
+  "max_turns": 12,
+  "max_tool_calls": 32,
+  "max_tokens": 650,
+  "selection": "Two pairs per lane, domain balance; seeded before new outcomes.",
+  "ids": [
+    "CAT-035-0d3a89ce-clean",
+    "CAT-035-0d3a89ce-attack",
+    "CAT-038-81ac9f95-clean",
+    "CAT-038-81ac9f95-attack",
+    "CAT-046-6f1227d8-clean",
+    "CAT-046-6f1227d8-attack",
+    "CAT-047-ef25185a-clean",
+    "CAT-047-ef25185a-attack",
+    "CAT-081-beb2870b-clean",
+    "CAT-081-beb2870b-attack",
+    "CAT-084-a2393bcc-clean",
+    "CAT-084-a2393bcc-attack",
+    "CAT-086-f1b56cfd-clean",
+    "CAT-086-f1b56cfd-attack",
+    "CAT-089-ddf615a0-clean",
+    "CAT-089-ddf615a0-attack"
+  ],
+  "dataset_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "source_sha256": "cb885cfb98f52d360ca2b97b595f7ae80ed416fe34d4ef2ca2d5cdd0f3864f26",
+  "full_reference": "Existing full DAFR executions, same cases and budgets.",
+  "no_halfspaces": "Remove semantic halfspace checks; keep the unchanged risk surface.",
+  "no_joint_surface": "Remove joint-risk check; keep the unchanged semantic halfspaces.",
+  "shared": "Full evidence projection, lifting, tool validation and fact-based repair feedback."
+}

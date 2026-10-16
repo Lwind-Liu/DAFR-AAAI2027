@@ -1,0 +1,117 @@
+{
+  "simple_linear": {
+    "safe_success_gain": {
+      "estimate": 0.04861111111111111,
+      "paired_95pct": [
+        0.020833333333333332,
+        0.09027777777777778
+      ]
+    },
+    "verification_queries_saved": {
+      "estimate": 0.4027777777777778,
+      "paired_95pct": [
+        0.2361111111111111,
+        0.5694444444444444
+      ]
+    },
+    "false_block_rate_reduction": {
+      "estimate": 0.25,
+      "paired_95pct": [
+        0.18055555555555555,
+        0.3194444444444444
+      ]
+    }
+  },
+  "no_projection": {
+    "safe_success_gain": {
+      "estimate": 0.1875,
+      "paired_95pct": [
+        0.125,
+        0.2569444444444444
+      ]
+    },
+    "verification_queries_saved": {
+      "estimate": -0.375,
+      "paired_95pct": [
+        -0.5138888888888888,
+        -0.25
+      ]
+    },
+    "false_block_rate_reduction": {
+      "estimate": 0.0,
+      "paired_95pct": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "no_lifting": {
+    "safe_success_gain": {
+      "estimate": 0.0,
+      "paired_95pct": [
+        0.0,
+        0.0
+      ]
+    },
+    "verification_queries_saved": {
+      "estimate": 0.6666666666666666,
+      "paired_95pct": [
+        0.5138888888888888,
+        0.8194444444444444
+      ]
+    },
+    "false_block_rate_reduction": {
+      "estimate": 0.3333333333333333,
+      "paired_95pct": [
+        0.2569444444444444,
+        0.4097222222222222
+      ]
+    }
+  },
+  "no_geometry": {
+    "safe_success_gain": {
+      "estimate": 0.5902777777777778,
+      "paired_95pct": [
+        0.5138888888888888,
+        0.6666666666666666
+      ]
+    },
+    "verification_queries_saved": {
+      "estimate": -1.1805555555555556,
+      "paired_95pct": [
+        -1.3333333333333333,
+        -1.0277777777777777
+      ]
+    },
+    "false_block_rate_reduction": {
+      "estimate": 0.0,
+      "paired_95pct": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "no_feedback": {
+    "safe_success_gain": {
+      "estimate": 0.5902777777777778,
+      "paired_95pct": [
+        0.5138888888888888,
+        0.6666666666666666
+      ]
+    },
+    "verification_queries_saved": {
+      "estimate": -1.1805555555555556,
+      "paired_95pct": [
+        -1.3333333333333333,
+        -1.0277777777777777
+      ]
+    },
+    "false_block_rate_reduction": {
+      "estimate": 0.0,
+      "paired_95pct": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "results\\summaries\\catalog_feedback_24_v1",
+  "change": "Partial summaries allow missing clean/attack groups. Each audited new episode is durably saved before returning to the aggregator.",
+  "ablation_change": false,
+  "wrapper_sha256": "d80685b1cdcf8e78f69ecf2e84d170c8cc1a7718b753490c681c97144626a06d",
+  "parent_rows_sha256": "9b794b7a1d4b42484bb8bda8b3a11dc17a48bbe53b883a4e9ef596c86777a456"
+}

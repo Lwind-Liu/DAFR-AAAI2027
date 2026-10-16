@@ -1,0 +1,26 @@
+% XeLaTeX. Editable table.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}\pagestyle{empty}
+\begin{document}\begin{table}[ht]\centering
+{\large Overview of the Synthetic Tool-Agent Dataset}\par\medskip
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular*}{.95\linewidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Tasks} & Statistics \\
+\cmidrule(lr){3-4}\cmidrule(l){5-5}
+Domain & Tools & User & Attack & Avg. Calls \\
+\midrule
+Payment & 6 & 19 & 19 & 6.21 \\
+Email & 6 & 19 & 19 & 5.74 \\
+Documents & 6 & 16 & 16 & 6.56 \\
+Calendar & 6 & 17 & 17 & 6.65 \\
+CRM & 6 & 17 & 17 & 6.00 \\
+Cloud & 6 & 16 & 16 & 6.69 \\
+\midrule
+Overall & 6 & 104 & 104 & 6.29 \\
+\bottomrule\end{tabular*}
+\caption{合成工具调用数据集概览。数据集覆盖付款、邮件、文档授权、日程、客户信息与云端发布六个领域，共 104 个用户任务；每个任务包含一个干净场景和一个攻击场景，每种配置共执行 208 次。Tools 为可用工具接口数，六个领域共用同一套 6 个参数化接口，Overall 按去重后的接口数统计。Attack Cases 为配对攻击场景数，不是攻击类型数。Avg. Calls 为 DeepSeek V4 Flash（0731）运行完整 DAFR 时，104 次干净执行的平均工具调用数，包含核验与被拦截的有效请求，并纳入成功和失败执行；Overall 按任务数加权。该列描述实测执行开销，未将其视为任务的最短参考轨迹长度。}
+\label{tab:synthetic-dataset-overview}
+\end{table}\end{document}

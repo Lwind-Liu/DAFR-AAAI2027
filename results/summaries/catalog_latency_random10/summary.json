@@ -1,0 +1,84 @@
+{
+  "complete": true,
+  "task_pairs": 10,
+  "episodes": 120,
+  "timing": "End-to-end episode including planner, defense, verification and tools. Detectors loaded and warmed before timing; audit and result-file writes excluded.",
+  "sources": [
+    {
+      "path": "results\\summaries\\catalog_latency_random5_v1",
+      "rows_sha256": "af6db99e7475e40fc58228fbe9d3d9160933edefa521f0b8215b8d7b2975913f"
+    },
+    {
+      "path": "results\\summaries\\catalog_latency_random5_v2",
+      "rows_sha256": "6cfaef32c2a21615ec30a2772fd6251178ab32e5342faecefbafe1d1926d616a"
+    }
+  ],
+  "rows": [
+    {
+      "Method": "No Defense",
+      "Episodes": 20,
+      "Batch 1 seconds": 12.876659910014132,
+      "Batch 2 seconds": 11.645273290009936,
+      "Clean seconds": 11.017842670012033,
+      "Attack seconds": 13.504090530012036,
+      "Mean seconds": 12.260966600012035,
+      "Std seconds": 2.140694839633421,
+      "Median seconds": 11.637762450001901
+    },
+    {
+      "Method": "PIGuard",
+      "Episodes": 20,
+      "Batch 1 seconds": 14.207984950009267,
+      "Batch 2 seconds": 15.142063280002912,
+      "Clean seconds": 14.935235390003072,
+      "Attack seconds": 14.414812840009109,
+      "Mean seconds": 14.67502411500609,
+      "Std seconds": 3.866949476124162,
+      "Median seconds": 12.77601114998106
+    },
+    {
+      "Method": "ProtectAI",
+      "Episodes": 20,
+      "Batch 1 seconds": 15.420890690007946,
+      "Batch 2 seconds": 13.581928439991316,
+      "Clean seconds": 14.458103709999705,
+      "Attack seconds": 14.544715419999557,
+      "Mean seconds": 14.50140956499963,
+      "Std seconds": 3.8690417537616586,
+      "Median seconds": 12.389476300013484
+    },
+    {
+      "Method": "Progent",
+      "Episodes": 20,
+      "Batch 1 seconds": 46.50802735000616,
+      "Batch 2 seconds": 34.412633810011904,
+      "Clean seconds": 38.1662898300041,
+      "Attack seconds": 42.75437133001397,
+      "Mean seconds": 40.46033058000903,
+      "Std seconds": 11.785916240109723,
+      "Median seconds": 35.62141495003016
+    },
+    {
+      "Method": "DRIFT",
+      "Episodes": 20,
+      "Batch 1 seconds": 30.42750130999484,
+      "Batch 2 seconds": 36.453785930003505,
+      "Clean seconds": 31.01428361000726,
+      "Attack seconds": 35.86700362999109,
+      "Mean seconds": 33.44064361999917,
+      "Std seconds": 11.148082970580422,
+      "Median seconds": 33.65099069997086
+    },
+    {
+      "Method": "DAFR",
+      "Episodes": 20,
+      "Batch 1 seconds": 16.12940373000456,
+      "Batch 2 seconds": 13.368799490004312,
+      "Clean seconds": 13.153417260001879,
+      "Attack seconds": 16.344785960006995,
+      "Mean seconds": 14.749101610004436,
+      "Std seconds": 4.821862302873544,
+      "Median seconds": 13.109630599996308
+    }
+  ]
+}

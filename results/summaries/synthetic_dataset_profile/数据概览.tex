@@ -1,0 +1,32 @@
+% Compile with XeLaTeX. All statistics are computed from the frozen 104-task dataset.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,margin=22mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Arial}
+\pagestyle{empty}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption{Overview of the synthetic dataset.}
+\label{tab:synthetic-dataset-profile}
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{7pt}
+\begin{tabular}{@{}lccccc@{}}
+\hline\hline
+& & \multicolumn{2}{c}{Tasks} & \multicolumn{2}{c}{Statistics} \\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+Env. & Tools & User & Injection & Avg. Traj. & Avg. Verify. \\
+\midrule
+Business & 6 & 36 & 36 & 6.11 & 1.00 \\
+Office & 6 & 52 & 52 & 6.29 & 1.54 \\
+Cloud & 6 & 16 & 16 & 6.69 & 1.81 \\
+\hline\hline
+\end{tabular}
+\par\medskip
+\begin{minipage}{\linewidth}\small
+Business 包含付款与客户信息更新，Office 包含邮件、文档授权与日程，Cloud 包含云端部署。Tools 为每类可用工具接口数，三类共用同一套 6 个接口；User 为用户任务数，Injection 为配对攻击场景数，共 104 个任务、104 个攻击场景。
+
+Avg. Traj. 为每任务平均工具调用请求数，Avg. Verify. 为其中的平均核验请求数。两列统计 DeepSeek V4 Flash（0731）运行完整 DAFR 的全部 104 次干净执行，包含成功、失败任务及被拦截、重试请求，不含代理执行前的自动导入。它们是固定配置下的实测轨迹统计，非最短参考轨迹。
+\end{minipage}
+\end{table}
+\end{document}

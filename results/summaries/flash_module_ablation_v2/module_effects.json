@@ -1,0 +1,42 @@
+{
+  "simple_linear": {
+    "paired_tasks": 172,
+    "safe_success_gain_pp": 27.906976744186046,
+    "unsafe_commits_avoided": 48,
+    "verification_calls_saved": 33,
+    "tasks_with_fewer_verifications_in_full": 62,
+    "tasks_with_more_verifications_in_full": 36
+  },
+  "no_projection": {
+    "paired_tasks": 172,
+    "safe_success_gain_pp": 18.023255813953487,
+    "unsafe_commits_avoided": 31,
+    "verification_calls_saved": -47,
+    "tasks_with_fewer_verifications_in_full": 1,
+    "tasks_with_more_verifications_in_full": 33
+  },
+  "no_lifting": {
+    "paired_tasks": 172,
+    "safe_success_gain_pp": 36.627906976744185,
+    "unsafe_commits_avoided": 63,
+    "verification_calls_saved": -20,
+    "tasks_with_fewer_verifications_in_full": 9,
+    "tasks_with_more_verifications_in_full": 29
+  },
+  "no_geometry": {
+    "paired_tasks": 172,
+    "safe_success_gain_pp": 65.69767441860465,
+    "unsafe_commits_avoided": 113,
+    "verification_calls_saved": -152,
+    "tasks_with_fewer_verifications_in_full": 0,
+    "tasks_with_more_verifications_in_full": 113
+  },
+  "no_feedback": {
+    "paired_tasks": 172,
+    "safe_success_gain_pp": 0.0,
+    "unsafe_commits_avoided": 0,
+    "verification_calls_saved": 74,
+    "tasks_with_fewer_verifications_in_full": 74,
+    "tasks_with_more_verifications_in_full": 0
+  }
+}

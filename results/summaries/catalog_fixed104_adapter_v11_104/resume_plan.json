@@ -1,0 +1,1226 @@
+{
+  "valid_episodes": 945,
+  "remaining_episodes": 303,
+  "remaining_by_method": {
+    "drift": 168,
+    "progent": 135
+  },
+  "pending": [
+    {
+      "id": "CAT-001-ac8aa168-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-001-ac8aa168-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-002-b4f647ca-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-002-b4f647ca-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-003-7d045055-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-003-7d045055-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-004-1b03e17e-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-004-1b03e17e-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-005-f9ffecca-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-005-f9ffecca-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-007-33a12fa4-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-007-33a12fa4-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-009-c9f062f5-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-009-c9f062f5-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-010-4a3eb5b2-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-010-4a3eb5b2-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-011-ffaeea7e-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-011-ffaeea7e-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-012-5fbef5ac-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-012-5fbef5ac-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-014-72023d92-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-014-72023d92-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-015-0a43e74b-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-015-0a43e74b-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-016-8e73cc8a-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-016-8e73cc8a-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-017-55c76caa-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-017-55c76caa-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-018-6df5752c-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-018-6df5752c-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-021-232066fa-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-021-232066fa-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-023-b525cb9c-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-023-b525cb9c-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-024-6358145a-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-024-6358145a-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-025-fdacf903-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-025-fdacf903-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-026-d4b47e75-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-026-d4b47e75-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-028-730742eb-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-028-730742eb-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-029-3d4695ff-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-029-3d4695ff-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-030-d9cd8471-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-030-d9cd8471-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-031-200181e0-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-031-200181e0-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-032-f6c1a003-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-032-f6c1a003-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-033-442697ad-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-033-442697ad-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-034-67c40732-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-034-67c40732-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-035-0d3a89ce-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-035-0d3a89ce-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-037-e75bba44-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-037-e75bba44-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-040-2f984cf7-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-040-2f984cf7-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-042-ad563d13-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-042-ad563d13-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-043-0837657b-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-043-0837657b-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-045-322c19dd-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-045-322c19dd-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-046-6f1227d8-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-046-6f1227d8-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-047-ef25185a-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-047-ef25185a-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-048-e12ac9bd-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-048-e12ac9bd-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-049-a206819b-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-049-a206819b-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-050-23bd7ca2-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-050-23bd7ca2-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-051-1a77512d-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-051-1a77512d-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-052-b8db1a4b-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-052-b8db1a4b-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-054-a49d1857-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-054-a49d1857-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-055-0f88e57d-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-055-0f88e57d-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-056-a100ead4-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-056-a100ead4-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-057-7d809fc2-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-057-7d809fc2-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-058-44e7bfc1-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-058-44e7bfc1-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-059-1fbee7c9-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-059-1fbee7c9-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-060-99cb11a8-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-060-99cb11a8-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-061-95305d72-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-061-95305d72-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-062-48f4c594-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-062-48f4c594-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-063-6af59cd5-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-063-6af59cd5-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-065-f2efbad1-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-065-f2efbad1-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-066-041544ce-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-066-041544ce-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-067-84b2fd28-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-067-84b2fd28-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-068-458deb9e-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-068-458deb9e-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-069-6cf50b7f-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-069-6cf50b7f-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-070-9a137857-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-070-9a137857-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-071-a84718e6-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-071-a84718e6-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-073-f181e2e0-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-073-f181e2e0-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-074-9d14c61f-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-074-9d14c61f-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-077-13cc167a-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-077-13cc167a-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-078-5a8e6f31-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-078-5a8e6f31-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-079-5823f51b-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-079-5823f51b-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-080-47f567a7-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-080-47f567a7-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-081-beb2870b-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-081-beb2870b-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-082-e7a086e1-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-082-e7a086e1-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-084-a2393bcc-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-084-a2393bcc-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-085-fbdc951d-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-085-fbdc951d-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-086-f1b56cfd-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-086-f1b56cfd-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-088-502e4ed6-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-088-502e4ed6-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-090-63bfa971-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-090-63bfa971-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-092-4ecb7f92-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-092-4ecb7f92-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-093-c699dbe4-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-093-c699dbe4-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-094-fd996739-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-094-fd996739-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-095-fce8114f-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-095-fce8114f-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-096-996e2fe0-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-096-996e2fe0-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-097-6c16286b-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-097-6c16286b-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-098-9153ff8d-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-098-9153ff8d-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-099-b3e4ca7e-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-099-b3e4ca7e-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-100-8c0bd4ab-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-100-8c0bd4ab-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-101-50d978f0-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-101-50d978f0-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-102-50b6f81d-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-102-50b6f81d-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-103-e540fc63-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-103-e540fc63-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-104-f65db124-attack",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-104-f65db124-clean",
+      "method": "drift"
+    },
+    {
+      "id": "CAT-023-b525cb9c-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-023-b525cb9c-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-024-6358145a-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-025-fdacf903-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-025-fdacf903-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-026-d4b47e75-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-026-d4b47e75-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-028-730742eb-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-028-730742eb-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-029-3d4695ff-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-029-3d4695ff-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-030-d9cd8471-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-030-d9cd8471-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-031-200181e0-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-031-200181e0-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-032-f6c1a003-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-032-f6c1a003-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-033-442697ad-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-033-442697ad-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-034-67c40732-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-034-67c40732-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-035-0d3a89ce-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-035-0d3a89ce-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-037-e75bba44-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-037-e75bba44-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-040-2f984cf7-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-040-2f984cf7-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-042-ad563d13-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-042-ad563d13-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-043-0837657b-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-043-0837657b-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-045-322c19dd-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-045-322c19dd-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-046-6f1227d8-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-046-6f1227d8-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-047-ef25185a-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-047-ef25185a-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-048-e12ac9bd-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-048-e12ac9bd-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-049-a206819b-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-049-a206819b-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-050-23bd7ca2-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-050-23bd7ca2-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-051-1a77512d-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-051-1a77512d-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-052-b8db1a4b-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-052-b8db1a4b-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-054-a49d1857-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-054-a49d1857-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-055-0f88e57d-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-055-0f88e57d-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-056-a100ead4-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-056-a100ead4-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-057-7d809fc2-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-057-7d809fc2-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-058-44e7bfc1-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-058-44e7bfc1-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-059-1fbee7c9-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-059-1fbee7c9-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-060-99cb11a8-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-060-99cb11a8-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-061-95305d72-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-061-95305d72-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-062-48f4c594-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-062-48f4c594-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-063-6af59cd5-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-063-6af59cd5-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-065-f2efbad1-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-065-f2efbad1-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-066-041544ce-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-066-041544ce-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-067-84b2fd28-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-067-84b2fd28-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-068-458deb9e-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-068-458deb9e-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-069-6cf50b7f-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-069-6cf50b7f-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-070-9a137857-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-070-9a137857-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-071-a84718e6-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-071-a84718e6-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-073-f181e2e0-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-073-f181e2e0-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-074-9d14c61f-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-074-9d14c61f-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-077-13cc167a-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-077-13cc167a-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-078-5a8e6f31-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-078-5a8e6f31-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-079-5823f51b-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-079-5823f51b-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-080-47f567a7-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-080-47f567a7-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-081-beb2870b-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-081-beb2870b-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-082-e7a086e1-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-082-e7a086e1-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-084-a2393bcc-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-084-a2393bcc-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-085-fbdc951d-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-085-fbdc951d-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-086-f1b56cfd-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-086-f1b56cfd-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-088-502e4ed6-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-088-502e4ed6-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-090-63bfa971-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-090-63bfa971-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-092-4ecb7f92-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-092-4ecb7f92-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-093-c699dbe4-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-093-c699dbe4-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-094-fd996739-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-094-fd996739-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-095-fce8114f-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-095-fce8114f-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-096-996e2fe0-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-096-996e2fe0-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-097-6c16286b-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-097-6c16286b-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-098-9153ff8d-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-098-9153ff8d-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-099-b3e4ca7e-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-099-b3e4ca7e-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-100-8c0bd4ab-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-100-8c0bd4ab-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-101-50d978f0-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-101-50d978f0-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-102-50b6f81d-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-102-50b6f81d-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-103-e540fc63-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-103-e540fc63-clean",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-104-f65db124-attack",
+      "method": "progent"
+    },
+    {
+      "id": "CAT-104-f65db124-clean",
+      "method": "progent"
+    }
+  ],
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "adapter_sha256": "9d143eab96cd0448d3ba3348ca998fc23cd785e57cd60d5156d6744343ba7d73",
+  "runner_sha256": "26e6dd6749ab1fe3198f3bd59ba5db52b58cbfb0a9f7ba6c29136acf958d3f36",
+  "requirement": "Restore access to the same deepseek-v4-flash-0731 model; resume existing runner without altering cases or accepted-result rows."
+}

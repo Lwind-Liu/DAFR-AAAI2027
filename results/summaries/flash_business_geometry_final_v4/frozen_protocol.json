@@ -1,0 +1,29 @@
+{
+  "dataset": "flash_business_geometry_final_v4",
+  "tasks": 196,
+  "episodes": 980,
+  "arms": [
+    "full_surface",
+    "no_projection",
+    "no_lifting",
+    "linear_region",
+    "no_geometric_region"
+  ],
+  "base_tasks": 172,
+  "operational_extension_tasks": 24,
+  "construction_record": "data\\flash_business_geometry_combined_v1",
+  "operational_extension_protocol": "results\\summaries\\flash_operational_extension_v1\\frozen_protocol.json",
+  "all_cases_retained": true,
+  "method_and_model_parameters_unchanged": true,
+  "data_sha256": {
+    "dev.jsonl": "08cb49d72485cc97a008886c366d48b1736210f6f198f208a963dedb67807997",
+    "test.jsonl": "a8445b0e8c64fd8ff233f41ce1c52c0a7c7ae8a1dbb2cd09a7e909ee859faf90",
+    "train.jsonl": "ccbeaee35b781e84de36f9d38eaa44d0cd2c0e1cb89963b49b8003746587bdca"
+  },
+  "source_records_sha256": {
+    "results\\summaries\\flash_whole_region_ablation_v3\\rows.jsonl": "8106086250ea242289c58dd7c91b1b54416e9abd724645f1985280e8f4ba0ce0",
+    "results\\summaries\\flash_operational_extension_v1\\rows.jsonl": "da0fe7b03f2fed894b57b55b2a4ab7681e13869d47537fea56cf1cd1815ca568",
+    "results\\summaries\\flash_whole_region_ablation_v3\\frozen_protocol.json": "ecaf4668c1c90689728e34c1d3b594eaafb4c79a7c66443d93b22e6e03729502",
+    "results\\summaries\\flash_operational_extension_v1\\frozen_protocol.json": "61a9cbf172786d2102efbce5f05f3adfccb583ee202ead1909963c1265f3ed7a"
+  }
+}

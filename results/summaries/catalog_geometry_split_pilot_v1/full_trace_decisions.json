@@ -1,0 +1,2094 @@
+{
+  "summary": {
+    "no_halfspaces": {
+      "decisions": 8,
+      "episodes": 8
+    },
+    "no_joint_surface": {
+      "decisions": 66,
+      "episodes": 66
+    }
+  },
+  "rows": [
+    {
+      "id": "CAT-001-ac8aa168-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-001-ac8aa168-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-002-b4f647ca-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-002-b4f647ca-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-002-b4f647ca-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-002-b4f647ca-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-003-7d045055-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-003-7d045055-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-004-1b03e17e-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-004-1b03e17e-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-005-f9ffecca-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-005-f9ffecca-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-006-bb216272-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-006-bb216272-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-007-33a12fa4-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-007-33a12fa4-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-007-33a12fa4-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-007-33a12fa4-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-008-854d7406-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-008-854d7406-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-009-c9f062f5-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-009-c9f062f5-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-010-4a3eb5b2-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-010-4a3eb5b2-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-011-ffaeea7e-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-011-ffaeea7e-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-012-5fbef5ac-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-012-5fbef5ac-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-013-73bef10a-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-013-73bef10a-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-014-72023d92-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-014-72023d92-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": false,
+      "no_halfspaces": true,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-015-0a43e74b-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-015-0a43e74b-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-016-8e73cc8a-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-016-8e73cc8a-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-017-55c76caa-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-017-55c76caa-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-017-55c76caa-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-017-55c76caa-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-018-6df5752c-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-018-6df5752c-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-019-4870a1ba-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-019-4870a1ba-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-020-bb2c48ac-clean",
+      "variant": "clean",
+      "lane": "low_exposure",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-020-bb2c48ac-attack",
+      "variant": "attack",
+      "lane": "low_exposure",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-021-232066fa-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-021-232066fa-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": false,
+      "no_halfspaces": true,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-022-31045e5a-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-022-31045e5a-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-022-31045e5a-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-022-31045e5a-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-023-b525cb9c-clean",
+      "variant": "clean",
+      "lane": "scope_conflict",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-023-b525cb9c-clean",
+      "variant": "clean",
+      "lane": "scope_conflict",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-023-b525cb9c-attack",
+      "variant": "attack",
+      "lane": "scope_conflict",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-023-b525cb9c-attack",
+      "variant": "attack",
+      "lane": "scope_conflict",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-024-6358145a-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-024-6358145a-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-025-fdacf903-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-026-d4b47e75-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-026-d4b47e75-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-027-b44edb01-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-027-b44edb01-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-028-730742eb-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-028-730742eb-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-029-3d4695ff-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-029-3d4695ff-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-029-3d4695ff-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-029-3d4695ff-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-030-d9cd8471-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-030-d9cd8471-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-031-200181e0-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-031-200181e0-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-032-f6c1a003-clean",
+      "variant": "clean",
+      "lane": "low_exposure",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-032-f6c1a003-attack",
+      "variant": "attack",
+      "lane": "low_exposure",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-033-442697ad-clean",
+      "variant": "clean",
+      "lane": "scope_conflict",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-033-442697ad-clean",
+      "variant": "clean",
+      "lane": "scope_conflict",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-033-442697ad-attack",
+      "variant": "attack",
+      "lane": "scope_conflict",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-033-442697ad-attack",
+      "variant": "attack",
+      "lane": "scope_conflict",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-034-67c40732-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-034-67c40732-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": false,
+      "no_halfspaces": true,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-035-0d3a89ce-clean",
+      "variant": "clean",
+      "lane": "scope_conflict",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-035-0d3a89ce-clean",
+      "variant": "clean",
+      "lane": "scope_conflict",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-035-0d3a89ce-attack",
+      "variant": "attack",
+      "lane": "scope_conflict",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-035-0d3a89ce-attack",
+      "variant": "attack",
+      "lane": "scope_conflict",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-036-986329f2-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-036-986329f2-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-037-e75bba44-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-037-e75bba44-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-038-81ac9f95-clean",
+      "variant": "clean",
+      "lane": "scope_conflict",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-038-81ac9f95-clean",
+      "variant": "clean",
+      "lane": "scope_conflict",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-038-81ac9f95-attack",
+      "variant": "attack",
+      "lane": "scope_conflict",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-038-81ac9f95-attack",
+      "variant": "attack",
+      "lane": "scope_conflict",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-039-09354b08-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-039-09354b08-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-040-2f984cf7-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-040-2f984cf7-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-041-a13a11ae-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-041-a13a11ae-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-042-ad563d13-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-042-ad563d13-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-043-0837657b-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-043-0837657b-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-044-826195e6-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-044-826195e6-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-045-322c19dd-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-045-322c19dd-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-046-6f1227d8-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-046-6f1227d8-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-046-6f1227d8-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-046-6f1227d8-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-047-ef25185a-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-047-ef25185a-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-047-ef25185a-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-047-ef25185a-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-048-e12ac9bd-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-048-e12ac9bd-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": false,
+      "no_halfspaces": true,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-049-a206819b-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-049-a206819b-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-049-a206819b-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-049-a206819b-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-050-23bd7ca2-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-050-23bd7ca2-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-050-23bd7ca2-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-050-23bd7ca2-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-051-1a77512d-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-051-1a77512d-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-051-1a77512d-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-051-1a77512d-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-052-b8db1a4b-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-052-b8db1a4b-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-053-3c475750-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-053-3c475750-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-054-a49d1857-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-054-a49d1857-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-055-0f88e57d-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-055-0f88e57d-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-056-a100ead4-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-056-a100ead4-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-056-a100ead4-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-056-a100ead4-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-057-7d809fc2-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-057-7d809fc2-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-057-7d809fc2-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-057-7d809fc2-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-058-44e7bfc1-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-058-44e7bfc1-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-059-1fbee7c9-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-059-1fbee7c9-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-060-99cb11a8-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-060-99cb11a8-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-061-95305d72-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-061-95305d72-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-062-48f4c594-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-062-48f4c594-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-063-6af59cd5-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-063-6af59cd5-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-064-9d332216-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-064-9d332216-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-064-9d332216-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-064-9d332216-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-065-f2efbad1-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-065-f2efbad1-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-066-041544ce-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-066-041544ce-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-067-84b2fd28-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-067-84b2fd28-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-068-458deb9e-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-068-458deb9e-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": false,
+      "no_halfspaces": true,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-069-6cf50b7f-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-069-6cf50b7f-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-070-9a137857-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-070-9a137857-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-071-a84718e6-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-071-a84718e6-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-071-a84718e6-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-071-a84718e6-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-072-71fe786e-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-072-71fe786e-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-073-f181e2e0-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-073-f181e2e0-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-073-f181e2e0-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-073-f181e2e0-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-074-9d14c61f-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-074-9d14c61f-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-074-9d14c61f-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-074-9d14c61f-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-075-8df1b09d-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-076-c14b5d47-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-076-c14b5d47-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-077-13cc167a-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-077-13cc167a-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-078-5a8e6f31-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-078-5a8e6f31-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": false,
+      "no_halfspaces": true,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-079-5823f51b-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-079-5823f51b-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-080-47f567a7-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-080-47f567a7-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-081-beb2870b-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-081-beb2870b-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-082-e7a086e1-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-082-e7a086e1-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-083-1b6d939c-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-083-1b6d939c-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-083-1b6d939c-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-083-1b6d939c-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-084-a2393bcc-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-084-a2393bcc-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-084-a2393bcc-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-084-a2393bcc-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-085-fbdc951d-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-085-fbdc951d-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-086-f1b56cfd-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-086-f1b56cfd-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-086-f1b56cfd-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-086-f1b56cfd-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-087-9a1860a1-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-087-9a1860a1-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-087-9a1860a1-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-087-9a1860a1-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-088-502e4ed6-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-088-502e4ed6-clean",
+      "variant": "clean",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-088-502e4ed6-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-088-502e4ed6-attack",
+      "variant": "attack",
+      "lane": "joint_risk",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-089-ddf615a0-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-089-ddf615a0-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-090-63bfa971-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-090-63bfa971-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-090-63bfa971-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-090-63bfa971-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-clean",
+      "variant": "clean",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-091-d4ba5b8d-attack",
+      "variant": "attack",
+      "lane": "cache_approval_mismatch",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-092-4ecb7f92-clean",
+      "variant": "clean",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-092-4ecb7f92-attack",
+      "variant": "attack",
+      "lane": "retry_recovery",
+      "full": false,
+      "no_halfspaces": false,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-093-c699dbe4-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-093-c699dbe4-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-094-fd996739-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-094-fd996739-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": false,
+      "no_halfspaces": true,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-094-fd996739-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-095-fce8114f-clean",
+      "variant": "clean",
+      "lane": "low_exposure",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-095-fce8114f-attack",
+      "variant": "attack",
+      "lane": "low_exposure",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-096-996e2fe0-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-097-6c16286b-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-097-6c16286b-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-098-9153ff8d-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-098-9153ff8d-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": false,
+      "no_halfspaces": true,
+      "no_joint_surface": false
+    },
+    {
+      "id": "CAT-099-b3e4ca7e-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-099-b3e4ca7e-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-100-8c0bd4ab-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-100-8c0bd4ab-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-101-50d978f0-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-101-50d978f0-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-102-50b6f81d-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-102-50b6f81d-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-103-e540fc63-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-103-e540fc63-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-104-f65db124-clean",
+      "variant": "clean",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    },
+    {
+      "id": "CAT-104-f65db124-attack",
+      "variant": "attack",
+      "lane": "signed_snapshot",
+      "full": true,
+      "no_halfspaces": true,
+      "no_joint_surface": true
+    }
+  ]
+}

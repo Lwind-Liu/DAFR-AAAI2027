@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "arm": "full",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 66.66666666666667,
+      "ASR": 0.0,
+      "total_tool_calls": 90,
+      "total_llm_calls": 102
+    },
+    {
+      "arm": "no_projection",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 50.0,
+      "ASR": 16.666666666666668,
+      "total_tool_calls": 85,
+      "total_llm_calls": 97
+    },
+    {
+      "arm": "no_lifting",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 0.0,
+      "ASR": 66.66666666666667,
+      "total_tool_calls": 56,
+      "total_llm_calls": 68
+    },
+    {
+      "arm": "linear",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 0.0,
+      "ASR": 50.0,
+      "total_tool_calls": 51,
+      "total_llm_calls": 63
+    },
+    {
+      "arm": "no_geometry",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 33.333333333333336,
+      "ASR": 50.0,
+      "total_tool_calls": 61,
+      "total_llm_calls": 73
+    }
+  ]
+}

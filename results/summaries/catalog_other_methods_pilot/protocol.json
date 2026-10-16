@@ -1,0 +1,28 @@
+{
+  "pairs": 3,
+  "ids": [
+    "CAT-001-ac8aa168-clean",
+    "CAT-001-ac8aa168-attack",
+    "CAT-007-33a12fa4-clean",
+    "CAT-007-33a12fa4-attack",
+    "CAT-002-b4f647ca-clean",
+    "CAT-002-b4f647ca-attack"
+  ],
+  "methods": [
+    "piguard",
+    "protectai",
+    "progent",
+    "drift"
+  ],
+  "model": "deepseek-v4-flash-0731",
+  "max_turns": 12,
+  "max_tool_calls": 32,
+  "max_planner_tokens": 650,
+  "max_defense_tokens": 2048,
+  "filters": "Original detector weights, threshold .5, external source_notes channel; preserve typed runtime and authenticated records",
+  "progent": "Original policy generation/update/checker; inspect concrete stage arguments at prepared-draft commit",
+  "drift": "Original constraint construction, isolation and dynamic validation; workflow tool schemas",
+  "no_defense": "Reuse unchanged no_geometry executions with schema validation only",
+  "source_sha256": "652b93b3b1b9258682920090dcbe9cc3b0e56a02cfd742800ed0929c39621cec",
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698"
+}

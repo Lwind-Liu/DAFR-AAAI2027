@@ -1,0 +1,23 @@
+{
+  "input_fields": [
+    "privacy_egress",
+    "financial_risk",
+    "state_write_risk",
+    "scope_risk"
+  ],
+  "weights": [
+    388.6280811868923,
+    389.18150976096547,
+    387.5662206695004,
+    389.87819212387274
+  ],
+  "bias": -545.5685428597968,
+  "threshold": 0.10033464866705799,
+  "train_cases": 8192,
+  "dev_cases": 4096,
+  "train_seed": 2026101201,
+  "dev_seed": 2026101202,
+  "calibration": "minimize mean of unsafe false-allow and safe false-block rates on dev only",
+  "dev_balanced_error": 0.00140485312899106,
+  "test_scope": "original branch 512 test vectors, unchanged"
+}

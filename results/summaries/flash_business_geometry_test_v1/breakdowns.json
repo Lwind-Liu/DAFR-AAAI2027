@@ -1,0 +1,502 @@
+{
+  "domain": {
+    "calendar": {
+      "full_surface": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.25
+      },
+      "simple_linear": {
+        "cases": 24,
+        "safe_successes": 23,
+        "unsafe_commits": 1,
+        "mean_verifications": 1.5
+      },
+      "no_projection": {
+        "cases": 24,
+        "safe_successes": 20,
+        "unsafe_commits": 4,
+        "mean_verifications": 0.9166666666666666
+      },
+      "no_lifting": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.75
+      },
+      "no_geometry": {
+        "cases": 24,
+        "safe_successes": 9,
+        "unsafe_commits": 15,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 24,
+        "safe_successes": 9,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "cloud": {
+      "full_surface": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.0833333333333333
+      },
+      "simple_linear": {
+        "cases": 24,
+        "safe_successes": 23,
+        "unsafe_commits": 1,
+        "mean_verifications": 1.6666666666666667
+      },
+      "no_projection": {
+        "cases": 24,
+        "safe_successes": 19,
+        "unsafe_commits": 5,
+        "mean_verifications": 0.6666666666666666
+      },
+      "no_lifting": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.9166666666666667
+      },
+      "no_geometry": {
+        "cases": 24,
+        "safe_successes": 11,
+        "unsafe_commits": 13,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 24,
+        "safe_successes": 11,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "crm": {
+      "full_surface": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.0833333333333333
+      },
+      "simple_linear": {
+        "cases": 24,
+        "safe_successes": 23,
+        "unsafe_commits": 1,
+        "mean_verifications": 1.6666666666666667
+      },
+      "no_projection": {
+        "cases": 24,
+        "safe_successes": 20,
+        "unsafe_commits": 4,
+        "mean_verifications": 0.75
+      },
+      "no_lifting": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.8333333333333333
+      },
+      "no_geometry": {
+        "cases": 24,
+        "safe_successes": 11,
+        "unsafe_commits": 13,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 24,
+        "safe_successes": 11,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "documents": {
+      "full_surface": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.3333333333333333
+      },
+      "simple_linear": {
+        "cases": 24,
+        "safe_successes": 22,
+        "unsafe_commits": 2,
+        "mean_verifications": 1.5
+      },
+      "no_projection": {
+        "cases": 24,
+        "safe_successes": 20,
+        "unsafe_commits": 4,
+        "mean_verifications": 1.0
+      },
+      "no_lifting": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.8333333333333333
+      },
+      "no_geometry": {
+        "cases": 24,
+        "safe_successes": 8,
+        "unsafe_commits": 16,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 24,
+        "safe_successes": 8,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "email": {
+      "full_surface": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.0833333333333333
+      },
+      "simple_linear": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.75
+      },
+      "no_projection": {
+        "cases": 24,
+        "safe_successes": 20,
+        "unsafe_commits": 4,
+        "mean_verifications": 0.75
+      },
+      "no_lifting": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.9166666666666667
+      },
+      "no_geometry": {
+        "cases": 24,
+        "safe_successes": 11,
+        "unsafe_commits": 13,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 24,
+        "safe_successes": 11,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "payment": {
+      "full_surface": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.25
+      },
+      "simple_linear": {
+        "cases": 24,
+        "safe_successes": 22,
+        "unsafe_commits": 2,
+        "mean_verifications": 1.4166666666666667
+      },
+      "no_projection": {
+        "cases": 24,
+        "safe_successes": 18,
+        "unsafe_commits": 6,
+        "mean_verifications": 0.75
+      },
+      "no_lifting": {
+        "cases": 24,
+        "safe_successes": 24,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.8333333333333333
+      },
+      "no_geometry": {
+        "cases": 24,
+        "safe_successes": 9,
+        "unsafe_commits": 15,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 24,
+        "safe_successes": 9,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    }
+  },
+  "graph_family": {
+    "disjoint_sources": {
+      "full_surface": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.6666666666666667
+      },
+      "simple_linear": {
+        "cases": 36,
+        "safe_successes": 33,
+        "unsafe_commits": 3,
+        "mean_verifications": 1.6666666666666667
+      },
+      "no_projection": {
+        "cases": 36,
+        "safe_successes": 28,
+        "unsafe_commits": 8,
+        "mean_verifications": 1.2222222222222223
+      },
+      "no_lifting": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 2.0
+      },
+      "no_geometry": {
+        "cases": 36,
+        "safe_successes": 6,
+        "unsafe_commits": 30,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 36,
+        "safe_successes": 6,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "overlapping_sources": {
+      "full_surface": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.6111111111111112
+      },
+      "simple_linear": {
+        "cases": 36,
+        "safe_successes": 32,
+        "unsafe_commits": 4,
+        "mean_verifications": 1.2777777777777777
+      },
+      "no_projection": {
+        "cases": 36,
+        "safe_successes": 33,
+        "unsafe_commits": 3,
+        "mean_verifications": 0.4444444444444444
+      },
+      "no_lifting": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 2.0
+      },
+      "no_geometry": {
+        "cases": 36,
+        "safe_successes": 25,
+        "unsafe_commits": 11,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 36,
+        "safe_successes": 25,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "shared_chain": {
+      "full_surface": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.0
+      },
+      "simple_linear": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.5
+      },
+      "no_projection": {
+        "cases": 36,
+        "safe_successes": 28,
+        "unsafe_commits": 8,
+        "mean_verifications": 0.5555555555555556
+      },
+      "no_lifting": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.7222222222222223
+      },
+      "no_geometry": {
+        "cases": 36,
+        "safe_successes": 18,
+        "unsafe_commits": 18,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 36,
+        "safe_successes": 18,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "shared_source": {
+      "full_surface": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.4444444444444444
+      },
+      "simple_linear": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.8888888888888888
+      },
+      "no_projection": {
+        "cases": 36,
+        "safe_successes": 28,
+        "unsafe_commits": 8,
+        "mean_verifications": 1.0
+      },
+      "no_lifting": {
+        "cases": 36,
+        "safe_successes": 36,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.6666666666666667
+      },
+      "no_geometry": {
+        "cases": 36,
+        "safe_successes": 10,
+        "unsafe_commits": 26,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 36,
+        "safe_successes": 10,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    }
+  },
+  "variant": {
+    "forged_grant": {
+      "full_surface": {
+        "cases": 48,
+        "safe_successes": 48,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.125
+      },
+      "simple_linear": {
+        "cases": 48,
+        "safe_successes": 47,
+        "unsafe_commits": 1,
+        "mean_verifications": 1.5833333333333333
+      },
+      "no_projection": {
+        "cases": 48,
+        "safe_successes": 21,
+        "unsafe_commits": 27,
+        "mean_verifications": 0.0
+      },
+      "no_lifting": {
+        "cases": 48,
+        "safe_successes": 48,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.8333333333333333
+      },
+      "no_geometry": {
+        "cases": 48,
+        "safe_successes": 21,
+        "unsafe_commits": 27,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 48,
+        "safe_successes": 21,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "ordinary": {
+      "full_surface": {
+        "cases": 48,
+        "safe_successes": 48,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.375
+      },
+      "simple_linear": {
+        "cases": 48,
+        "safe_successes": 45,
+        "unsafe_commits": 3,
+        "mean_verifications": 1.75
+      },
+      "no_projection": {
+        "cases": 48,
+        "safe_successes": 48,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.375
+      },
+      "no_lifting": {
+        "cases": 48,
+        "safe_successes": 48,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.8333333333333333
+      },
+      "no_geometry": {
+        "cases": 48,
+        "safe_successes": 15,
+        "unsafe_commits": 33,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 48,
+        "safe_successes": 15,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    },
+    "redirect": {
+      "full_surface": {
+        "cases": 48,
+        "safe_successes": 48,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.0416666666666667
+      },
+      "simple_linear": {
+        "cases": 48,
+        "safe_successes": 45,
+        "unsafe_commits": 3,
+        "mean_verifications": 1.4166666666666667
+      },
+      "no_projection": {
+        "cases": 48,
+        "safe_successes": 48,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.0416666666666667
+      },
+      "no_lifting": {
+        "cases": 48,
+        "safe_successes": 48,
+        "unsafe_commits": 0,
+        "mean_verifications": 1.875
+      },
+      "no_geometry": {
+        "cases": 48,
+        "safe_successes": 23,
+        "unsafe_commits": 25,
+        "mean_verifications": 0.0
+      },
+      "no_feedback": {
+        "cases": 48,
+        "safe_successes": 23,
+        "unsafe_commits": 0,
+        "mean_verifications": 0.0
+      }
+    }
+  }
+}

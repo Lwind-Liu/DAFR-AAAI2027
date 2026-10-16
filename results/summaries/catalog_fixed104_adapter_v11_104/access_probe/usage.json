@@ -1,0 +1,9 @@
+{
+  "requests": 3,
+  "failed_requests": 3,
+  "prompt_tokens": 21,
+  "completion_tokens": 6,
+  "estimated_cost_cny": 0.000117,
+  "fatal_provider_http_status": 403,
+  "rejected_requests": 3
+}

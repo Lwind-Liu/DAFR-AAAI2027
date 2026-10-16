@@ -1,0 +1,20 @@
+% XeLaTeX; editable table.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}\pagestyle{empty}
+\begin{document}\begin{table}[ht]\centering
+{\large Overview of the Evaluated Datasets}\par\medskip
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular*}{.98\linewidth}{@{\extracolsep{\fill}}lcccccc@{}}
+\toprule
+ & & & \multicolumn{2}{c}{Tasks} & \multicolumn{2}{c}{Avg. Calls} \\
+\cmidrule(lr){4-5}\cmidrule(l){6-7}
+Benchmark & Domains & Avg. Tools & User & Attack & Clean & Attack \\
+\midrule
+AgentDojo & 4 & 18.35 & 71 & 585 & 6.54 & 6.01 \\
+ASB & 10 & 3.00 & 51 & 204 & — & 2.39 \\
+Synthetic & 6 & 6.00 & 104 & 104 & 6.29 & 6.67 \\
+\bottomrule\end{tabular*}
+\caption{三套数据集在本文实际评测范围内的概览。Domains 为环境或代理类别数；Avg. Tools 为每个用户任务可见的平均工具数，按用户任务加权，ASB 包含每次执行注入的一个攻击工具。User 为不同用户任务数，Attack 为实际评测的任务—攻击组合数。Avg. Calls 为完整 DAFR 的平均工具调用请求数，计入被防御层拦截的请求及成功、失败执行，按执行记录平均；Clean 与 Attack 分别统计干净和攻击条件。AgentDojo 与 ASB 使用归档 DeepSeek V4 Flash 结果，合成数据使用 DeepSeek V4 Flash（0731）。ASB 无对应干净执行记录，标为“—”。调用数反映所用模型与防御配置的实测开销，不作为最短参考轨迹长度；各行描述实际评测子集，而非原基准全部规模。}
+\end{table}\end{document}

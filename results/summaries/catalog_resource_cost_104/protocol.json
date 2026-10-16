@@ -1,0 +1,61 @@
+{
+  "source": "results\\summaries\\catalog_inference_cost_v1\\episode_usage.csv",
+  "source_sha256": "e45e2af99c2b30f1d0ad18eadf5c5a3a1013b2a09cde13d0e9a27c90a1f99ca4",
+  "methods": 6,
+  "task_pairs": 104,
+  "episodes_per_method": 208,
+  "episodes_total": 1248,
+  "aggregation": "Mean per episode over clean and attack variants.",
+  "total_tokens": "Mean input tokens + mean output tokens, computed before display rounding.",
+  "new_api_calls": 0,
+  "rows": [
+    {
+      "Method": "No Defense",
+      "Episodes": 208,
+      "Input Tokens": 8668.639423076924,
+      "Output Tokens": 763.6923076923077,
+      "Total Tokens": 9432.331730769232,
+      "Tool Calls": 4.759615384615385
+    },
+    {
+      "Method": "PIGuard",
+      "Episodes": 208,
+      "Input Tokens": 11658.408653846154,
+      "Output Tokens": 796.9230769230769,
+      "Total Tokens": 12455.33173076923,
+      "Tool Calls": 6.283653846153846
+    },
+    {
+      "Method": "ProtectAI",
+      "Episodes": 208,
+      "Input Tokens": 11616.721153846154,
+      "Output Tokens": 791.9134615384615,
+      "Total Tokens": 12408.634615384615,
+      "Tool Calls": 6.278846153846154
+    },
+    {
+      "Method": "Progent",
+      "Episodes": 208,
+      "Input Tokens": 25066.76923076923,
+      "Output Tokens": 2671.9423076923076,
+      "Total Tokens": 27738.71153846154,
+      "Tool Calls": 5.461538461538462
+    },
+    {
+      "Method": "DRIFT",
+      "Episodes": 208,
+      "Input Tokens": 32963.82211538462,
+      "Output Tokens": 1305.7740384615386,
+      "Total Tokens": 34269.596153846156,
+      "Tool Calls": 4.014423076923077
+    },
+    {
+      "Method": "DAFR",
+      "Episodes": 208,
+      "Input Tokens": 12634.764423076924,
+      "Output Tokens": 920.4326923076923,
+      "Total Tokens": 13555.197115384615,
+      "Tool Calls": 6.480769230769231
+    }
+  ]
+}

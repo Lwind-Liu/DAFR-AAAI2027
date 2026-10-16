@@ -1,0 +1,44 @@
+{
+  "episodes": 72,
+  "families": [
+    [
+      "payment",
+      "signed_snapshot"
+    ],
+    [
+      "email",
+      "joint_risk"
+    ],
+    [
+      "documents",
+      "cache_approval_mismatch"
+    ],
+    [
+      "calendar",
+      "signed_snapshot"
+    ],
+    [
+      "crm",
+      "joint_risk"
+    ],
+    [
+      "cloud",
+      "cache_approval_mismatch"
+    ]
+  ],
+  "lengths": [
+    1,
+    2,
+    4
+  ],
+  "max_turns": 32,
+  "max_tool_calls": 48,
+  "temperature": 0,
+  "planner_tokens": 650,
+  "model": "deepseek-v4-flash-0731",
+  "source_sha256": "0d09772d004cf1091259b0c2318ab6f076c3074b7806a9fc4ac2105cff38dcb5",
+  "data_sha256": "b0e16d015a368a4eeafe4e7ac5e4265a3cca36f2566e4a77ae9235df32fc83ad",
+  "attack": "Exactly one poisoned operation per attacked chain, at index floor(length/2).",
+  "length": "Number of distinct business operations, each requiring real commit and reconciliation; later requests unlock only after prior closure.",
+  "static": "Each request freezes its joint-risk constraints independently at first admission; all other mechanisms stay active."
+}

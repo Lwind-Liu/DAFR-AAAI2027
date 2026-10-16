@@ -1,0 +1,481 @@
+{
+  "branch": "jianghao",
+  "commit": "c375c0c84d57c198c37ccfa78a3f918619db4673",
+  "scope": "Offline mechanism rerun; 0 LLM/API calls. Not CU/UA/ASR or a new end-to-end agent evaluation.",
+  "policy_labels": "Declared unit L2 budget, checked independently as sum of squared coordinates <= 1.",
+  "joint_cases": 512,
+  "policy_safe_cases": 487,
+  "policy_unsafe_cases": 25,
+  "joint_comparisons": {
+    "axis_ifelse": {
+      "safe_allow": 487,
+      "false_block": 0,
+      "unsafe_block": 0,
+      "false_allow": 25,
+      "cases": 512,
+      "accuracy": 0.951171875,
+      "unsafe_false_allow_rate": 1.0,
+      "safe_false_block_rate": 0.0
+    },
+    "geometry": {
+      "safe_allow": 487,
+      "false_block": 0,
+      "unsafe_block": 25,
+      "false_allow": 0,
+      "cases": 512,
+      "accuracy": 1.0,
+      "unsafe_false_allow_rate": 0.0,
+      "safe_false_block_rate": 0.0
+    },
+    "single_affine_rule": {
+      "safe_allow": 486,
+      "false_block": 1,
+      "unsafe_block": 24,
+      "false_allow": 1,
+      "cases": 512,
+      "accuracy": 0.99609375,
+      "unsafe_false_allow_rate": 0.04,
+      "safe_false_block_rate": 0.002053388090349076
+    }
+  },
+  "joint_frozen_row_mismatches": 0,
+  "small_pilot": {
+    "cases": 32,
+    "axis_allow": 32,
+    "geometry_allow": 23,
+    "decision_differences": 9
+  },
+  "action_repair": {
+    "cases": 256,
+    "repairable_cases": 192,
+    "nonrepairable_cases": 64,
+    "geometry_blocked": {
+      "successes": 256,
+      "total": 256,
+      "rate": 1.0,
+      "ci95_low": 0.9852156082782743,
+      "ci95_high": 1.0
+    },
+    "predicate_blocked": {
+      "successes": 256,
+      "total": 256,
+      "rate": 1.0,
+      "ci95_low": 0.9852156082782743,
+      "ci95_high": 1.0
+    },
+    "geometry_repair_success": {
+      "successes": 192,
+      "total": 256,
+      "rate": 0.75,
+      "ci95_low": 0.6935238434514225,
+      "ci95_high": 0.7990839606877146
+    },
+    "predicate_oracle_repair_success": {
+      "successes": 192,
+      "total": 256,
+      "rate": 0.75,
+      "ci95_low": 0.6935238434514225,
+      "ci95_high": 0.7990839606877146
+    },
+    "geometry_candidate_set_safe_selection": {
+      "successes": 192,
+      "total": 256,
+      "rate": 0.75,
+      "ci95_low": 0.6935238434514225,
+      "ci95_high": 0.7990839606877146
+    },
+    "predicate_candidate_set_safe_selection": {
+      "successes": 192,
+      "total": 256,
+      "rate": 0.75,
+      "ci95_low": 0.6935238434514225,
+      "ci95_high": 0.7990839606877146
+    },
+    "bool_only_predicate_repair_success": {
+      "successes": 0,
+      "total": 256,
+      "rate": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.014784391721725852
+    },
+    "block_only_safe_effect_preserved": {
+      "successes": 0,
+      "total": 256,
+      "rate": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.014784391721725852
+    },
+    "geometry_predicate_block_disagreements": 0,
+    "geometry_mean_latency_ms": 0.7831855469930815,
+    "predicate_mean_latency_ms": 0.8215574221139832,
+    "geometry_repair_mean_latency_ms": 0.5925507816755271,
+    "predicate_oracle_repair_mean_latency_ms": 0.6089535146429625,
+    "unsafe_external_side_effects": 0,
+    "scope": "same clafr encoder/compiler/action candidate; in-process only; no external side effects"
+  },
+  "agentdojo_boundary_replay": {
+    "api_calls": 0,
+    "certificate_rows": 610,
+    "external_tool_executions": 0,
+    "geometry_allow": 546,
+    "geometry_block_or_clarify": 64,
+    "geometry_vs_equivalent_predicate_disagreements": 0,
+    "saved_rows": 614,
+    "schema": "agentdojo-geometry-boundary-replay-v1",
+    "scope": "saved AgentDojo action/evidence boundaries; no new planner or external execution",
+    "source": "results\\summaries\\agentdojo_mapper_boundary_replay_v1\\rows.jsonl",
+    "top_blocking_facets": [
+      [
+        "critical_field_grounding_floor",
+        43
+      ],
+      [
+        "trusted_over_untrusted_direction",
+        36
+      ],
+      [
+        "trusted_action_support",
+        1
+      ],
+      [
+        "state_cleanliness",
+        1
+      ],
+      [
+        "entity_grounding_required",
+        1
+      ],
+      [
+        "critical_side_effect_grounding",
+        1
+      ],
+      [
+        "irreversible_effect_authorization",
+        1
+      ],
+      [
+        "untrusted_control_budget",
+        1
+      ]
+    ],
+    "valid_rows": 610
+  },
+  "shape_isolation": {
+    "case_count": 160,
+    "label_counts": {
+      "attack": 16,
+      "benign": 24,
+      "mixed": 120
+    },
+    "blocks": {
+      "A": {
+        "axis_additive_only": {
+          "variant": "axis_additive_only",
+          "n_constraints": 9,
+          "hard_verifier": false,
+          "region_composition": {
+            "dimension": 116,
+            "adapter_wrapped": false,
+            "n_constraints": 9,
+            "n_soft": 3,
+            "n_hard": 6,
+            "shape_counts": {
+              "axis_aligned": 6,
+              "oblique": 0,
+              "dense_semantic": 3,
+              "second_order": 0
+            },
+            "hard_shape_counts": {
+              "axis_aligned": 6,
+              "oblique": 0,
+              "dense_semantic": 0,
+              "second_order": 0
+            },
+            "max_support": 61
+          },
+          "attack_pass_rate": 0.0,
+          "attack_pass_n": 0,
+          "attack_n": 16,
+          "benign_block_rate": 1.0,
+          "benign_block_n": 24,
+          "benign_n": 24,
+          "margin_separation": null,
+          "projection_rate": 1.0,
+          "mean_projection_distance": 0.6493065660663286,
+          "projection_lands_feasible_rate": 1.0,
+          "repair_hint_rate": 1.0,
+          "margin_grading_rho": null,
+          "n_blocked": 160,
+          "divergence_from_reference": 0.5375
+        },
+        "halfspace_only": {
+          "variant": "halfspace_only",
+          "n_constraints": 8,
+          "hard_verifier": false,
+          "region_composition": {
+            "dimension": 116,
+            "adapter_wrapped": false,
+            "n_constraints": 8,
+            "n_soft": 4,
+            "n_hard": 4,
+            "shape_counts": {
+              "axis_aligned": 5,
+              "oblique": 0,
+              "dense_semantic": 3,
+              "second_order": 0
+            },
+            "hard_shape_counts": {
+              "axis_aligned": 4,
+              "oblique": 0,
+              "dense_semantic": 0,
+              "second_order": 0
+            },
+            "max_support": 61
+          },
+          "attack_pass_rate": 0.25,
+          "attack_pass_n": 4,
+          "attack_n": 16,
+          "benign_block_rate": 0.25,
+          "benign_block_n": 6,
+          "benign_n": 24,
+          "margin_separation": 0.3559373767538224,
+          "projection_rate": 1.0,
+          "mean_projection_distance": 0.5853444046914421,
+          "projection_lands_feasible_rate": 1.0,
+          "repair_hint_rate": 1.0,
+          "margin_grading_rho": null,
+          "n_blocked": 75,
+          "divergence_from_reference": 0.06875
+        },
+        "convex_region_only": {
+          "variant": "convex_region_only",
+          "n_constraints": 13,
+          "hard_verifier": false,
+          "region_composition": {
+            "dimension": 116,
+            "adapter_wrapped": false,
+            "n_constraints": 13,
+            "n_soft": 3,
+            "n_hard": 10,
+            "shape_counts": {
+              "axis_aligned": 3,
+              "oblique": 2,
+              "dense_semantic": 3,
+              "second_order": 5
+            },
+            "hard_shape_counts": {
+              "axis_aligned": 3,
+              "oblique": 2,
+              "dense_semantic": 0,
+              "second_order": 5
+            },
+            "max_support": 61
+          },
+          "attack_pass_rate": 0.125,
+          "attack_pass_n": 2,
+          "attack_n": 16,
+          "benign_block_rate": 0.25,
+          "benign_block_n": 6,
+          "benign_n": 24,
+          "margin_separation": 0.5067917547121975,
+          "projection_rate": 1.0,
+          "mean_projection_distance": 0.8107803257656129,
+          "projection_lands_feasible_rate": 1.0,
+          "repair_hint_rate": 1.0,
+          "margin_grading_rho": 0.43332975426985665,
+          "n_blocked": 74,
+          "divergence_from_reference": 0.0
+        }
+      },
+      "B": {
+        "verifier_only": {
+          "variant": "verifier_only",
+          "n_constraints": 0,
+          "hard_verifier": true,
+          "region_composition": {
+            "dimension": 116,
+            "adapter_wrapped": false,
+            "n_constraints": 0,
+            "n_soft": 0,
+            "n_hard": 0,
+            "shape_counts": {
+              "axis_aligned": 0,
+              "oblique": 0,
+              "dense_semantic": 0,
+              "second_order": 0
+            },
+            "hard_shape_counts": {
+              "axis_aligned": 0,
+              "oblique": 0,
+              "dense_semantic": 0,
+              "second_order": 0
+            },
+            "max_support": 0
+          },
+          "attack_pass_rate": 0.25,
+          "attack_pass_n": 4,
+          "attack_n": 16,
+          "benign_block_rate": 0.75,
+          "benign_block_n": 18,
+          "benign_n": 24,
+          "margin_separation": 0.0,
+          "projection_rate": 0.0,
+          "mean_projection_distance": 0.0,
+          "projection_lands_feasible_rate": null,
+          "repair_hint_rate": 1.0,
+          "margin_grading_rho": null,
+          "n_blocked": 120,
+          "divergence_from_reference": 0.0
+        },
+        "rule_shield": {
+          "variant": "rule_shield",
+          "n_constraints": 4,
+          "hard_verifier": true,
+          "region_composition": {
+            "dimension": 116,
+            "adapter_wrapped": false,
+            "n_constraints": 4,
+            "n_soft": 0,
+            "n_hard": 4,
+            "shape_counts": {
+              "axis_aligned": 4,
+              "oblique": 0,
+              "dense_semantic": 0,
+              "second_order": 0
+            },
+            "hard_shape_counts": {
+              "axis_aligned": 4,
+              "oblique": 0,
+              "dense_semantic": 0,
+              "second_order": 0
+            },
+            "max_support": 1
+          },
+          "attack_pass_rate": 0.25,
+          "attack_pass_n": 4,
+          "attack_n": 16,
+          "benign_block_rate": 0.75,
+          "benign_block_n": 18,
+          "benign_n": 24,
+          "margin_separation": 0.625,
+          "projection_rate": 0.625,
+          "mean_projection_distance": 0.36584025293215133,
+          "projection_lands_feasible_rate": 0.625,
+          "repair_hint_rate": 1.0,
+          "margin_grading_rho": 0.7324670207647143,
+          "n_blocked": 120,
+          "divergence_from_reference": 0.0
+        },
+        "full": {
+          "variant": "full",
+          "n_constraints": 8,
+          "hard_verifier": true,
+          "region_composition": {
+            "dimension": 116,
+            "adapter_wrapped": false,
+            "n_constraints": 8,
+            "n_soft": 4,
+            "n_hard": 4,
+            "shape_counts": {
+              "axis_aligned": 5,
+              "oblique": 0,
+              "dense_semantic": 3,
+              "second_order": 0
+            },
+            "hard_shape_counts": {
+              "axis_aligned": 4,
+              "oblique": 0,
+              "dense_semantic": 0,
+              "second_order": 0
+            },
+            "max_support": 61
+          },
+          "attack_pass_rate": 0.25,
+          "attack_pass_n": 4,
+          "attack_n": 16,
+          "benign_block_rate": 0.75,
+          "benign_block_n": 18,
+          "benign_n": 24,
+          "margin_separation": 0.7563669256018727,
+          "projection_rate": 0.625,
+          "mean_projection_distance": 0.36584025293215133,
+          "projection_lands_feasible_rate": 0.625,
+          "repair_hint_rate": 1.0,
+          "margin_grading_rho": null,
+          "n_blocked": 120,
+          "divergence_from_reference": 0.0
+        },
+        "full_no_margin": {
+          "variant": "full_no_margin",
+          "n_constraints": 8,
+          "hard_verifier": true,
+          "region_composition": {
+            "dimension": 116,
+            "adapter_wrapped": true,
+            "n_constraints": 8,
+            "n_soft": 4,
+            "n_hard": 4,
+            "shape_counts": {
+              "axis_aligned": 5,
+              "oblique": 0,
+              "dense_semantic": 3,
+              "second_order": 0
+            },
+            "hard_shape_counts": {
+              "axis_aligned": 4,
+              "oblique": 0,
+              "dense_semantic": 0,
+              "second_order": 0
+            },
+            "max_support": 61
+          },
+          "attack_pass_rate": 0.25,
+          "attack_pass_n": 4,
+          "attack_n": 16,
+          "benign_block_rate": 0.75,
+          "benign_block_n": 18,
+          "benign_n": 24,
+          "margin_separation": 0.7563669256018727,
+          "projection_rate": 0.625,
+          "mean_projection_distance": 0.36584025293215133,
+          "projection_lands_feasible_rate": 0.625,
+          "repair_hint_rate": 1.0,
+          "margin_grading_rho": null,
+          "n_blocked": 120,
+          "divergence_from_reference": 0.0
+        }
+      }
+    }
+  },
+  "single_affine_model": {
+    "input_fields": [
+      "privacy_egress",
+      "financial_risk",
+      "state_write_risk",
+      "scope_risk"
+    ],
+    "weights": [
+      388.6280811868923,
+      389.18150976096547,
+      387.5662206695004,
+      389.87819212387274
+    ],
+    "bias": -545.5685428597968,
+    "threshold": 0.10033464866705799,
+    "train_cases": 8192,
+    "dev_cases": 4096,
+    "train_seed": 2026101201,
+    "dev_seed": 2026101202,
+    "calibration": "minimize mean of unsafe false-allow and safe false-block rates on dev only",
+    "dev_balanced_error": 0.00140485312899106,
+    "test_scope": "original branch 512 test vectors, unchanged"
+  },
+  "source_hashes": {
+    "scripts/run_geometry_repair_benchmark_v1.py": "7c9c19f4ec6e09893d825f16309bc111f7f736a472eac50ad34279ffed2e8acb",
+    "scripts/run_agentdojo_geometry_boundary_replay.py": "5286e6035dd9a0b7f9448d642f9b610ad03c4557170827f7fba65fd041d53aaa",
+    "scripts/geometry_isolation_ifelse_ablation.py": "3176ad9b8b5d8da196b612c37741348341c4f5bd3ef77d2e07004e5a391ba803",
+    "src/clafr/geometry.py": "4b082aacdb77b30e602fd38d257a58cfb1f49f873d1a875c9ae3a40cc5521b62",
+    "src/clafr/selector.py": "c81420d047e9af7ce0999018b503a2026e1bfc6742deec8e57aebc64032ad7f5",
+    "results/summaries/geometry_repair_benchmark_v1/joint_rows.jsonl": "044b1217b4d4cce2ea2cf61a57846b74a7d324e8cae099f0f8c75a4417836e79"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "adapter_version": "v11",
+  "data": "workflow_catalog_104/cases.jsonl",
+  "dataset_unchanged": true,
+  "metrics": {
+    "CU": "Clean task completion (%)",
+    "UA": "Attacked task completion (%)",
+    "ASR": "Attacker goal success (%)",
+    "total_tool_calls": "Sum of runtime tool submissions across paired tasks"
+  },
+  "adaptations": {
+    "piguard_protectai": "Classify full external record_id/field/value/note at the original 0.5 threshold. Propagate removed source records only to their affected, unverified draft parameters. Preserve authenticated facts.",
+    "progent": "Original generated policies and parameter checker; resolve opaque operation handles and refresh policies from observed evidence.",
+    "drift": "Original constraint building, instruction isolation, and dynamic validation. Bridge native tool calls, resolve opaque handles, avoid reintroducing raw notes through runtime evidence, and propagate native isolation to cached draft fields."
+  },
+  "common_limits": {
+    "planner_turns": 12,
+    "tool_submissions": 32,
+    "planner_output_tokens": 650,
+    "defense_output_tokens": 2048
+  },
+  "source_hashes": {
+    "data\\workflow_catalog_104\\cases.jsonl": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+    "scripts\\catalog_baseline_adapter_v11.py": "9d143eab96cd0448d3ba3348ca998fc23cd785e57cd60d5156d6744343ba7d73",
+    "scripts\\run_catalog_fixed104_adapter_v11_20.py": "9d53c72c890e0588918341748ee2cfd1c09b1074dac6648f8bff02a3a74ae0d6",
+    "scripts\\run_catalog_fixed104_adapter_v11_full.py": "26e6dd6749ab1fe3198f3bd59ba5db52b58cbfb0a9f7ba6c29136acf958d3f36"
+  }
+}

@@ -1,0 +1,14 @@
+\begin{table}[!ht]
+\centering\small
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Configuration & CU (\%) $\uparrow$ & UA (\%) $\uparrow$ & ASR (\%) $\downarrow$ & Total Tool Calls \\
+\midrule
+\rowcolor{gray!15}\textbf{DAFR} & 90.4 & 77.9 & 2.9 & 1348 \\
+Linear Rules & 79.8 & 55.8 & 25.0 & 1181 \\
+\bottomrule
+\end{tabular}}
+\caption{几何建模对比：在相同动作–证据坐标上，比较 DAFR 的完整几何可行域与简单线性判别规则。完整几何可行域同时包含半空间约束和联合风险曲面；线性规则替代整个几何判别部分。\par 两种配置保留相同的证据投影、动作–证据绑定、工具参数校验和反馈机制，使用相同的 104 个配对任务、模型和执行预算，每种配置共执行 208 次。\par CU、UA、ASR 分别为干净任务完成率、攻击条件下原任务完成率和攻击者目标达成率，单位为百分比。Total Tool Calls 为全部执行的工具调用总数，包含被拒绝的有效提交。\par 该对比用于展示几何建模相对于线性判别在任务效用与安全性上的收益。}
+\end{table}

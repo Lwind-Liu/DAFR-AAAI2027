@@ -1,0 +1,264 @@
+{
+  "arms": {
+    "full_surface": {
+      "cases": 96,
+      "safe_successes": 96,
+      "unsafe_commits": 0,
+      "task_completions": 96,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 0,
+      "mean_verifications": 1.1458333333333333,
+      "api_failures": 0
+    },
+    "simple_linear": {
+      "cases": 96,
+      "safe_successes": 92,
+      "unsafe_commits": 4,
+      "task_completions": 96,
+      "initial_false_allows": 4,
+      "initial_false_blocks": 38,
+      "mean_verifications": 1.8541666666666667,
+      "api_failures": 0
+    },
+    "no_projection": {
+      "cases": 96,
+      "safe_successes": 80,
+      "unsafe_commits": 16,
+      "task_completions": 96,
+      "initial_false_allows": 16,
+      "initial_false_blocks": 0,
+      "mean_verifications": 0.8125,
+      "api_failures": 0
+    },
+    "no_lifting": {
+      "cases": 96,
+      "safe_successes": 96,
+      "unsafe_commits": 0,
+      "task_completions": 96,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 36,
+      "mean_verifications": 1.8958333333333333,
+      "api_failures": 0
+    },
+    "no_geometry": {
+      "cases": 96,
+      "safe_successes": 41,
+      "unsafe_commits": 55,
+      "task_completions": 96,
+      "initial_false_allows": 55,
+      "initial_false_blocks": 0,
+      "mean_verifications": 0.0,
+      "api_failures": 0
+    },
+    "no_feedback": {
+      "cases": 96,
+      "safe_successes": 41,
+      "unsafe_commits": 0,
+      "task_completions": 41,
+      "initial_false_allows": 0,
+      "initial_false_blocks": 0,
+      "mean_verifications": 0.0,
+      "api_failures": 0
+    }
+  },
+  "per_domain": {
+    "calendar": {
+      "full_surface": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "simple_linear": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_projection": {
+        "safe_successes": 13,
+        "cases": 16
+      },
+      "no_lifting": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_geometry": {
+        "safe_successes": 8,
+        "cases": 16
+      },
+      "no_feedback": {
+        "safe_successes": 8,
+        "cases": 16
+      }
+    },
+    "cloud": {
+      "full_surface": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "simple_linear": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_projection": {
+        "safe_successes": 11,
+        "cases": 16
+      },
+      "no_lifting": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_geometry": {
+        "safe_successes": 3,
+        "cases": 16
+      },
+      "no_feedback": {
+        "safe_successes": 3,
+        "cases": 16
+      }
+    },
+    "crm": {
+      "full_surface": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "simple_linear": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_projection": {
+        "safe_successes": 14,
+        "cases": 16
+      },
+      "no_lifting": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_geometry": {
+        "safe_successes": 8,
+        "cases": 16
+      },
+      "no_feedback": {
+        "safe_successes": 8,
+        "cases": 16
+      }
+    },
+    "documents": {
+      "full_surface": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "simple_linear": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_projection": {
+        "safe_successes": 14,
+        "cases": 16
+      },
+      "no_lifting": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_geometry": {
+        "safe_successes": 7,
+        "cases": 16
+      },
+      "no_feedback": {
+        "safe_successes": 7,
+        "cases": 16
+      }
+    },
+    "email": {
+      "full_surface": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "simple_linear": {
+        "safe_successes": 14,
+        "cases": 16
+      },
+      "no_projection": {
+        "safe_successes": 15,
+        "cases": 16
+      },
+      "no_lifting": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_geometry": {
+        "safe_successes": 8,
+        "cases": 16
+      },
+      "no_feedback": {
+        "safe_successes": 8,
+        "cases": 16
+      }
+    },
+    "payment": {
+      "full_surface": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "simple_linear": {
+        "safe_successes": 14,
+        "cases": 16
+      },
+      "no_projection": {
+        "safe_successes": 13,
+        "cases": 16
+      },
+      "no_lifting": {
+        "safe_successes": 16,
+        "cases": 16
+      },
+      "no_geometry": {
+        "safe_successes": 7,
+        "cases": 16
+      },
+      "no_feedback": {
+        "safe_successes": 7,
+        "cases": 16
+      }
+    }
+  },
+  "intervals": {
+    "simple_linear": {
+      "paired_cases": 96,
+      "success_gain": 0.041666666666666664,
+      "paired_bootstrap_95pct": [
+        0.010416666666666666,
+        0.08333333333333333
+      ]
+    },
+    "no_projection": {
+      "paired_cases": 96,
+      "success_gain": 0.16666666666666666,
+      "paired_bootstrap_95pct": [
+        0.09375,
+        0.25
+      ]
+    },
+    "no_lifting": {
+      "paired_cases": 96,
+      "success_gain": 0.0,
+      "paired_bootstrap_95pct": [
+        0.0,
+        0.0
+      ]
+    },
+    "no_geometry": {
+      "paired_cases": 96,
+      "success_gain": 0.5729166666666666,
+      "paired_bootstrap_95pct": [
+        0.46875,
+        0.6770833333333334
+      ]
+    },
+    "no_feedback": {
+      "paired_cases": 96,
+      "success_gain": 0.5729166666666666,
+      "paired_bootstrap_95pct": [
+        0.46875,
+        0.6770833333333334
+      ]
+    }
+  }
+}

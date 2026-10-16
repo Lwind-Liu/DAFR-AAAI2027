@@ -1,0 +1,8 @@
+{
+  "tasks": 196,
+  "episodes": 980,
+  "every_configuration_has_all_tasks": true,
+  "method_and_model_parameters_unchanged": true,
+  "controller_decisions_and_business_states_replayed": true,
+  "errors": []
+}

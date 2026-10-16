@@ -1,0 +1,21 @@
+{
+  "new_baselines_conservative_cost_cny": 9.172397399999976,
+  "source_usage": [
+    {
+      "prompt_tokens": 2729462,
+      "completion_tokens": 276361,
+      "requests": 3409,
+      "failed_requests": 0,
+      "conservative_cost_cny": 7.6825180799999755,
+      "budget_cny": 15.0
+    },
+    {
+      "prompt_tokens": 617261,
+      "completion_tokens": 66242,
+      "requests": 826,
+      "failed_requests": 0,
+      "conservative_cost_cny": 1.48987932,
+      "budget_cny": 7.0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "episodes": 8,
+  "pairs": 2,
+  "ids": [
+    "CAT-040-2f984cf7-clean",
+    "CAT-040-2f984cf7-attack",
+    "CAT-045-322c19dd-clean",
+    "CAT-045-322c19dd-attack"
+  ],
+  "reason": "Matched 24-turn diagnosis because the 16-step clean reference procedure exceeds the original 12-turn allowance.",
+  "max_turns": 24,
+  "max_tool_calls": 32,
+  "planner_tokens": 650,
+  "model": "deepseek-v4-flash-0731",
+  "temperature": 0,
+  "source_sha256": "33024a1c58ff282acd3121e56d19158e4d09d3338c7715f5e65e5ab77533a9e0",
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698"
+}

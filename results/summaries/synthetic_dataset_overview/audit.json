@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "domain": "Payment",
+      "tools": 6,
+      "user_tasks": 19,
+      "attack_cases": 19,
+      "mean_tool_calls": 6.2105263157894735,
+      "total_tool_calls": 118
+    },
+    {
+      "domain": "Email",
+      "tools": 6,
+      "user_tasks": 19,
+      "attack_cases": 19,
+      "mean_tool_calls": 5.7368421052631575,
+      "total_tool_calls": 109
+    },
+    {
+      "domain": "Documents",
+      "tools": 6,
+      "user_tasks": 16,
+      "attack_cases": 16,
+      "mean_tool_calls": 6.5625,
+      "total_tool_calls": 105
+    },
+    {
+      "domain": "Calendar",
+      "tools": 6,
+      "user_tasks": 17,
+      "attack_cases": 17,
+      "mean_tool_calls": 6.647058823529412,
+      "total_tool_calls": 113
+    },
+    {
+      "domain": "CRM",
+      "tools": 6,
+      "user_tasks": 17,
+      "attack_cases": 17,
+      "mean_tool_calls": 6.0,
+      "total_tool_calls": 102
+    },
+    {
+      "domain": "Cloud",
+      "tools": 6,
+      "user_tasks": 16,
+      "attack_cases": 16,
+      "mean_tool_calls": 6.6875,
+      "total_tool_calls": 107
+    },
+    {
+      "domain": "Overall",
+      "tools": 6,
+      "user_tasks": 104,
+      "attack_cases": 104,
+      "mean_tool_calls": 6.288461538461538,
+      "total_tool_calls": 654
+    }
+  ],
+  "tools": [
+    "read_request",
+    "verify_record",
+    "stage_operation",
+    "commit_operation",
+    "get_status",
+    "close_request"
+  ],
+  "api_requests": 0,
+  "dataset_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "records_sha256": "fd3cd1b6f48d1ac9be3580a175ba51169923b025e8615ba964978d160860a7f8"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "development pilot; not final benchmark",
+  "user_tasks": 6,
+  "attack_variants": 12,
+  "total_scenarios": 18,
+  "dataset_sha256": "94e7ee35baf0865d4481abe44ecdd6eb57bfe42d64203d9b9aa104d714c410d3",
+  "source_sha256": {
+    "src\\heterogeneous_benchmark\\world.py": "9f7aeae1dc4304473e83313180d229d3743d32d9a9001b04ad0ba744743335b6",
+    "src\\heterogeneous_benchmark\\fixtures.py": "c3622d7ce1fe559c62970ad159752121b05e9528d5f7abd8a2c1b4a9ab3d8151",
+    "src\\heterogeneous_benchmark\\guard.py": "9223e1f1244503307bbc7c73ebd3dec18ab63cac5b2b2692d97fcf46902a33f7"
+  },
+  "reference_length": "hand-authored feasible tool sequence, audited against state; not claimed shortest or observed LLM length",
+  "deduplication": "unique native-tool sequence and dependency DAG; all pairwise tool-overlap values retained",
+  "attack_counts": "configured injections and actual exposures recorded separately",
+  "fairness": "same tools, observations, state transitions and budgets for all arms; independent verification always accessible",
+  "controller": "existing relational_dafr.controller.surface_risk with new generic native-argument adapter; not claimed identical to archived benchmark adapters",
+  "risk_inputs": "fixed declared stress coordinates in tool contracts; not empirically estimated probabilities",
+  "ablation": "remove provenance filtering, scoped argument binding, or geometric admission; no performance target used by evaluator",
+  "expansion": "review first live task before adding task families; retain all completed runs and errors",
+  "observed_trajectory_audit": "distinct-tool sequence, length and similarity measured after live runs; structural uniqueness does not guarantee unique model trajectories"
+}

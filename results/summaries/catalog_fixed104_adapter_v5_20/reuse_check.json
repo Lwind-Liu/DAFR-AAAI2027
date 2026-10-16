@@ -1,0 +1,11 @@
+{
+  "unchanged_progent_drift_components": {
+    "WorkflowProgent": "d885f890c2dc62166d2c8283eba3202805d2749aaff9730f5b6a31555cbdf9c7",
+    "WorkflowDriftClient": "dfc88b87c0d32af172522568b2052a225428d23b88da5f7fbbde1cafd91622d2",
+    "drift_setup": "40d19c3e835e6217e3525e2724f7d55e3fdf0d0ccd379b991c5b41fb2c86c1ea",
+    "shared_budget_drift_class": "89536e9d373ce16ba36ca9932666d43f396aad6f7a9f7ec0cf7c271d31416db2",
+    "public_evidence": "e2faa1ebd095fcada99e5e4b86752db4ef220ff365dde369bcb3b808d2082507",
+    "episode": "fed82e30b751d0bdeccf17fd9e86a253ec9f07030c13054887f37b446d988ae2"
+  },
+  "reused_source": "catalog_fixed104_adapter_v4_pilot"
+}

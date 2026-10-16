@@ -1,0 +1,5 @@
+﻿Method,Clean tasks,Attacked tasks,CU (%),UA (%),ASR (%),Total Tool Calls
+No Defense,104,104,76.0,54.8,35.6,990
+PIGuard,104,104,82.7,76.0,14.4,1307
+ProtectAI,104,104,81.7,82.7,8.7,1306
+DAFR,104,104,90.4,77.9,2.9,1348

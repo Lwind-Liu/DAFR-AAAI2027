@@ -1,0 +1,14 @@
+{
+  "benchmark_version": "v1.2.2",
+  "suite": "travel",
+  "user_task": "user_task_9",
+  "injection_task": "injection_task_0",
+  "model": "deepseek-v4-flash-ascend",
+  "base_url": "https://api.llm.ustc.edu.cn/v1",
+  "temperature": 0,
+  "max_llm_calls": 16,
+  "historical_dafr_model": "deepseek-v4-flash/clafr",
+  "historical_source_sha256": "cb25f888a49951332d8e4c2f2fe9e718285185fb149c01713819b070cb98328e",
+  "same_prompt_and_injections": true,
+  "comparison_scope": "Case illustration; different recorded model identifiers."
+}

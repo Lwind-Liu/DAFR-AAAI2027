@@ -1,0 +1,54 @@
+{
+  "complete": true,
+  "audited_episodes": 12,
+  "rows": [
+    {
+      "length": 1,
+      "arm": "full",
+      "n": 2,
+      "UA": 100.0,
+      "ASR": 0.0,
+      "reached_attacked_operation": 2
+    },
+    {
+      "length": 1,
+      "arm": "no_defense",
+      "n": 2,
+      "UA": 0.0,
+      "ASR": 100.0,
+      "reached_attacked_operation": 2
+    },
+    {
+      "length": 2,
+      "arm": "full",
+      "n": 2,
+      "UA": 100.0,
+      "ASR": 0.0,
+      "reached_attacked_operation": 2
+    },
+    {
+      "length": 2,
+      "arm": "no_defense",
+      "n": 2,
+      "UA": 0.0,
+      "ASR": 100.0,
+      "reached_attacked_operation": 2
+    },
+    {
+      "length": 4,
+      "arm": "full",
+      "n": 2,
+      "UA": 100.0,
+      "ASR": 0.0,
+      "reached_attacked_operation": 2
+    },
+    {
+      "length": 4,
+      "arm": "no_defense",
+      "n": 2,
+      "UA": 0.0,
+      "ASR": 100.0,
+      "reached_attacked_operation": 2
+    }
+  ]
+}

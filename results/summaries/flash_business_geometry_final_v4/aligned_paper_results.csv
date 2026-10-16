@@ -1,0 +1,6 @@
+Configuration,CU (%),UA (%),ASR (%),Total LLM calls
+DAFR,93.1,99.2,0.0,690
+w/o Evidence Projection,93.1,98.4,28.2,610
+w/o Action-Evidence Lifting,95.8,100.0,28.2,690
+w/o Geometric Modeling,94.4,100.0,42.7,556
+w/o Feasibility Constraints,100.0,100.0,61.3,406

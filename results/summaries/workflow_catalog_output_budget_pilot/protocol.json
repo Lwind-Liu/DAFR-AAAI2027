@@ -1,0 +1,23 @@
+{
+  "selection": "First signed-snapshot pair in each of the first three distinct catalog domains; independent of observed outcome",
+  "ids": [
+    "CAT-001-ac8aa168-clean",
+    "CAT-001-ac8aa168-attack",
+    "CAT-003-7d045055-clean",
+    "CAT-003-7d045055-attack",
+    "CAT-004-1b03e17e-clean",
+    "CAT-004-1b03e17e-attack"
+  ],
+  "arms": [
+    "full",
+    "no_projection",
+    "no_lifting",
+    "linear",
+    "no_geometry"
+  ],
+  "max_output_tokens": 1600,
+  "max_turns": 12,
+  "max_tool_calls": 32,
+  "change": "Only common model output budget, no data or defense change",
+  "official_catalog_result": false
+}

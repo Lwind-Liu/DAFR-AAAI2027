@@ -1,0 +1,10 @@
+{
+  "cases": 172,
+  "runs": 1032,
+  "complete": true,
+  "missing_episodes": 0,
+  "source_and_data_hashes_checked": true,
+  "controller_decisions_and_business_effects_replayed": true,
+  "budget_exhausted_episodes": 0,
+  "errors": []
+}

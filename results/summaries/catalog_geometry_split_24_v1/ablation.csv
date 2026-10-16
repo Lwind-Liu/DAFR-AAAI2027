@@ -1,0 +1,4 @@
+﻿arm,clean_n,attack_n,CU,UA,ASR,total_tool_calls,total_llm_calls
+full,24,24,100.0,91.66666666666667,0.0,295,342
+no_halfspaces,24,24,100.0,100.0,0.0,291,339
+no_joint_surface,24,24,83.33333333333333,62.5,33.333333333333336,246,294

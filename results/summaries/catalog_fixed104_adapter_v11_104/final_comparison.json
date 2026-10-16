@@ -1,0 +1,110 @@
+{
+  "complete": true,
+  "paired_tasks": 104,
+  "replayed_episodes": 1248,
+  "model": "deepseek-v4-flash-0731",
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "rows_sha256": "fd3cd1b6f48d1ac9be3580a175ba51169923b025e8615ba964978d160860a7f8",
+  "aggregation": "Pooled task counts, matching the frozen 104-task ablation.",
+  "DAFR_CU_highest": true,
+  "DAFR_UA_highest": false,
+  "DAFR_ASR_lowest": true,
+  "comparisons": {
+    "PIGuard": {
+      "CU_gain": 7.692307692307693,
+      "UA_gain": 1.9230769230769198,
+      "ASR_reduction": 11.538461538461538,
+      "UA_gain_over_No_Defense": 21.15384615384616,
+      "ASR_reduction_vs_No_Defense": 21.153846153846157
+    },
+    "ProtectAI": {
+      "CU_gain": 8.65384615384616,
+      "UA_gain": -4.807692307692307,
+      "ASR_reduction": 5.769230769230768,
+      "UA_gain_over_No_Defense": 27.884615384615387,
+      "ASR_reduction_vs_No_Defense": 26.923076923076927
+    },
+    "Progent": {
+      "CU_gain": 13.461538461538467,
+      "UA_gain": 19.230769230769234,
+      "ASR_reduction": 21.153846153846157,
+      "UA_gain_over_No_Defense": 3.8461538461538467,
+      "ASR_reduction_vs_No_Defense": 11.53846153846154
+    },
+    "DRIFT": {
+      "CU_gain": 15.384615384615387,
+      "UA_gain": 7.692307692307693,
+      "ASR_reduction": 13.461538461538462,
+      "UA_gain_over_No_Defense": 15.384615384615387,
+      "ASR_reduction_vs_No_Defense": 19.230769230769234
+    }
+  },
+  "results": [
+    {
+      "method": "no_defense",
+      "label": "No Defense",
+      "clean_n": 104,
+      "attack_n": 104,
+      "CU": 75.96153846153847,
+      "UA": 54.80769230769231,
+      "ASR": 35.57692307692308,
+      "total_tool_calls": 990,
+      "total_llm_calls": 1198
+    },
+    {
+      "method": "piguard",
+      "label": "PIGuard",
+      "clean_n": 104,
+      "attack_n": 104,
+      "CU": 82.6923076923077,
+      "UA": 75.96153846153847,
+      "ASR": 14.423076923076923,
+      "total_tool_calls": 1307,
+      "total_llm_calls": 1494
+    },
+    {
+      "method": "protectai",
+      "label": "ProtectAI",
+      "clean_n": 104,
+      "attack_n": 104,
+      "CU": 81.73076923076923,
+      "UA": 82.6923076923077,
+      "ASR": 8.653846153846153,
+      "total_tool_calls": 1306,
+      "total_llm_calls": 1493
+    },
+    {
+      "method": "progent",
+      "label": "Progent",
+      "clean_n": 104,
+      "attack_n": 104,
+      "CU": 76.92307692307692,
+      "UA": 58.65384615384615,
+      "ASR": 24.03846153846154,
+      "total_tool_calls": 1136,
+      "total_llm_calls": 2870
+    },
+    {
+      "method": "drift",
+      "label": "DRIFT",
+      "clean_n": 104,
+      "attack_n": 104,
+      "CU": 75.0,
+      "UA": 70.1923076923077,
+      "ASR": 16.346153846153847,
+      "total_tool_calls": 835,
+      "total_llm_calls": 3768
+    },
+    {
+      "method": "full",
+      "label": "DAFR",
+      "clean_n": 104,
+      "attack_n": 104,
+      "CU": 90.38461538461539,
+      "UA": 77.88461538461539,
+      "ASR": 2.8846153846153846,
+      "total_tool_calls": 1348,
+      "total_llm_calls": 1529
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+% Compile with XeLaTeX. Statistics are deterministic replay, not new LLM runs.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Arial}
+\pagestyle{empty}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption{Overview of the synthetic dataset.}
+\label{tab:synthetic-protocol-overview}
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{7pt}
+\begin{tabular}{@{}lccccc@{}}
+\hline\hline
+& & \multicolumn{4}{c}{Replay Statistics} \\
+\cmidrule(l){3-6}
+Env. & Tasks & Tool Types & Avg. Traj. & Range & Avg. Verify. \\
+\midrule
+Business & 36 & 5.92 & 8.00 & 4--15 & 1.39 \\
+Office & 52 & 5.63 & 7.87 & 4--14 & 1.77 \\
+Cloud & 16 & 6.19 & 8.62 & 5--13 & 2.31 \\
+\midrule
+\textbf{Overall} & \textbf{104} & \textbf{5.82} & \textbf{8.03} & \textbf{4--15} & \textbf{1.72} \\
+\hline\hline
+\end{tabular}
+\par\medskip
+\begin{minipage}{\linewidth}\small
+数据集包含 104 个任务，每个任务配有干净与攻击两个版本。Business 包含付款与客户信息更新，Office 包含邮件、文档授权与日程，Cloud 包含云端部署。
+
+Tasks 为任务数；Tool Types 为每条轨迹实际调用的不同工具接口数的均值；Avg. Traj. 与 Range 分别为平均工具调用步数及最小—最大值；Avg. Verify. 为平均核验相关调用次数，包含提交核验与领取回执。
+
+统计采用完整 DAFR 的 104 条干净历史轨迹，经新版工具协议确定性展开并回放，包含成功、失败及重试，不含执行前自动导入。任务目标、攻击内容和几何判定保持原样；本表描述协议改造后的回放结构，不代表新模型自主执行的实测结果。
+\end{minipage}
+\end{table}
+\end{document}

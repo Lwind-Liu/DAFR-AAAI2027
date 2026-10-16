@@ -1,0 +1,36 @@
+{
+  "episodes": 60,
+  "ids": [
+    "CAT-023-b525cb9c-clean",
+    "CAT-023-b525cb9c-attack",
+    "CAT-070-9a137857-clean",
+    "CAT-070-9a137857-attack",
+    "CAT-087-9a1860a1-clean",
+    "CAT-087-9a1860a1-attack",
+    "CAT-094-fd996739-clean",
+    "CAT-094-fd996739-attack",
+    "CAT-099-b3e4ca7e-clean",
+    "CAT-099-b3e4ca7e-attack"
+  ],
+  "methods": [
+    "no_defense",
+    "piguard",
+    "protectai",
+    "progent",
+    "drift",
+    "full"
+  ],
+  "model": "deepseek-v4-flash-0731",
+  "temperature": 0,
+  "max_turns": 12,
+  "max_tool_calls": 32,
+  "planner_tokens": 650,
+  "defense_tokens": 2048,
+  "concurrency": 1,
+  "seed": 20261014,
+  "sampling": "Uniform random sample of five task pairs from frozen 104 before outcomes; no outcome filtering",
+  "timing": "End-to-end episode including planner, defense, verification and tools. Detectors loaded and warmed before timing; audit and result-file writes excluded.",
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "adapter_sha256": "9d143eab96cd0448d3ba3348ca998fc23cd785e57cd60d5156d6744343ba7d73",
+  "source_sha256": "e162f90aa838fb72bf5d32b58b78594bf947aef3e42942da3366d3bf89f67588"
+}

@@ -1,0 +1,7 @@
+﻿Method,CU (%),UA (%),ASR (%),Total Tool Calls
+No Defense,76.0,54.8,35.6,990
+PIGuard,82.7,76.0,14.4,1307
+ProtectAI,81.7,82.7,8.7,1306
+Progent,76.9,58.7,24.0,1136
+DRIFT,75.0,70.2,16.3,835
+DAFR,90.4,77.9,2.9,1348

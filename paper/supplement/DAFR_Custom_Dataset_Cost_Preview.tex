@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[margin=1in,landscape]{geometry}
+\usepackage{booktabs}
+\begin{document}
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Method & Input Tokens $\downarrow$ & Output Tokens $\downarrow$ & Total Tokens $\downarrow$ & Tool Calls $\downarrow$ \\
+\midrule
+No Defense & 8,668.64 & 763.69 & 9,432.33 & 4.76 \\
+PIGuard & 11,658.41 & 796.92 & 12,455.33 & 6.28 \\
+ProtectAI & 11,616.72 & 791.91 & 12,408.63 & 6.28 \\
+Progent & 25,066.77 & 2,671.94 & 27,738.71 & 5.46 \\
+DRIFT & 32,963.82 & 1,305.77 & 34,269.60 & 4.01 \\
+DAFR & 12,634.76 & 920.43 & 13,555.20 & 6.48 \\
+\bottomrule
+\end{tabular}
+\caption{Resource overhead on the 104-task synthetic dataset. Values are means per episode over 104 clean and 104 attacked executions for each method. Token counts include agent and defense LLM calls; total tokens sum input and output tokens. Tool calls include valid requests blocked by the defense. Values are rounded to two decimal places.}
+\label{tab:synthetic-resource-overhead}
+\end{table}
+\end{document}

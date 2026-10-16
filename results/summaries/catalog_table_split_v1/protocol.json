@@ -1,0 +1,14 @@
+{
+  "source": "results/summaries/workflow_catalog_104/summary.json",
+  "ablation_arms": [
+    "full",
+    "no_projection",
+    "no_lifting",
+    "no_geometry"
+  ],
+  "geometry_comparison_arms": [
+    "full",
+    "linear"
+  ],
+  "new_api_calls": 0
+}

@@ -1,0 +1,52 @@
+{
+  "pairs": 104,
+  "episodes": 1248,
+  "methods": [
+    "no_defense",
+    "piguard",
+    "protectai",
+    "progent",
+    "drift",
+    "full"
+  ],
+  "model": "deepseek-v4-flash-0731",
+  "planner_tokens": 650,
+  "defense_tokens": 2048,
+  "max_turns": 12,
+  "max_tool_calls": 32,
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "detectors": {
+    "piguard": [
+      "leolee99/PIGuard",
+      "dd78b24e330193a22d2293ac66922dd4f982f563"
+    ],
+    "protectai": [
+      "protectai/deberta-v3-base-prompt-injection-v2",
+      "90c9989b1a342275dd0d1a95aad283c04e075671"
+    ]
+  },
+  "adapter_scope": "Original main-table implementations; workflow tool schemas, external-note filtering, concrete draft argument policy checks. No DAFR risk admission in baselines.",
+  "source_sha256": {
+    "scripts\\run_catalog_baseline_matrix.py": "1d3a0d928c1f81475310925317751b03e545d976eb3bc909e27bed09c4128668",
+    "scripts\\run_catalog_other_methods.py": "652b93b3b1b9258682920090dcbe9cc3b0e56a02cfd742800ed0929c39621cec",
+    "scripts\\run_flash_other_methods.py": "30f1aa0caba37510e1197d4f8a25d7f955799a699538861b5b212ae6f4a63e45",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\progent_defense\\secagent\\policy_analysis.py": "af20d3d575104a6fa214b6fa8d31a3e641d5855893b70d3bc83b63ed2f630f3f",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\progent_defense\\secagent\\policy_type_check.py": "96204e413ed982a723ca171f1bd545fce16a33302c659536f1fc2cce929d4b02",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\progent_defense\\secagent\\role_analyzer.py": "4acb307d32e6c7f619ec9b3cea205b2bbcd1619963b26aa074e3bbbb3a8cc22c",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\progent_defense\\secagent\\tool.py": "2ba25d4337ac07fff3df004886e897b2314288b7ea31678bac9bde383f1afb29",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\progent_defense\\secagent\\utils.py": "6b185684f5255acc33fcbaa615ec408368981f2a1f2902b4b28803fa188338e1",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\progent_defense\\secagent\\__init__.py": "edd5b4df72a48e671a89aad5365a90aaf21b828802434bc79a2d1f5fe4f70cf9",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\drift_defense\\build_cache.py": "6867a44e8b91b2ea90d1f2bdb07ff1da43d91a8158fd9169658925d5f380cad9",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\drift_defense\\drift_cache.py": "4397c2b572ffb6bde642c465a463cb0a226123e84d043eb88e1e67aeb96831de",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\drift_defense\\drift_client.py": "6093677bb83783b889a4ed5302e2cdd78e49f01afe5e78c25e2a605d16ac5f57",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\drift_defense\\drift_llm.py": "882ded41d6e4590e63e0fb528cd35b59e6e106294881c9a08a2149861240f79b",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\drift_defense\\drift_prompts.py": "68ea0d407151e961f6d2f0b3c5dd5df8a799cc14708b57515b30516837127c98",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\drift_defense\\drift_suite.py": "8bb1dba087af695d00c6775f92033dcf4b5c6282fc8f06cf196e523913ee7aa2",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\drift_defense\\drift_tools_loop.py": "8bd95f1fab15b9eeb1ab7cb7bfe192376b15d87a9c99e9d3cb079c443dea0152",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\drift_defense\\__init__.py": "8cbca5f6013dd60c6e4dd5aa82f92e270b41ea322995d3bbdff51c124df6efa7",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\filter_defenses\\data_filter_defense.py": "819c773d61efbe03a0544a13b5008e5e08707607a08d642db9f80807201d5f7c",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\filter_defenses\\piguard_defense.py": "d408e2acb270a22b464df3f3dbb3da8a9fecd53afeb14ec3ac7f93b6f184936c",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\filter_defenses\\promptguard_defense.py": "7bfd45cfd0148bbe28887be6516354452030d7ac30ee1f7545ed5f67b3981c99",
+    "external\\official_baselines\\AutoDojo\\agentdojo\\src\\agentdojo\\agent_pipeline\\filter_defenses\\protectai_defense.py": "4249f7c5aea2047022cab8b1fdbdfde32de87fb4c163215be826c2c2f7cd7597"
+  }
+}

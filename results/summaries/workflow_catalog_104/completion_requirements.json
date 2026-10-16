@@ -1,0 +1,33 @@
+{
+  "gates": {
+    "all_paired_episodes_complete": true,
+    "all_traces_replayed": true,
+    "all_modules_positive": true,
+    "full_CU_80_to_90": false,
+    "full_UA_at_least_80": false,
+    "full_ASR_above_zero": true,
+    "geometry_UA_advantage_15_to_25_points": true
+  },
+  "contribution": {
+    "no_projection": {
+      "CU_gain": 10.57692307692308,
+      "UA_gain": 7.692307692307693,
+      "ASR_reduction": 10.576923076923077
+    },
+    "no_lifting": {
+      "CU_gain": 14.42307692307692,
+      "UA_gain": 12.5,
+      "ASR_reduction": 21.153846153846157
+    },
+    "linear": {
+      "CU_gain": 10.57692307692308,
+      "UA_gain": 22.11538461538462,
+      "ASR_reduction": 22.115384615384617
+    },
+    "no_geometry": {
+      "CU_gain": 14.42307692307692,
+      "UA_gain": 23.07692307692308,
+      "ASR_reduction": 32.69230769230769
+    }
+  }
+}

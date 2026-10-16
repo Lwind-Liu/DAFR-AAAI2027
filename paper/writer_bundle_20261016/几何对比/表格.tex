@@ -1,0 +1,23 @@
+% 使用 XeLaTeX 编译。黑白三线表，中文说明置于表下。
+\documentclass[UTF8,11pt]{ctexart}
+\usepackage[paperwidth=280mm,paperheight=120mm,margin=12mm]{geometry}
+\usepackage{booktabs,caption,array}
+\pagestyle{empty}
+\captionsetup{font=small,labelsep=colon,justification=justified,singlelinecheck=false}
+\begin{document}
+\begin{table}[!ht]
+\centering
+{\fontsize{20}{25}\selectfont
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lcccr@{}}
+\toprule[1.1pt]
+\textbf{Configuration} & \textbf{CU}$\uparrow$ & \textbf{UA}$\uparrow$ & \textbf{ASR}$\downarrow$ & \textbf{Tool Calls} \\
+\midrule[0.7pt]
+DAFR & 90.4 & 77.9 & 2.9 & 1348 \\
+Linear Rules & 79.8 & 55.8 & 25.0 & 1181 \\
+\bottomrule[1.1pt]
+\end{tabular*}}
+\caption{几何建模与线性规则的比较。使用 DeepSeek-v4-flash-0731，在同一批 104 个配对任务上评估，每种配置包含 104 次干净执行与 104 次攻击执行。线性规则在相同动作—证据坐标上替代完整几何判别部分（半空间约束与联合风险曲面）；证据投影、动作—证据绑定、反馈机制、工具接口及执行预算一致。CU、UA、ASR 分别为干净任务完成率、攻击条件下原任务完成率和攻击者目标达成率，均为百分比，按环境状态独立判定。Tool Calls 为全部 208 次执行的工具调用总数，包含被防御层拒绝的有效请求。}
+\label{tab:synthetic-geometry-comparison}
+\end{table}
+\end{document}

@@ -1,0 +1,22 @@
+% 使用 XeLaTeX 编译；中文说明可直接供论文作者参考。
+\documentclass[UTF8]{ctexart}
+\usepackage[a3paper,landscape,margin=15mm]{geometry}
+\usepackage{booktabs,multirow,graphicx}
+\usepackage[table]{xcolor}
+\begin{document}
+\begin{table}[!ht]
+\centering\small
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Configuration & CU (\%) $\uparrow$ & UA (\%) $\uparrow$ & ASR (\%) $\downarrow$ & Total Tool Calls \\
+\midrule
+\rowcolor{gray!15}\textbf{DAFR} & 90.4 & 77.9 & 2.9 & 1348 \\
+Linear Rules & 79.8 & 55.8 & 25.0 & 1181 \\
+\bottomrule
+\end{tabular}}
+\caption{使用 DeepSeek-v4-flash-0731，在相同的 104 个配对任务上评估；每种配置执行 104 次干净任务与 104 次攻击任务，工具接口及执行预算一致。\par CU 为干净任务完成率，UA 为攻击条件下原任务完成率，ASR 为攻击者目标达成率，均以百分比表示。CU、UA 越高越好，ASR 越低越好。三项独立按环境状态判定。\par Total Tool Calls 为全部 208 次执行的工具调用总数，包含被防御层拒绝的有效请求。\par 线性规则在相同动作—证据坐标上替代完整几何判别部分（半空间约束与联合风险曲面）；证据投影、动作—证据绑定及反馈机制保持一致。\par DAFR 的 CU、UA 分别提高 10.6、22.1 个百分点，ASR 降低 22.1 个百分点。}
+\end{table}
+
+\end{document}

@@ -1,0 +1,9 @@
+{
+  "episodes": 96,
+  "runs": 576,
+  "unique_runs": 576,
+  "split_overlap": false,
+  "source_and_data_hashes_checked": true,
+  "all_state_mutations_replayed": true,
+  "errors": []
+}

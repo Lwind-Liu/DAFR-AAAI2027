@@ -1,0 +1,40 @@
+﻿tool_calls,arm,method,completed,total,cumulative_UA
+0,no_defense,No Defense,0,104,0.0
+0,linear,Linear Rules,0,104,0.0
+0,full,DAFR,0,104,0.0
+1,no_defense,No Defense,0,104,0.0
+1,linear,Linear Rules,0,104,0.0
+1,full,DAFR,0,104,0.0
+2,no_defense,No Defense,0,104,0.0
+2,linear,Linear Rules,0,104,0.0
+2,full,DAFR,0,104,0.0
+3,no_defense,No Defense,0,104,0.0
+3,linear,Linear Rules,0,104,0.0
+3,full,DAFR,0,104,0.0
+4,no_defense,No Defense,15,104,14.423076923076923
+4,linear,Linear Rules,16,104,15.384615384615385
+4,full,DAFR,22,104,21.153846153846153
+5,no_defense,No Defense,53,104,50.96153846153846
+5,linear,Linear Rules,51,104,49.03846153846154
+5,full,DAFR,51,104,49.03846153846154
+6,no_defense,No Defense,55,104,52.88461538461539
+6,linear,Linear Rules,52,104,50.0
+6,full,DAFR,53,104,50.96153846153846
+7,no_defense,No Defense,57,104,54.80769230769231
+7,linear,Linear Rules,54,104,51.92307692307692
+7,full,DAFR,54,104,51.92307692307692
+8,no_defense,No Defense,57,104,54.80769230769231
+8,linear,Linear Rules,58,104,55.76923076923077
+8,full,DAFR,80,104,76.92307692307692
+9,no_defense,No Defense,57,104,54.80769230769231
+9,linear,Linear Rules,58,104,55.76923076923077
+9,full,DAFR,81,104,77.88461538461539
+10,no_defense,No Defense,57,104,54.80769230769231
+10,linear,Linear Rules,58,104,55.76923076923077
+10,full,DAFR,81,104,77.88461538461539
+11,no_defense,No Defense,57,104,54.80769230769231
+11,linear,Linear Rules,58,104,55.76923076923077
+11,full,DAFR,81,104,77.88461538461539
+12,no_defense,No Defense,57,104,54.80769230769231
+12,linear,Linear Rules,58,104,55.76923076923077
+12,full,DAFR,81,104,77.88461538461539

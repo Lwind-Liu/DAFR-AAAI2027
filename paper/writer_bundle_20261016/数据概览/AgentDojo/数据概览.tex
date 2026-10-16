@@ -1,0 +1,23 @@
+% XeLaTeX; editable table.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}\pagestyle{empty}
+\begin{document}\begin{table}[ht]\centering
+{\large Overview of the Evaluated AgentDojo Subset}\par\medskip
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular*}{.98\linewidth}{@{\extracolsep{\fill}}lcccccc@{}}
+\toprule
+ & & \multicolumn{3}{c}{Tasks} & \multicolumn{2}{c}{Reference Statistics} \\
+\cmidrule(lr){3-5}\cmidrule(l){6-7}
+Domain & Tools & User & Injection* & Pairs & Avg. Traj. & Avg. App. \\
+\midrule
+Workspace & 24 & 14 & 14 & 196 & 2.14 & 1.29 \\
+Slack & 11 & 21 & 5 & 105 & 4.67 & 1.52 \\
+Travel & 28 & 20 & 7 & 140 & 6.20 & 1.25 \\
+Banking & 11 & 16 & 9 & 144 & 2.06 & 1.38 \\
+\midrule
+Overall & 18.35 & 71 & 35 & 585 & 4.01 & 1.37 \\
+\bottomrule\end{tabular*}
+\caption{AgentDojo v1.2.2 实际评测子集概览。User 为不同用户任务数；Injection* 为独立攻击任务或模板数；Pairs 为实际评测的任务—攻击组合数。Avg. Traj. 为每个用户任务的参考工具调用步数；Avg. App. 为参考轨迹涉及的不同应用/服务数。攻击任务按环境内的 injection task ID 去重；参考轨迹来自官方 ground_truth，应用/服务按工具所属客户端模块去重（如邮件、日历、云盘）。Tools 为环境可用工具数；Overall 的平均量均按用户任务加权，不按攻击组合重复计数。}
+\end{table}\end{document}

@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "arm": "full",
+      "clean_n": 3,
+      "attack_n": 3,
+      "clean_successes": 3,
+      "attack_successes_user": 3,
+      "attacker_successes": 0
+    },
+    {
+      "arm": "no_projection",
+      "clean_n": 3,
+      "attack_n": 3,
+      "clean_successes": 3,
+      "attack_successes_user": 2,
+      "attacker_successes": 0
+    },
+    {
+      "arm": "no_lifting",
+      "clean_n": 3,
+      "attack_n": 3,
+      "clean_successes": 3,
+      "attack_successes_user": 2,
+      "attacker_successes": 1
+    },
+    {
+      "arm": "linear",
+      "clean_n": 3,
+      "attack_n": 3,
+      "clean_successes": 3,
+      "attack_successes_user": 3,
+      "attacker_successes": 0
+    },
+    {
+      "arm": "no_geometry",
+      "clean_n": 3,
+      "attack_n": 3,
+      "clean_successes": 3,
+      "attack_successes_user": 2,
+      "attacker_successes": 1
+    }
+  ],
+  "official_catalog_result": false
+}

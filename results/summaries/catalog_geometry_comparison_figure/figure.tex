@@ -1,0 +1,11 @@
+\documentclass[UTF8,11pt]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{graphicx}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.94\linewidth]{对比图.png}
+\caption{几何建模与线性规则在 104 个配对任务上的比较。两种配置均使用 DeepSeek-v4-flash-0731，每种配置执行 104 次干净任务与 104 次攻击任务；证据投影、动作—证据绑定、反馈机制、工具接口及执行预算一致。线性规则替代包含半空间约束与联合风险曲面的完整几何判别部分。CU 为干净任务完成率，UA 为攻击条件下原任务完成率，ASR 为攻击者目标达成率，三项独立按环境状态判定。CU、UA 越高越好，ASR 越低越好；三个子图纵轴范围分别为 0--100、0--100 和 0--30。DAFR 的 CU、UA 分别提高 10.6、22.1 个百分点，ASR 降低 22.1 个百分点。}
+\end{figure}
+\end{document}

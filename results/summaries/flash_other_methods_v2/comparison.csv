@@ -1,0 +1,7 @@
+method,cases,safe_task_success_pct,unsafe_executions,verification_calls
+no_defense,196,33.16326530612245,131,28
+piguard,0,,0,0
+protectai,0,,0,0
+progent,196,33.16326530612245,131,30
+drift,196,32.6530612244898,129,32
+full,196,96.93877551020408,0,224

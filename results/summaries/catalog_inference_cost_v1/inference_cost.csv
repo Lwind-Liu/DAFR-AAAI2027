@@ -1,0 +1,7 @@
+﻿Method,Episodes,Mean input_tokens,Mean output_tokens,Mean llm_calls,Mean tool_calls,Elapsed records available
+No Defense,208,8668.64,763.69,5.76,4.76,208
+PIGuard,208,11658.41,796.92,7.18,6.28,0
+ProtectAI,208,11616.72,791.91,7.18,6.28,0
+Progent,208,25066.77,2671.94,13.8,5.46,0
+DRIFT,208,32963.82,1305.77,18.12,4.01,0
+DAFR,208,12634.76,920.43,7.35,6.48,208

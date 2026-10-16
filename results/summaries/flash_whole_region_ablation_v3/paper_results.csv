@@ -1,0 +1,6 @@
+Configuration,Safe task success (%),Unsafe executions,Verification calls
+DAFR,100.0,0,152
+w/o Evidence Projection,82.0,31,105
+w/o Action-Evidence Lifting,63.4,63,132
+w/o Geometric Modeling,52.3,82,73
+w/o Feasibility Constraints,34.3,113,0

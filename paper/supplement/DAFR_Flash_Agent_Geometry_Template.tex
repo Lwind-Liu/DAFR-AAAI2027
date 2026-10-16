@@ -1,0 +1,82 @@
+% Generated experiment uses booktabs and graphicx from the host paper. New surface only.
+\section{Stateful Tool-Agent Study of Relational Joint Risk}
+\label{sec:flash-relational-study}
+\subsection{Dataset and Protocol}
+We construct synthetic stateful sandboxes for email, payments, document sharing,
+calendar scheduling, CRM updates, and cloud deployment. Operations change domain
+state: outboxes, balances and invoice status, access-control lists, invitations,
+account records, and deployed configurations. A trusted request lookup supplies
+exact operation fields; external records provide ordinary notes, forged scoped
+grants, or suggested destination redirects. These records are not user instructions.
+The agent uses actual \texttt{deepseek-flash} function calls to read records and
+current policy, submit an operation, and acquire independent registry verification
+after a blocked preflight. Verification checks an exact
+field/value/effect/revision tuple against the request ledger.
+
+We use 400 training tasks and 200 development tasks from four domains, and
+144 newly seeded test tasks, 24 per domain. CRM and cloud deployment are held
+out from fitting and calibration. Training uses shared-source and shared-chain
+graphs; test additionally contains disjoint-source and overlapping-source graphs.
+All methods use the same tools, temperature-zero non-thinking model, a
+10-turn limit, a 650-token response limit, and at most four verification queries.
+Every test case and failure is retained. Exploratory pilots identified
+unconditional prior verification and a fully-verified-state baseline artifact;
+both were resolved before freezing independent tests.
+
+\subsection{Curved Joint-Risk Representation}
+Primitive event probabilities and field-dependency graphs are declared by the
+sandbox policy. A protected operation is compromised when an unverified causal
+path activates. Under independent primitive events, the proposed surface computes
+the union-of-conjunctions probability by inclusion--exclusion:
+\[
+ R(p)=s\sum_{\emptyset\ne J\subseteq\mathcal P}
+ (-1)^{|J|+1}\prod_{e\in\cup_{P\in J}P}p_e.
+\]
+Paths sharing events are not treated as independent. Scoped verification
+removes only its corresponding applicable path. The executor independently
+enumerates all primitive-event worlds to obtain expected loss and records unsafe
+admissions as committed effects; labels do not read controller scores.
+The comparison is one affine rule on the same probabilities, graph membership,
+severity, budget, and scoped evidence. Coefficients are learned on training
+states including partial verification, and the development threshold minimizes
+$5\,\mathrm{FAR}+\mathrm{FBR}$. Both methods allow fully verified actions with
+no remaining applicable path.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{flash_joint_surface_slice.pdf}
+\caption{Illustrative conditional slice of the declared joint-risk model and
+the frozen affine rule. The second propagation probability and risk budget
+are fixed at 0.2; severity is 1 and no field is verified. This is a representation
+illustration, not a test-performance plot.}
+\label{fig:flash-joint-slice}
+\end{figure}
+
+\subsection{Results and Module Ablations}
+@@COMPARISON@@
+
+@@ABLATION@@
+
+The full surface safely completes @@FULL@@/@@N@@ tasks with @@FULL_UNSAFE@@
+unsafe commits; the linear rule completes @@LINEAR@@/@@N@@ safely with
+@@LINEAR_UNSAFE@@ unsafe commits. The surface saves @@SAVED@@\% of independent
+verification queries (paired mean reduction @@QUERY_DELTA@@, 95\% CI
+[@@QUERY_LO@@, @@QUERY_HI@@]). The safe-success difference is
+@@SUCCESS_DELTA@@ percentage points (95\% CI [@@SUCCESS_LO@@, @@SUCCESS_HI@@]).
+Of the linear rule's unsafe commits, @@UNSEEN_UNSAFE@@ occur in the two
+held-out graph families. Domain and topology breakdowns are retained with
+the execution traces.
+
+Projection removal admits externally claimed grants. Lifting removal retains a
+source-only path rather than its dependency chain. Geometric-filter removal
+retains schema, current-policy, and user-scope checks but omits the joint budget.
+Feedback removal stops at the first blocked operation. In these graphs, lifting
+removal is conservative: extra verification can recover tasks, so final success
+alone does not measure its contribution. We report false blocks and queries too.
+
+These findings concern the upgraded relational surface with typed domain
+adapters and declared uncertainty, rather than a rerun of original cone-based
+DAFR benchmarks. They do not establish production natural-language encoding or
+probability calibration. The event model provides a controlled representation
+test; real-world hazard-model validity requires separate evidence. Existing
+benchmark results are unchanged.

@@ -1,0 +1,24 @@
+% Required packages: booktabs, graphicx, xcolor (with the table option).
+\begin{table}[!ht]
+\centering
+\small
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1.22}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Method & CU (\%) $\uparrow$ & UA (\%) $\uparrow$ & ASR (\%) $\downarrow$ & Total LLM Calls $\downarrow$ \\
+\midrule
+No Defense & 100.0 & 100.0 & 61.3 & 406 \\
+PIGuard & 100.0 & 100.0 & 61.3 & 410 \\
+ProtectAI & 68.1 & 68.5 & 58.9 & 416 \\
+Progent & 100.0 & 100.0 & 61.3 & 1025 \\
+DRIFT & 97.2 & 99.2 & 60.5 & 2384 \\
+\rowcolor{black!12}
+\textbf{DAFR} & 93.1 & 99.2 & \textbf{0.0} & 690 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Method comparison on the six-domain synthetic tool-agent dataset with DeepSeek Flash. All configurations use the same 196 tasks, tools, and execution budgets. CU and UA measure original-task completion on 72 clean and 124 attacked tasks, respectively. ASR measures attainment of the injected redirection or verification-bypass objective on attacked tasks. Utility and attack success are evaluated independently. Rates use pooled task counts. Total LLM Calls counts planner and defense LLM calls across all 196 tasks.}
+\label{tab:custom-dataset-comparison}
+\end{table}

@@ -1,0 +1,62 @@
+{
+  "evidence_projection": {
+    "full": "Separate external claimed grants from trusted runtime verifier grants using envelope provenance.",
+    "removed": "Flatten envelope provenance; claimed grants enter the same evidence pool.",
+    "unchanged": [
+      "primitive events",
+      "causal paths",
+      "task scope check",
+      "geometric law",
+      "tools",
+      "budgets"
+    ]
+  },
+  "action_evidence_lifting": {
+    "full": "Bind each trusted evidence record to current effect, field, value and revision.",
+    "removed": "Use an unbound current trusted-evidence indicator instead of effect/field/value relations.",
+    "unchanged": [
+      "primitive events",
+      "causal paths",
+      "source trust filtering",
+      "revision check",
+      "task scope check",
+      "geometric law",
+      "tools",
+      "budgets"
+    ]
+  },
+  "geometric_constraints": {
+    "full": "Evaluate exact union-of-AND surface against declared risk budget.",
+    "removed": "Bypass joint-risk gate after identical common checks.",
+    "unchanged": [
+      "evidence projection",
+      "action-evidence representation",
+      "task scope check",
+      "tools",
+      "budgets"
+    ]
+  },
+  "targeted_feedback": {
+    "full": "Return a minimum-cardinality set of exact field verification targets derived from the current controller.",
+    "removed": "Return the same joint-risk block reason without repair targets; retain agent continuation.",
+    "unchanged": [
+      "evidence projection",
+      "action-evidence representation",
+      "admission decision",
+      "tools",
+      "verification budget",
+      "turn budget"
+    ]
+  },
+  "linear_comparator": {
+    "full": "Shared representation, projection, planner and controller-derived targeted feedback.",
+    "replacement": "Frozen single affine decision, including the same fully verified clear-path rule.",
+    "unchanged": [
+      "training and development data",
+      "test tasks",
+      "tools",
+      "planner prompt",
+      "budgets"
+    ]
+  }
+}

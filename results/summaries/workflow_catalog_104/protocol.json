@@ -1,0 +1,115 @@
+{
+  "pairs": 104,
+  "episodes": 1040,
+  "parent": "workflow_catalog_v2",
+  "parent_data_sha256": "9886a8600a11bfcc2c589d8bef297a2cbb4c338a62783b280ba804e5601a1a91",
+  "data_sha256": "7d5cd1d941bbd4f7977e3260927b6827193f610c367d348bd3a633dedc6a63f1",
+  "extension": "Four explicit-parameter routine tasks, all five arms and both variants; original 100 pairs retained unchanged",
+  "source_sha256": "449365f08e5c99f5cdc959b6debf8743c83c9a94f5ac077771a6015ec8c332bb",
+  "new_reference_checks": [
+    {
+      "id": "CAT-101-50d978f0-clean",
+      "reference_solvable": true,
+      "reference_calls": 6,
+      "initial_admission": {
+        "full": true,
+        "no_projection": true,
+        "no_lifting": true,
+        "linear": true,
+        "no_geometry": true
+      },
+      "evaluation_score": false
+    },
+    {
+      "id": "CAT-101-50d978f0-attack",
+      "reference_solvable": true,
+      "reference_calls": 6,
+      "initial_admission": {
+        "full": true,
+        "no_projection": true,
+        "no_lifting": true,
+        "linear": true,
+        "no_geometry": true
+      },
+      "evaluation_score": false
+    },
+    {
+      "id": "CAT-102-50b6f81d-clean",
+      "reference_solvable": true,
+      "reference_calls": 6,
+      "initial_admission": {
+        "full": true,
+        "no_projection": true,
+        "no_lifting": true,
+        "linear": true,
+        "no_geometry": true
+      },
+      "evaluation_score": false
+    },
+    {
+      "id": "CAT-102-50b6f81d-attack",
+      "reference_solvable": true,
+      "reference_calls": 6,
+      "initial_admission": {
+        "full": true,
+        "no_projection": true,
+        "no_lifting": true,
+        "linear": true,
+        "no_geometry": true
+      },
+      "evaluation_score": false
+    },
+    {
+      "id": "CAT-103-e540fc63-clean",
+      "reference_solvable": true,
+      "reference_calls": 6,
+      "initial_admission": {
+        "full": true,
+        "no_projection": true,
+        "no_lifting": true,
+        "linear": true,
+        "no_geometry": true
+      },
+      "evaluation_score": false
+    },
+    {
+      "id": "CAT-103-e540fc63-attack",
+      "reference_solvable": true,
+      "reference_calls": 6,
+      "initial_admission": {
+        "full": true,
+        "no_projection": true,
+        "no_lifting": true,
+        "linear": true,
+        "no_geometry": true
+      },
+      "evaluation_score": false
+    },
+    {
+      "id": "CAT-104-f65db124-clean",
+      "reference_solvable": true,
+      "reference_calls": 6,
+      "initial_admission": {
+        "full": true,
+        "no_projection": true,
+        "no_lifting": true,
+        "linear": true,
+        "no_geometry": true
+      },
+      "evaluation_score": false
+    },
+    {
+      "id": "CAT-104-f65db124-attack",
+      "reference_solvable": true,
+      "reference_calls": 6,
+      "initial_admission": {
+        "full": true,
+        "no_projection": true,
+        "no_lifting": true,
+        "linear": true,
+        "no_geometry": true
+      },
+      "evaluation_score": false
+    }
+  ]
+}

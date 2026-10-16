@@ -1,0 +1,29 @@
+% XeLaTeX; editable table.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}\pagestyle{empty}
+\begin{document}\begin{table}[ht]\centering
+{\large Overview of the Evaluated ASB Subset}\par\medskip
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular*}{.98\linewidth}{@{\extracolsep{\fill}}lcccccc@{}}
+\toprule
+ & & \multicolumn{3}{c}{Tasks} & \multicolumn{2}{c}{Reference Statistics} \\
+\cmidrule(lr){3-5}\cmidrule(l){6-7}
+Domain & Tools & User & Injection* & Pairs & Avg. Traj. & Avg. App. \\
+\midrule
+Finance & 3 & 5 & 4 & 20 & — & — \\
+Legal & 3 & 5 & 4 & 20 & — & — \\
+Medical & 3 & 5 & 4 & 20 & — & — \\
+Education & 3 & 5 & 4 & 20 & — & — \\
+Psychology & 3 & 5 & 4 & 20 & — & — \\
+E-commerce & 3 & 5 & 4 & 20 & — & — \\
+Aerospace & 3 & 5 & 4 & 20 & — & — \\
+Academic Search & 3 & 6 & 4 & 24 & — & — \\
+Autonomous Driving & 3 & 5 & 4 & 20 & — & — \\
+System Administration & 3 & 5 & 4 & 20 & — & — \\
+\midrule
+Overall & 3.00 & 51 & 40 & 204 & — & — \\
+\bottomrule\end{tabular*}
+\caption{ToolSafe-ASB 实际评测子集概览。User 为不同用户任务数；Injection* 为独立攻击任务或模板数；Pairs 为实际评测的任务—攻击组合数。Avg. Traj. 为每个用户任务的参考工具调用步数；Avg. App. 为参考轨迹涉及的不同应用/服务数。攻击任务按代理类别与 attack ID 联合去重；每类四个攻击与该类用户任务组合评测。每次执行可见两个正常工具与一个攻击工具。源任务未提供标准参考动作序列及应用归属映射，这两项标为“—”，表示未定义而非零。}
+\end{table}\end{document}

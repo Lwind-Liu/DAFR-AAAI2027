@@ -1,0 +1,23 @@
+% XeLaTeX; editable table.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}\pagestyle{empty}
+\begin{document}\begin{table}[ht]\centering
+{\large Overview of the Evaluated AgentDojo Subset}\par\medskip
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular*}{.98\linewidth}{@{\extracolsep{\fill}}lccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Tasks} & \multicolumn{2}{c}{Avg. Calls} \\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+Domain & Tools & User & Attack & Clean & Attack \\
+\midrule
+Workspace & 24 & 14 & 196 & 3.64 & 3.78 \\
+Slack & 11 & 21 & 105 & 7.95 & 8.48 \\
+Travel & 28 & 20 & 140 & 8.45 & 8.12 \\
+Banking & 11 & 16 & 144 & 4.81 & 5.18 \\
+\midrule
+Overall & 18.35 & 71 & 585 & 6.54 & 6.01 \\
+\bottomrule\end{tabular*}
+\caption{AgentDojo v1.2.2 实际评测子集概览，模型为 DeepSeek V4 Flash。User 为不同用户任务数，Attack 为实际评测的任务—攻击组合数。Avg. Calls 为完整 DAFR 的平均工具调用请求数，计入被防御层拦截的请求及成功、失败执行，按执行记录平均；Clean 与 Attack 分别统计干净和攻击条件。Tools 为各环境可用工具数；Overall 的工具数按用户任务数加权平均。}
+\end{table}\end{document}

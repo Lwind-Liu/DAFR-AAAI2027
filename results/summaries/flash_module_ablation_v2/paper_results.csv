@@ -1,0 +1,7 @@
+configuration,cases,safe_success_pct,unsafe_commits,verification_queries,mean_verifications
+Full geometric method,172,100.0,0,152,0.8837209302325582
+Simple linear rule,172,72.09302325581395,48,185,1.0755813953488371
+w/o Evidence Projection,172,81.97674418604652,31,105,0.6104651162790697
+w/o Action-Evidence Binding,172,63.372093023255815,63,132,0.7674418604651163
+w/o Geometric Constraints,172,34.30232558139535,113,0,0.0
+w/o Targeted Feedback,172,100.0,0,226,1.313953488372093

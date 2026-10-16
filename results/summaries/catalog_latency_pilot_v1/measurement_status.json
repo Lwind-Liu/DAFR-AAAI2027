@@ -1,0 +1,4 @@
+{
+  "status": "setup pilot; excluded from final latency comparison",
+  "reason": "Chain experiment overlapped in time; final timings will be measured alone after that job finishes."
+}

@@ -1,0 +1,7 @@
+{
+  "inputs": {
+    "results\\summaries\\catalog_baseline_matrix_104": "e40035248668943c19c6132826410f670413ec32a2ef4aeb9891115d5db91b33",
+    "results\\summaries\\catalog_policy_baseline_matrix_104": "dedc71210ead9cd890ca2e837c776da5d5a61b5067cacd5b2ed3263a602199f2"
+  },
+  "note": "Pilot and reused DAFR/No Defense executions deduplicated by case and method; all outcome traces replayed."
+}

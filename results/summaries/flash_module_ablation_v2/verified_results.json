@@ -1,0 +1,137 @@
+{
+  "status": "completed_and_audited",
+  "dataset": "flash_business_geometry_combined_v1",
+  "test_tasks": 172,
+  "completed_episodes": 1032,
+  "module_results": {
+    "full_surface": {
+      "cases": 172,
+      "safe_successes": 172,
+      "unsafe_commits": 0,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 152,
+      "mean_verifications": 0.8837209302325582,
+      "model_requests": 585,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "simple_linear": {
+      "cases": 172,
+      "safe_successes": 124,
+      "unsafe_commits": 48,
+      "task_completions": 172,
+      "initial_false_blocks": 36,
+      "verification_queries": 185,
+      "mean_verifications": 1.0755813953488371,
+      "model_requests": 603,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_projection": {
+      "cases": 172,
+      "safe_successes": 141,
+      "unsafe_commits": 31,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 105,
+      "mean_verifications": 0.6104651162790697,
+      "model_requests": 517,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_lifting": {
+      "cases": 172,
+      "safe_successes": 109,
+      "unsafe_commits": 63,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 132,
+      "mean_verifications": 0.7674418604651163,
+      "model_requests": 585,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_geometry": {
+      "cases": 172,
+      "safe_successes": 59,
+      "unsafe_commits": 113,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 0,
+      "mean_verifications": 0.0,
+      "model_requests": 356,
+      "termination_counts": {
+        "committed": 172
+      }
+    },
+    "no_feedback": {
+      "cases": 172,
+      "safe_successes": 172,
+      "unsafe_commits": 0,
+      "task_completions": 172,
+      "initial_false_blocks": 0,
+      "verification_queries": 226,
+      "mean_verifications": 1.313953488372093,
+      "model_requests": 576,
+      "termination_counts": {
+        "committed": 172
+      }
+    }
+  },
+  "module_effects": {
+    "simple_linear": {
+      "paired_tasks": 172,
+      "safe_success_gain_pp": 27.906976744186046,
+      "unsafe_commits_avoided": 48,
+      "verification_calls_saved": 33,
+      "tasks_with_fewer_verifications_in_full": 62,
+      "tasks_with_more_verifications_in_full": 36
+    },
+    "no_projection": {
+      "paired_tasks": 172,
+      "safe_success_gain_pp": 18.023255813953487,
+      "unsafe_commits_avoided": 31,
+      "verification_calls_saved": -47,
+      "tasks_with_fewer_verifications_in_full": 1,
+      "tasks_with_more_verifications_in_full": 33
+    },
+    "no_lifting": {
+      "paired_tasks": 172,
+      "safe_success_gain_pp": 36.627906976744185,
+      "unsafe_commits_avoided": 63,
+      "verification_calls_saved": -20,
+      "tasks_with_fewer_verifications_in_full": 9,
+      "tasks_with_more_verifications_in_full": 29
+    },
+    "no_geometry": {
+      "paired_tasks": 172,
+      "safe_success_gain_pp": 65.69767441860465,
+      "unsafe_commits_avoided": 113,
+      "verification_calls_saved": -152,
+      "tasks_with_fewer_verifications_in_full": 0,
+      "tasks_with_more_verifications_in_full": 113
+    },
+    "no_feedback": {
+      "paired_tasks": 172,
+      "safe_success_gain_pp": 0.0,
+      "unsafe_commits_avoided": 0,
+      "verification_calls_saved": 74,
+      "tasks_with_fewer_verifications_in_full": 74,
+      "tasks_with_more_verifications_in_full": 0
+    }
+  },
+  "measurement_scope": "typed business-tool adapter: provenance, action-evidence binding, joint-risk gate, targeted repair feedback",
+  "files_sha256": {
+    "rows.jsonl": "d48eff1f3aca705e0defccc7e14b0ad287ae2ca60f3123a5f062d2a0d33fb888",
+    "summary.json": "26e6b8d00e29500d8b84d1187b6baa60d20dc738c6f5ddabe8ce9b9f48ce6b66",
+    "frozen_protocol.json": "6512acc8c84412214a5ea9738f92fbcaf2bd84d6672b706adfd1ca2727b5d967",
+    "integrity_audit.json": "e119f33b67750d7d4bb056a1a1c3846d3d0246af1efc77bd5605e8c81b962502",
+    "component_definitions.json": "867b0c6f75ad0361cf3b8bc34037a63cdb42cc3223b814e42b96017d19893d60",
+    "paper_results.csv": "870888b2e4920191e544477a0d4864fa8695c35e39dcede2b6934bb846ba5964"
+  }
+}

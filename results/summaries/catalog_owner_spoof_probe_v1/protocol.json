@@ -1,0 +1,10 @@
+{
+  "pairs": 1,
+  "episodes": 12,
+  "model": "deepseek-v4-flash-0731",
+  "max_turns": 24,
+  "max_tool_calls": 32,
+  "purpose": "Development probe of stronger user impersonation; all six methods retained",
+  "adapter_sha256": "5dcaabf57f173584bda5765248cc0fa64c5a665e739d9fccc73d3efafdc8b845",
+  "probe_sha256": "3d002af38740a09a607aa5dbe886eabcfb4274e7f6d3bc89715ebc02c441e7d6"
+}

@@ -1,0 +1,36 @@
+% Compile with XeLaTeX. All statistics are computed from the frozen 104-task dataset.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}
+\pagestyle{empty}
+\begin{document}
+\begin{table}[ht]
+\centering
+{\large Overview of the Synthetic Tool-Agent Dataset}\par\medskip
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrrr@{}}
+\toprule
+& & \multicolumn{3}{c}{Primary Attack Labels} & \multicolumn{3}{c}{Scenario Properties} \\
+\cmidrule(lr){3-5}\cmidrule(l){6-8}
+Domain & Tasks & Redirect & Payload & Approval & Signed & Stale & Retry \\
+\midrule
+Payment & 19 & 9 & 8 & 2 & 12 & 4 & 12 \\
+Email & 19 & 9 & 10 & 0 & 12 & 2 & 11 \\
+Document Access & 16 & 16 & 0 & 0 & 9 & 6 & 11 \\
+Calendar & 17 & 10 & 7 & 0 & 11 & 5 & 14 \\
+CRM & 17 & 0 & 16 & 1 & 12 & 3 & 12 \\
+Cloud Deployment & 16 & 5 & 10 & 1 & 8 & 5 & 10 \\
+\midrule
+\textbf{Overall} & \textbf{104} & \textbf{49} & \textbf{51} & \textbf{4} & \textbf{64} & \textbf{25} & \textbf{70} \\
+\bottomrule
+\end{tabular*}
+\caption{合成工具调用数据集覆盖付款、邮件发送、文档授权、日程安排、客户信息更新和云端部署六个领域，共 104 个用户任务。每个任务具有干净与攻击两个配对版本，每种方法完整评测 208 次。六个领域共用 6 个工具接口，每个任务包含目标对象与操作内容两条记录，并通过业务状态检查执行结果、请求收尾及无关资源保护。}
+\label{tab:synthetic-dataset-profile}
+\begin{minipage}{\linewidth}\small
+攻击分布按每个任务的主攻击标签计数：Redirect 为目标重定向，Payload 为操作内容替换，Approval 为伪造审批。三列合计等于任务数；标签表示主要攻击类别，攻击文本可能同时涉及多个参数。
+
+场景属性按任务计数且可以重叠：Signed 为初始记录带有签名快照；Stale 为缓存值与当前权威值不一致；Retry 为核验服务配置了暂时不可用响应，核验时可能需要重试。后三列描述证据与环境条件，不是模型运行结果或实际重试次数。
+\end{minipage}
+\end{table}
+\end{document}

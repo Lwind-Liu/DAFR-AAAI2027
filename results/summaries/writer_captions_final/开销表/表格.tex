@@ -1,0 +1,26 @@
+% 使用 XeLaTeX 编译；中文说明可直接供论文作者参考。
+\documentclass[UTF8]{ctexart}
+\usepackage[a3paper,landscape,margin=15mm]{geometry}
+\usepackage{booktabs,multirow,graphicx}
+\usepackage[table]{xcolor}
+\begin{document}
+\begin{table}[!ht]
+\centering\small
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Method & Input Tokens $\downarrow$ & Output Tokens $\downarrow$ & Total Tokens $\downarrow$ & Tool Calls $\downarrow$ \\
+\midrule
+No Defense & 8,668.64 & 763.69 & 9,432.33 & 4.76 \\
+PIGuard & 11,658.41 & 796.92 & 12,455.33 & 6.28 \\
+ProtectAI & 11,616.72 & 791.91 & 12,408.63 & 6.28 \\
+Progent & 25,066.77 & 2,671.94 & 27,738.71 & 5.46 \\
+DRIFT & 32,963.82 & 1,305.77 & 34,269.60 & 4.01 \\
+\rowcolor{gray!15}\textbf{DAFR} & 12,634.76 & 920.43 & 13,555.20 & 6.48 \\
+\bottomrule
+\end{tabular}}
+\caption{在与合成主表相同的 104 个配对任务上统计开销，每种方法共执行 208 次。表中数值均为单次执行的平均值，保留两位小数。\par Input Tokens、Output Tokens 包含 agent 规划及防御方法产生的全部大模型调用；Total Tokens 为输入与输出之和，按未舍入数值计算。\par Tool Calls 为平均工具调用次数，包含被防御层拒绝的有效请求；主表与消融表中的 Total Tool Calls 则为总数。}
+\end{table}
+
+\end{document}

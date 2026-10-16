@@ -1,0 +1,74 @@
+{
+  "arms": {
+    "no_defense": {
+      "cases": 196,
+      "safe_successes": 65,
+      "safe_success_pct": 33.16326530612245,
+      "unsafe_executions": 131,
+      "unsafe_tasks": 131,
+      "registry_verifications": 0,
+      "verification_calls": 28,
+      "termination_counts": {
+        "committed": 196
+      }
+    },
+    "piguard": {
+      "cases": 196,
+      "safe_successes": 65,
+      "safe_success_pct": 33.16326530612245,
+      "unsafe_executions": 131,
+      "unsafe_tasks": 131,
+      "registry_verifications": 0,
+      "verification_calls": 0,
+      "termination_counts": {
+        "committed": 196
+      }
+    },
+    "protectai": {
+      "cases": 196,
+      "safe_successes": 42,
+      "safe_success_pct": 21.428571428571427,
+      "unsafe_executions": 149,
+      "unsafe_tasks": 149,
+      "registry_verifications": 0,
+      "verification_calls": 4,
+      "termination_counts": {
+        "committed": 191,
+        "model_finished": 5
+      }
+    },
+    "progent": {
+      "cases": 0,
+      "safe_successes": 0,
+      "safe_success_pct": null,
+      "unsafe_executions": 0,
+      "unsafe_tasks": 0,
+      "registry_verifications": 0,
+      "verification_calls": 0,
+      "termination_counts": {}
+    },
+    "drift": {
+      "cases": 0,
+      "safe_successes": 0,
+      "safe_success_pct": null,
+      "unsafe_executions": 0,
+      "unsafe_tasks": 0,
+      "registry_verifications": 0,
+      "verification_calls": 0,
+      "termination_counts": {}
+    },
+    "full": {
+      "cases": 196,
+      "safe_successes": 190,
+      "safe_success_pct": 96.93877551020408,
+      "unsafe_executions": 0,
+      "unsafe_tasks": 0,
+      "registry_verifications": 192,
+      "verification_calls": 224,
+      "termination_counts": {
+        "committed": 190,
+        "model_finished": 6
+      }
+    }
+  }
+}

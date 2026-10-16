@@ -1,0 +1,195 @@
+{
+  "status": "Complete small-batch pilot; 16 paired tasks, not a full-104 dynamic experiment.",
+  "comparison": [
+    {
+      "Configuration": "dynamic",
+      "clean_n": 16,
+      "attack_n": 16,
+      "CU": 87.5,
+      "UA": 75.0,
+      "ASR": 12.5,
+      "total_tool_calls": 235,
+      "total_llm_calls": 263
+    },
+    {
+      "Configuration": "static",
+      "clean_n": 16,
+      "attack_n": 16,
+      "CU": 37.5,
+      "UA": 18.75,
+      "ASR": 12.5,
+      "total_tool_calls": 295,
+      "total_llm_calls": 307
+    }
+  ],
+  "length_groups": [
+    {
+      "Configuration": "dynamic",
+      "Reference tool steps": 3,
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 66.66666666666667,
+      "ASR": 33.333333333333336,
+      "total_tool_calls": 59,
+      "total_llm_calls": 71
+    },
+    {
+      "Configuration": "dynamic",
+      "Reference tool steps": 6,
+      "clean_n": 8,
+      "attack_n": 8,
+      "CU": 100.0,
+      "UA": 100.0,
+      "ASR": 0.0,
+      "total_tool_calls": 128,
+      "total_llm_calls": 144
+    },
+    {
+      "Configuration": "dynamic",
+      "Reference tool steps": 16,
+      "clean_n": 2,
+      "attack_n": 2,
+      "CU": 0.0,
+      "UA": 0.0,
+      "ASR": 0.0,
+      "total_tool_calls": 48,
+      "total_llm_calls": 48
+    },
+    {
+      "Configuration": "static",
+      "Reference tool steps": 3,
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 50.0,
+      "ASR": 33.333333333333336,
+      "total_tool_calls": 55,
+      "total_llm_calls": 67
+    },
+    {
+      "Configuration": "static",
+      "Reference tool steps": 6,
+      "clean_n": 8,
+      "attack_n": 8,
+      "CU": 0.0,
+      "UA": 0.0,
+      "ASR": 0.0,
+      "total_tool_calls": 192,
+      "total_llm_calls": 192
+    },
+    {
+      "Configuration": "static",
+      "Reference tool steps": 16,
+      "clean_n": 2,
+      "attack_n": 2,
+      "CU": 0.0,
+      "UA": 0.0,
+      "ASR": 0.0,
+      "total_tool_calls": 48,
+      "total_llm_calls": 48
+    }
+  ],
+  "pilot_overhead": [
+    {
+      "configuration": "dynamic",
+      "episodes": 32,
+      "mean_input_tokens": 14320.625,
+      "mean_output_tokens": 999.09375,
+      "mean_llm_calls": 8.21875,
+      "mean_tool_calls": 7.34375,
+      "mean_elapsed_seconds": 16.591281250000975
+    },
+    {
+      "configuration": "static",
+      "episodes": 32,
+      "mean_input_tokens": 19669.71875,
+      "mean_output_tokens": 1157.0,
+      "mean_llm_calls": 9.59375,
+      "mean_tool_calls": 9.21875,
+      "mean_elapsed_seconds": 20.08740625000246
+    }
+  ],
+  "static_definition": "Freeze uncovered path family, severity and budget at first admission. Current action, primitive risk coordinates, evidence projection, action-evidence lifting, halfspaces and feedback remain active.",
+  "length_definition": "Fixed clean reference protocol: read, verify both records if admission requires it (including registry retries), stage if necessary, commit, close. Excludes pre-ingestion.",
+  "cost_population": "Existing fixed-104 six-method comparison, 208 episodes per method.",
+  "cost_results": [
+    {
+      "Method": "No Defense",
+      "Episodes": "208",
+      "Mean input_tokens": "8668.64",
+      "Mean output_tokens": "763.69",
+      "Mean llm_calls": "5.76",
+      "Mean tool_calls": "4.76",
+      "Elapsed records available": "208"
+    },
+    {
+      "Method": "PIGuard",
+      "Episodes": "208",
+      "Mean input_tokens": "11658.41",
+      "Mean output_tokens": "796.92",
+      "Mean llm_calls": "7.18",
+      "Mean tool_calls": "6.28",
+      "Elapsed records available": "0"
+    },
+    {
+      "Method": "ProtectAI",
+      "Episodes": "208",
+      "Mean input_tokens": "11616.72",
+      "Mean output_tokens": "791.91",
+      "Mean llm_calls": "7.18",
+      "Mean tool_calls": "6.28",
+      "Elapsed records available": "0"
+    },
+    {
+      "Method": "Progent",
+      "Episodes": "208",
+      "Mean input_tokens": "25066.77",
+      "Mean output_tokens": "2671.94",
+      "Mean llm_calls": "13.8",
+      "Mean tool_calls": "5.46",
+      "Elapsed records available": "0"
+    },
+    {
+      "Method": "DRIFT",
+      "Episodes": "208",
+      "Mean input_tokens": "32963.82",
+      "Mean output_tokens": "1305.77",
+      "Mean llm_calls": "18.12",
+      "Mean tool_calls": "4.01",
+      "Elapsed records available": "0"
+    },
+    {
+      "Method": "DAFR",
+      "Episodes": "208",
+      "Mean input_tokens": "12634.76",
+      "Mean output_tokens": "920.43",
+      "Mean llm_calls": "7.35",
+      "Mean tool_calls": "6.48",
+      "Elapsed records available": "208"
+    }
+  ],
+  "interpretation": "Length groups use a pre-execution reference procedure, including verification and retries. They do not isolate multi-action chain length as a causal variable.",
+  "long_workflow_24_turn_probe": [
+    {
+      "Configuration": "dynamic",
+      "clean_n": 2,
+      "attack_n": 2,
+      "CU": 100.0,
+      "UA": 50.0,
+      "ASR": 0.0,
+      "total_tool_calls": 56,
+      "total_llm_calls": 60
+    },
+    {
+      "Configuration": "static",
+      "clean_n": 2,
+      "attack_n": 2,
+      "CU": 0.0,
+      "UA": 0.0,
+      "ASR": 0.0,
+      "total_tool_calls": 94,
+      "total_llm_calls": 95
+    }
+  ]
+}

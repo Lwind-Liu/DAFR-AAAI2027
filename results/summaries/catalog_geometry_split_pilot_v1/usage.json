@@ -1,0 +1,7 @@
+{
+  "requests": 236,
+  "failed_requests": 0,
+  "prompt_tokens": 393917,
+  "completion_tokens": 29424,
+  "estimated_cost_cny": 1.4465669999999995
+}

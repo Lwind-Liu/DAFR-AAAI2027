@@ -1,0 +1,42 @@
+[
+  {
+    "arm": "full",
+    "CU": 1,
+    "UA": 1,
+    "ASR": 0,
+    "paired_tasks": 1,
+    "total_tool_calls": 17
+  },
+  {
+    "arm": "no_projection",
+    "CU": 1,
+    "UA": 0,
+    "ASR": 1,
+    "paired_tasks": 1,
+    "total_tool_calls": 14
+  },
+  {
+    "arm": "no_lifting",
+    "CU": 1,
+    "UA": 0,
+    "ASR": 1,
+    "paired_tasks": 1,
+    "total_tool_calls": 10
+  },
+  {
+    "arm": "linear",
+    "CU": 1,
+    "UA": 0,
+    "ASR": 1,
+    "paired_tasks": 1,
+    "total_tool_calls": 10
+  },
+  {
+    "arm": "no_geometry",
+    "CU": 1,
+    "UA": 0,
+    "ASR": 1,
+    "paired_tasks": 1,
+    "total_tool_calls": 10
+  }
+]

@@ -1,0 +1,176 @@
+{
+  "chain_status": "complete six-family controlled study",
+  "chain_episodes": 72,
+  "overall": [
+    {
+      "configuration": "dynamic",
+      "clean_n": 18,
+      "attack_n": 18,
+      "CU": 100.0,
+      "UA": 100.0,
+      "ASR": 0.0,
+      "total_tool_calls": 589,
+      "total_llm_calls": 625
+    },
+    {
+      "configuration": "static",
+      "clean_n": 18,
+      "attack_n": 18,
+      "CU": 33.333333333333336,
+      "UA": 27.77777777777778,
+      "ASR": 0.0,
+      "total_tool_calls": 490,
+      "total_llm_calls": 529
+    }
+  ],
+  "length_groups": [
+    {
+      "length": 1,
+      "configuration": "dynamic",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 100.0,
+      "ASR": 0.0,
+      "total_tool_calls": 80,
+      "total_llm_calls": 92
+    },
+    {
+      "length": 1,
+      "configuration": "static",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 33.333333333333336,
+      "UA": 33.333333333333336,
+      "ASR": 0.0,
+      "total_tool_calls": 124,
+      "total_llm_calls": 137
+    },
+    {
+      "length": 2,
+      "configuration": "dynamic",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 100.0,
+      "ASR": 0.0,
+      "total_tool_calls": 167,
+      "total_llm_calls": 179
+    },
+    {
+      "length": 2,
+      "configuration": "static",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 33.333333333333336,
+      "UA": 16.666666666666668,
+      "ASR": 0.0,
+      "total_tool_calls": 154,
+      "total_llm_calls": 167
+    },
+    {
+      "length": 4,
+      "configuration": "dynamic",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 100.0,
+      "UA": 100.0,
+      "ASR": 0.0,
+      "total_tool_calls": 342,
+      "total_llm_calls": 354
+    },
+    {
+      "length": 4,
+      "configuration": "static",
+      "clean_n": 6,
+      "attack_n": 6,
+      "CU": 33.333333333333336,
+      "UA": 33.333333333333336,
+      "ASR": 0.0,
+      "total_tool_calls": 212,
+      "total_llm_calls": 225
+    }
+  ],
+  "length_definition": "Distinct ordered business operations, each physically committed and reconciled; later operations require prior closure.",
+  "static_scope": "Fixed initial joint-risk constraints per request; evidence, lifting, halfspaces and feedback stay active.",
+  "samples": "Six clean and six attacked chains per length per configuration. Families repeat across lengths.",
+  "budget": "48 model turns and 48 tool calls for every configuration and length.",
+  "chain_audit": {
+    "replayed_episodes": 72,
+    "errors": 0,
+    "complete": true
+  },
+  "chain_source": "results\\summaries\\catalog_action_chains_v2",
+  "inference_usage": {
+    "episodes": 1248,
+    "unit": "One clean or attacked episode; 208 episodes per method.",
+    "token_scope": "All recorded successful LLM calls, including policy generation and validation; local detector compute is not token usage.",
+    "latency": "No cross-method latency comparison: baseline rows do not store elapsed time and runs used different concurrency.",
+    "failed_api_requests": "Excluded; this is accepted-execution inference usage, not billing.",
+    "source": "results\\summaries\\catalog_inference_cost_v1"
+  },
+  "timing_status": "Small matched sequential timing pilot; four episodes per method.",
+  "timing_results": [
+    {
+      "Method": "No Defense",
+      "Episodes": 4,
+      "Mean seconds": 12.296825725017698,
+      "Std seconds": 1.6157810898269553,
+      "Median seconds": 11.70687620001263,
+      "Mean LLM calls": 6,
+      "Mean tool calls": 5
+    },
+    {
+      "Method": "PIGuard",
+      "Episodes": 4,
+      "Mean seconds": 15.105079325017869,
+      "Std seconds": 3.2501104280248057,
+      "Median seconds": 15.43870950001292,
+      "Mean LLM calls": 7,
+      "Mean tool calls": 6
+    },
+    {
+      "Method": "ProtectAI",
+      "Episodes": 4,
+      "Mean seconds": 16.362404625018826,
+      "Std seconds": 2.185813667286365,
+      "Median seconds": 16.71831044999999,
+      "Mean LLM calls": 7.25,
+      "Mean tool calls": 6.25
+    },
+    {
+      "Method": "Progent",
+      "Episodes": 4,
+      "Mean seconds": 47.090285875005065,
+      "Std seconds": 18.068321599602445,
+      "Median seconds": 47.998014500015415,
+      "Mean LLM calls": 19,
+      "Mean tool calls": 8.5
+    },
+    {
+      "Method": "DRIFT",
+      "Episodes": 4,
+      "Mean seconds": 34.893098899992765,
+      "Std seconds": 10.077693653969938,
+      "Median seconds": 34.069814049988054,
+      "Mean LLM calls": 19,
+      "Mean tool calls": 4.25
+    },
+    {
+      "Method": "DAFR",
+      "Episodes": 4,
+      "Mean seconds": 15.881404550003936,
+      "Std seconds": 2.7690951432100666,
+      "Median seconds": 16.588119549996918,
+      "Mean LLM calls": 7.5,
+      "Mean tool calls": 6.5
+    }
+  ],
+  "timing_source": "results\\summaries\\catalog_latency_pilot_v2",
+  "timing_audit": {
+    "replayed_episodes": 24,
+    "errors": 0,
+    "complete": true
+  },
+  "preview_sha256": "99016e88a78ba7e77447d332b69e47b3a5a332fa84b3c5c2c592c81b8e8a0f13"
+}

@@ -1,0 +1,7 @@
+﻿length,arm,n,tool_calls,tokens,UA,ASR
+1,no_defense,2,4.5,8587,0,100
+1,full,2,9,20301.5,100,0
+2,no_defense,2,8,17001,0,100
+2,full,2,16.5,49368.5,100,0
+4,no_defense,2,16,44200.5,0,100
+4,full,2,31,130369,100,0

@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "arm": "full",
+      "clean_n": 10,
+      "attack_n": 10,
+      "CU": 90.0,
+      "UA": 80.0,
+      "ASR": 10.0,
+      "total_tool_calls": 124
+    },
+    {
+      "arm": "no_projection",
+      "clean_n": 10,
+      "attack_n": 10,
+      "CU": 80.0,
+      "UA": 70.0,
+      "ASR": 20.0,
+      "total_tool_calls": 115
+    },
+    {
+      "arm": "no_lifting",
+      "clean_n": 10,
+      "attack_n": 10,
+      "CU": 80.0,
+      "UA": 70.0,
+      "ASR": 20.0,
+      "total_tool_calls": 116
+    },
+    {
+      "arm": "linear",
+      "clean_n": 10,
+      "attack_n": 10,
+      "CU": 80.0,
+      "UA": 60.0,
+      "ASR": 30.0,
+      "total_tool_calls": 106
+    },
+    {
+      "arm": "no_geometry",
+      "clean_n": 10,
+      "attack_n": 10,
+      "CU": 80.0,
+      "UA": 50.0,
+      "ASR": 40.0,
+      "total_tool_calls": 96
+    }
+  ]
+}

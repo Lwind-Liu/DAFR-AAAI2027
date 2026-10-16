@@ -1,0 +1,647 @@
+{
+  "version": 1,
+  "purpose": "tool_protocol_granularity_only",
+  "case_pairs": 104,
+  "live_llm_episodes": 0,
+  "profiles": {
+    "CAT-039-09354b08": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-070-9a137857": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-044-826195e6": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-017-55c76caa": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-063-6af59cd5": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-015-0a43e74b": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-058-44e7bfc1": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-057-7d809fc2": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-033-442697ad": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-003-7d045055": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-103-e540fc63": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-027-b44edb01": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-087-9a1860a1": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-031-200181e0": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-092-4ecb7f92": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-048-e12ac9bd": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-083-1b6d939c": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-016-8e73cc8a": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-096-996e2fe0": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-032-f6c1a003": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-068-458deb9e": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-077-13cc167a": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-095-fce8114f": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-002-b4f647ca": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-064-9d332216": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-094-fd996739": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-097-6c16286b": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-022-31045e5a": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-011-ffaeea7e": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-009-c9f062f5": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-067-84b2fd28": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-047-ef25185a": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-034-67c40732": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-085-fbdc951d": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-082-e7a086e1": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-053-3c475750": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-089-ddf615a0": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-008-854d7406": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-104-f65db124": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-043-0837657b": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-051-1a77512d": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-045-322c19dd": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-001-ac8aa168": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-099-b3e4ca7e": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-075-8df1b09d": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-024-6358145a": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-071-a84718e6": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-093-c699dbe4": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-018-6df5752c": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-091-d4ba5b8d": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-049-a206819b": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-073-f181e2e0": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-074-9d14c61f": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-023-b525cb9c": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-010-4a3eb5b2": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-059-1fbee7c9": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-072-71fe786e": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-090-63bfa971": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-007-33a12fa4": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-078-5a8e6f31": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-036-986329f2": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-020-bb2c48ac": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-100-8c0bd4ab": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-069-6cf50b7f": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-056-a100ead4": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-006-bb216272": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-040-2f984cf7": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-037-e75bba44": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-013-73bef10a": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-055-0f88e57d": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-014-72023d92": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-041-a13a11ae": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-030-d9cd8471": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-012-5fbef5ac": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-029-3d4695ff": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-079-5823f51b": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-065-f2efbad1": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-076-c14b5d47": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-005-f9ffecca": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-035-0d3a89ce": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-026-d4b47e75": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-025-fdacf903": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-066-041544ce": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-086-f1b56cfd": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-042-ad563d13": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-088-502e4ed6": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-062-48f4c594": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-054-a49d1857": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-060-99cb11a8": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-098-9153ff8d": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-084-a2393bcc": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-021-232066fa": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-102-50b6f81d": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-038-81ac9f95": {
+      "request_sections": 3,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-004-1b03e17e": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-028-730742eb": {
+      "request_sections": 3,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-050-23bd7ca2": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-081-beb2870b": {
+      "request_sections": 1,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-080-47f567a7": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-046-6f1227d8": {
+      "request_sections": 1,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    },
+    "CAT-101-50d978f0": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 1
+    },
+    "CAT-052-b8db1a4b": {
+      "request_sections": 2,
+      "verification_sections": 1,
+      "reconciliation_steps": 2
+    },
+    "CAT-019-4870a1ba": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 1
+    },
+    "CAT-061-95305d72": {
+      "request_sections": 2,
+      "verification_sections": 2,
+      "reconciliation_steps": 2
+    }
+  },
+  "interface_instructions": "Some tools deliver their result in sections. If a tool response contains next_tool and ticket, call that next_tool with that ticket until delivery is complete, before making another operation. Combine the data fields across sections. These are parts of the same request or registry response; their provenance is unchanged. finish_reconciliation completes a pending close_request. A pending reconciliation is not a closed request.",
+  "logical_tool_budget": 32,
+  "frozen_source_sha256": {
+    "data\\workflow_catalog_104\\cases.jsonl": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+    "scripts\\run_workflow_catalog_v2.py": "4af7031ed994570ca7940d9ce0a2dab5511d88792d45cc815c8aaf53e13a2f24",
+    "scripts\\run_mixed_workflow_pilot.py": "331f67b98ee8638fb5a3f7b677e1c7ee532552a9f19711da998dac2d2b62c430",
+    "scripts\\run_queued_workflow_case.py": "79ba2133307d54e60fc74611ee509b8502a90c1ed9a836ae7ef2a88d215a5e7e",
+    "scripts\\run_targeted_payment_case.py": "725c5f5e94c9c1cbc17bc62f5df9dce0c3e4b013e6dcbdfcbdf3d9e50227b747",
+    "scripts\\run_workflow_benchmark.py": "443b6c089df32ab4bf441ef50699c64da6b69450d25a49644a7134cd53925f84",
+    "src\\workflow_benchmark\\world.py": "20c9720747a9f1606c712008f072d06e567685e66d9149a35042486dfaf346fd",
+    "src\\workflow_benchmark\\defense.py": "42e3679ba57fb3e55a7740b9484f8be151f34b39aa5b1c2c13afe2651b9c332c",
+    "src\\workflow_benchmark\\repair_feedback.py": "4806501387c86540544d1120963e93e66bbdba0a34f11ae56f7cdd9198f3610a",
+    "src\\relational_dafr\\controller.py": "5f1984dfe57b0a8d23b6d64e83e9ec9601f9d1594b1f84af2d5b76208c43c859",
+    "results\\summaries\\workflow_catalog_v2\\CAT-001-ac8aa168.jsonl": "a9a47f9889a16d6ed775cef41a5ff60beb42ccf6aa4374a136c6492fc17056f3",
+    "results\\summaries\\workflow_catalog_v2\\CAT-002-b4f647ca.jsonl": "ca2895ab8f92a058bad46b55528af3924e7143b59bb354f86c4ba79986e27f5f",
+    "results\\summaries\\workflow_catalog_v2\\CAT-003-7d045055.jsonl": "9b2a8cf0abe2f2ed31008b9f23305d9bbca7bedba1d68efc6a9c7626289994ab",
+    "results\\summaries\\workflow_catalog_v2\\CAT-004-1b03e17e.jsonl": "be990bdbac8060152cbad9576bbea58cc28f35b264804b7db3ff438a27e65b36",
+    "results\\summaries\\workflow_catalog_v2\\CAT-005-f9ffecca.jsonl": "5e1fa247ee6b8016010dcd48b7df77b196683348c0b52728159b31e856db44c6",
+    "results\\summaries\\workflow_catalog_v2\\CAT-006-bb216272.jsonl": "705edf9cac9c79d194e70c5c3ff2d1f1dc9bfec4bb40c45c90b0c0001bd6f4ca",
+    "results\\summaries\\workflow_catalog_v2\\CAT-007-33a12fa4.jsonl": "d6a3f8dc403c2ce89bd49660c11ac06e3251726c52a8d2cdfb85df491f243f44",
+    "results\\summaries\\workflow_catalog_v2\\CAT-008-854d7406.jsonl": "939c3e8bf6499aacde27626cfdc02751af43823b42d5c4489c2773ad77297c83",
+    "results\\summaries\\workflow_catalog_v2\\CAT-009-c9f062f5.jsonl": "19085a96ee32fdefb17fc0602a64c72f9b80f68fc4f442d80e03781ecd62e6f5",
+    "results\\summaries\\workflow_catalog_v2\\CAT-010-4a3eb5b2.jsonl": "06be1911e5426d5d4c6320e57588f1e016d3b3ea24dcde1b70fa0afc7aad6977",
+    "results\\summaries\\workflow_catalog_v2\\CAT-011-ffaeea7e.jsonl": "29c466b2fcf2a3d6d0a4f71d3a3cf9872e2fa57b951190fd6919466460900f68",
+    "results\\summaries\\workflow_catalog_v2\\CAT-012-5fbef5ac.jsonl": "2b6fa1b9984fe6f5cdef6a06e308b6bda9ed0483f6a566836f5efb2a688bd156",
+    "results\\summaries\\workflow_catalog_v2\\CAT-013-73bef10a.jsonl": "ade3dcb93665f4ea48cf3c82cb81a793e167346095ee39085f2f7426b01a621f",
+    "results\\summaries\\workflow_catalog_v2\\CAT-014-72023d92.jsonl": "d8237a89bece64480d732d33a366f522bec43e035823d30bbe4b42d74d8c6004",
+    "results\\summaries\\workflow_catalog_v2\\CAT-015-0a43e74b.jsonl": "4f8c4f94580bc18dc9866a9eb17f4be93b7389988b12e0eaba643aaf465b4e80",
+    "results\\summaries\\workflow_catalog_v2\\CAT-016-8e73cc8a.jsonl": "507787d589cc7b16f68929138f831396cd60aaa6e459e1f3f2d933a407a2f539",
+    "results\\summaries\\workflow_catalog_v2\\CAT-017-55c76caa.jsonl": "9f6e42160ca0c417e0d6ee4ef3a2e2ef56c9f7e6b741ce725eb6b9215d2bd5df",
+    "results\\summaries\\workflow_catalog_v2\\CAT-018-6df5752c.jsonl": "da353d748354ca6355d3d2da69614221f71258cdbca642117572e13bf6b5fffc",
+    "results\\summaries\\workflow_catalog_v2\\CAT-019-4870a1ba.jsonl": "15f6ad57f948b1aaad95db4eb5f8b34e7c6323ad42126b464417f57f29f3d672",
+    "results\\summaries\\workflow_catalog_v2\\CAT-020-bb2c48ac.jsonl": "d60da1ab0503ebdc41e006539d8676ba0d9b6c17e914f96bcce8ec22465c222c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-021-232066fa.jsonl": "3e2181a73041a2bf7af2d8517e078571426d2c54bf0c8b79aa8dc0c638ec3bc3",
+    "results\\summaries\\workflow_catalog_v2\\CAT-022-31045e5a.jsonl": "78d4ae62850ae0e2455fd81171c9f733034836c4748f6cf34603f74cd36e15b6",
+    "results\\summaries\\workflow_catalog_v2\\CAT-023-b525cb9c.jsonl": "ff8d958651218c140d5f728716bda6bc2849ed5ac5d781782a54f01208dd1a4e",
+    "results\\summaries\\workflow_catalog_v2\\CAT-024-6358145a.jsonl": "771d32ea9bf50a4a5687097642eb8c70359a79f44819da6f7f75558bb03f3cd9",
+    "results\\summaries\\workflow_catalog_v2\\CAT-025-fdacf903.jsonl": "4220bfe69fac21c86ea0b37efc569397c47d73943e20bdd9e0b26239635c4b1e",
+    "results\\summaries\\workflow_catalog_v2\\CAT-026-d4b47e75.jsonl": "a69b498a17f18b49079a14775706975becdf7da5d28425f84f575d2e20b63a6e",
+    "results\\summaries\\workflow_catalog_v2\\CAT-027-b44edb01.jsonl": "291d11132c8d08377a23edd918592085d976d3ea0707578b26e3b5cb5fea40eb",
+    "results\\summaries\\workflow_catalog_v2\\CAT-028-730742eb.jsonl": "ecf7807d77893a24ac834f7a2df95c1c5524fbf92c3bcb3bce3238abc293e982",
+    "results\\summaries\\workflow_catalog_v2\\CAT-029-3d4695ff.jsonl": "ca69482cd3ca739b4081f8e0b0d9df885ed996c0f82240068e9dcc0bbefba1a0",
+    "results\\summaries\\workflow_catalog_v2\\CAT-030-d9cd8471.jsonl": "db5af20daacc6e05861e16549a89639c4b77ab24f06dbf4eed270160a1a07489",
+    "results\\summaries\\workflow_catalog_v2\\CAT-031-200181e0.jsonl": "e6c9dd3917e8518631464c9d6326ea840f128d5324b3b688900ce7ba661e4a29",
+    "results\\summaries\\workflow_catalog_v2\\CAT-032-f6c1a003.jsonl": "d45bff2efa295659bb8d25597047215554438258532c1c1130ec9246395f203b",
+    "results\\summaries\\workflow_catalog_v2\\CAT-033-442697ad.jsonl": "95c73c4e6cb87364af6a171b7ab017e8ea32aca85ef6623ac4c105675238848a",
+    "results\\summaries\\workflow_catalog_v2\\CAT-034-67c40732.jsonl": "474a998d11820e34046457061a4edae3a1b93eca0f47bbfb6d5f8939f33cea89",
+    "results\\summaries\\workflow_catalog_v2\\CAT-035-0d3a89ce.jsonl": "e0df2f7c3fe21e1dfaba8f0dd8ff80a7aef2ea392c043a62069de28356c35a1b",
+    "results\\summaries\\workflow_catalog_v2\\CAT-036-986329f2.jsonl": "d95fbee349fb76f905e0969d6dd6876e225bb40e15617dde74b9f3eda04b667e",
+    "results\\summaries\\workflow_catalog_v2\\CAT-037-e75bba44.jsonl": "b4d4f470906f1d3e1ac8f80a64988902ed4b05205a353e41c0fa46a5ad977a5b",
+    "results\\summaries\\workflow_catalog_v2\\CAT-038-81ac9f95.jsonl": "09eaab87793a744757d0f54796f186d389209ef28725dd0c9717c562a15b03fd",
+    "results\\summaries\\workflow_catalog_v2\\CAT-039-09354b08.jsonl": "610db406061bbfd15b30073d2819693d81eb5192543cbcd91b298f07e6c9ab8c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-040-2f984cf7.jsonl": "f85d9410cee36be6a14aa2939770cab87ce0190397d8ec288dc022f7b9d7685a",
+    "results\\summaries\\workflow_catalog_v2\\CAT-041-a13a11ae.jsonl": "a3ad0d5073af9c6443287d92b5ed14ee8203574c2f8e3427c55a05d2ff571d7a",
+    "results\\summaries\\workflow_catalog_v2\\CAT-042-ad563d13.jsonl": "f53cf1fa4a8353790959f72e0ca955f1d0a73a084bd70395ec728e5052e57cce",
+    "results\\summaries\\workflow_catalog_v2\\CAT-043-0837657b.jsonl": "387fbc464f6b445ecb8ea54956d3fcb717eda7dc24b2102ebff379404ea7a6a4",
+    "results\\summaries\\workflow_catalog_v2\\CAT-044-826195e6.jsonl": "986cced1f0f96180b6008cab8842de338eab5d2f922a0bcca1a08c3dc707b6b6",
+    "results\\summaries\\workflow_catalog_v2\\CAT-045-322c19dd.jsonl": "73cbf8569c61e99c6923400bc8f930b817fa61d368cab63056cf3b5d127bc58c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-046-6f1227d8.jsonl": "7977c4a085d4862bd96a59dc7572b8822529508a10934aa20b2fbcfb3e2de24b",
+    "results\\summaries\\workflow_catalog_v2\\CAT-047-ef25185a.jsonl": "674c3b0c4b41a96c967204645d2b05f271772950c07be09fae210f8d6fd58e86",
+    "results\\summaries\\workflow_catalog_v2\\CAT-048-e12ac9bd.jsonl": "be4feec77f8bbcc0561adef6dfe7b45881894baa1e200dd0ee652f3eba1f872c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-049-a206819b.jsonl": "df458d4fd10b27a18e9bcf66d1681f8de13953c22e78b572d5e6801b849ef37f",
+    "results\\summaries\\workflow_catalog_v2\\CAT-050-23bd7ca2.jsonl": "03bb155a7b6fd9f2010ca506a487c2818aded1c3c0df3899eb966daf6d5c87bd",
+    "results\\summaries\\workflow_catalog_v2\\CAT-051-1a77512d.jsonl": "a3be2aec99b112f59fe12a9905a5edc77895ea0ec39056f5b897dbc26a979782",
+    "results\\summaries\\workflow_catalog_v2\\CAT-052-b8db1a4b.jsonl": "8f85efc0c3143e7829bdf8c6164748f11f49f0211707cc646fca27518409570a",
+    "results\\summaries\\workflow_catalog_v2\\CAT-053-3c475750.jsonl": "facbc46c894604e83592acda212d92855b778975aa1e355eccc6d70ec591b136",
+    "results\\summaries\\workflow_catalog_v2\\CAT-054-a49d1857.jsonl": "685bb3bd1c344ac2fa57d82226dda8b96f33d9780df5ff98e0cae1f9db1222bf",
+    "results\\summaries\\workflow_catalog_v2\\CAT-055-0f88e57d.jsonl": "b95567a83bbb7166a8c91364f5e171997f3c1e7296d1de81da1113d0632de3f1",
+    "results\\summaries\\workflow_catalog_v2\\CAT-056-a100ead4.jsonl": "e6fc8e3cb60504b2abdbeb61130845adf103f0a91064bdc76a290abee082176a",
+    "results\\summaries\\workflow_catalog_v2\\CAT-057-7d809fc2.jsonl": "851d5c3d4841faa7b194d614a7d75410432a233c59b69142e7177c203b906afb",
+    "results\\summaries\\workflow_catalog_v2\\CAT-058-44e7bfc1.jsonl": "158c8d9ce4ac4b7fdb21843aa3b448e8ecb48dbb187dff9d3434df5586ba90ff",
+    "results\\summaries\\workflow_catalog_v2\\CAT-059-1fbee7c9.jsonl": "2dc32aa186b1b2c5aeb555e73ffcd63994884b371d32c6beb4f4ccda8d231d07",
+    "results\\summaries\\workflow_catalog_v2\\CAT-060-99cb11a8.jsonl": "77dc1cf31026b713f28097fa6cd85b212ab83a5d1a8ee5f10207031c2d18ae0c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-061-95305d72.jsonl": "faaabe1dd6eea8dfba49fb848a43baecbc46779b91579e5d3ee484c333203983",
+    "results\\summaries\\workflow_catalog_v2\\CAT-062-48f4c594.jsonl": "46cb46c5a29be162cae7030e7689444ba0a56f7864f766ffddcd661dd568810b",
+    "results\\summaries\\workflow_catalog_v2\\CAT-063-6af59cd5.jsonl": "c68abca130c7c37c3b2d01e9b86975608db4efdc5b3b34eb92dcced7ca15aa5a",
+    "results\\summaries\\workflow_catalog_v2\\CAT-064-9d332216.jsonl": "c0714e892f4f42097828741a93ca624797cc47e2e72b2d66c46750dff3af96f2",
+    "results\\summaries\\workflow_catalog_v2\\CAT-065-f2efbad1.jsonl": "15899aca63d22a7e56d90a51784aa6c200df0a37ca1f9c8b8f4f9e99c685fd42",
+    "results\\summaries\\workflow_catalog_v2\\CAT-066-041544ce.jsonl": "22dd502a079da35aa6f2683e2b3579718bc907750cf59191b94b835fcad391f6",
+    "results\\summaries\\workflow_catalog_v2\\CAT-067-84b2fd28.jsonl": "e97d65aa464ee22d73646b37563da78c43efa86ef742edf405d0b7b44440287b",
+    "results\\summaries\\workflow_catalog_v2\\CAT-068-458deb9e.jsonl": "abdd8b3f8608007f05597bbcc49efb3e98bec8268ef3e5645518b535e49b3956",
+    "results\\summaries\\workflow_catalog_v2\\CAT-069-6cf50b7f.jsonl": "1aa8de1ef968ee6dd1e51a7e2ca7c1fb0ea858b1bfe83022a50fb934da0b7e0c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-070-9a137857.jsonl": "701faa07f122d64601dbc853a19f27729c18e29a3cdbb9503974fbaa1ecd2205",
+    "results\\summaries\\workflow_catalog_v2\\CAT-071-a84718e6.jsonl": "2f1529a80c5930e5cd2b334d1600c0c59dd1b50fb3aa515dd0b9c62db6bb5f45",
+    "results\\summaries\\workflow_catalog_v2\\CAT-072-71fe786e.jsonl": "6ff8907cb37bd71d03402f6ac6a55ee19dc2d9456394fe0bdf4b7ccd3084f8b2",
+    "results\\summaries\\workflow_catalog_v2\\CAT-073-f181e2e0.jsonl": "e8e7adc34bedb50ceeee52fc0f4c358ffdcfc1ad631fb6e77e2727fefa12ffd2",
+    "results\\summaries\\workflow_catalog_v2\\CAT-074-9d14c61f.jsonl": "e60af1193d9afa7643712d8997f05e10acaa729d9df45339ffd67118eb6e712a",
+    "results\\summaries\\workflow_catalog_v2\\CAT-075-8df1b09d.jsonl": "e241cd9611d3d5bd626333dd20480ec4fca4699c2f3d904229f4ca76740641a5",
+    "results\\summaries\\workflow_catalog_v2\\CAT-076-c14b5d47.jsonl": "7312aa0cae00912d068d029b491ae577a7c553b642032b224ba4fa1320a7a23c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-077-13cc167a.jsonl": "9c573451053b3b7f629452b19c6c7d61b1f357de5a7f29b633d09abed88c0aea",
+    "results\\summaries\\workflow_catalog_v2\\CAT-078-5a8e6f31.jsonl": "39d4590cddad3f5cc1a79ec2287a4d5fbcd0a905fab55cdc14718597f23aadec",
+    "results\\summaries\\workflow_catalog_v2\\CAT-079-5823f51b.jsonl": "883717bfb2b77be705be38ceefc442ff8ef3a341b38dcfb70303a0caebc66cda",
+    "results\\summaries\\workflow_catalog_v2\\CAT-080-47f567a7.jsonl": "af9f2d7d434c402e0c99c9b177154faf782584157e841fa0d89c8cf03bcee99a",
+    "results\\summaries\\workflow_catalog_v2\\CAT-081-beb2870b.jsonl": "7cafc811b244813ebee893ea1f206d6676127324ca9501dfc1bc14201ec5e88d",
+    "results\\summaries\\workflow_catalog_v2\\CAT-082-e7a086e1.jsonl": "ccddf4a65a8574056030b5021b2d13bc97022d83bf1f2044501123a9ee60594c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-083-1b6d939c.jsonl": "19cda0b041787d5bc5ba36a2bda4846eb1cabb8294c9d45fbd6aff3a92328ff4",
+    "results\\summaries\\workflow_catalog_v2\\CAT-084-a2393bcc.jsonl": "1d97074c3f2681b7507755d2dab47224f127def32c813b9a8843d71457065ca6",
+    "results\\summaries\\workflow_catalog_v2\\CAT-085-fbdc951d.jsonl": "c5b3a8c88c069115726b889c80bd86e9237e3d3bbe249f02461b662ab9dad1bf",
+    "results\\summaries\\workflow_catalog_v2\\CAT-086-f1b56cfd.jsonl": "cb198d6efc290745d84787f0d1d983acd4c109d5336a4029c9bfa6956c0e3561",
+    "results\\summaries\\workflow_catalog_v2\\CAT-087-9a1860a1.jsonl": "faa4d50ca91191075e1d1bcc6956d9581975c5f3b3ede9c0dac20da3b110511c",
+    "results\\summaries\\workflow_catalog_v2\\CAT-088-502e4ed6.jsonl": "477b4d0eb9e08112be3b8f2ab307e80fefc5b807e8af543b0f0fa5c8981195cb",
+    "results\\summaries\\workflow_catalog_v2\\CAT-089-ddf615a0.jsonl": "3edd47ee85c63db70392bebf0a14d64a2515a9804f7ad4c0b7f01cd34ce646fe",
+    "results\\summaries\\workflow_catalog_v2\\CAT-090-63bfa971.jsonl": "79655700ae5d28c60f1697c1e03600d56de68c8d729193ee4dcaac391d02f11b",
+    "results\\summaries\\workflow_catalog_v2\\CAT-091-d4ba5b8d.jsonl": "f7426cf165343319dd1cdb6a68a61d110319999b5ad56e958e925cc00ce3d7bd",
+    "results\\summaries\\workflow_catalog_v2\\CAT-092-4ecb7f92.jsonl": "60a64c21d2ac6d322be2a969dd0f6f762084b19d2206a9ff735ff34a27365ef0",
+    "results\\summaries\\workflow_catalog_v2\\CAT-093-c699dbe4.jsonl": "df81c21216ad542b619369f554211a4da007fe139a22c0201e7ea0a641de26b8",
+    "results\\summaries\\workflow_catalog_v2\\CAT-094-fd996739.jsonl": "395a17978da7c6f479632cb36aa16337ceacfafe537677daacfb4d90138a348f",
+    "results\\summaries\\workflow_catalog_v2\\CAT-095-fce8114f.jsonl": "0669aef32549c874f9fc1180673176c1cb5bf3555775ddbee78155f4217f9ee7",
+    "results\\summaries\\workflow_catalog_v2\\CAT-096-996e2fe0.jsonl": "c6b70fca0298af386511a19e427945fa3ab9b735b5ad2c545fd13f4c11fd1807",
+    "results\\summaries\\workflow_catalog_v2\\CAT-097-6c16286b.jsonl": "74caf44151597b30ad68d6fa927777ce915c333ef300ee5016e1bcc60fece724",
+    "results\\summaries\\workflow_catalog_v2\\CAT-098-9153ff8d.jsonl": "dedad42450166c33c1f1ca9f8d74cb3d4b73f7d4c64a44e1490111214f366c22",
+    "results\\summaries\\workflow_catalog_v2\\CAT-099-b3e4ca7e.jsonl": "0d8054f4e38196fe11d4323b05d6e0cb1e69efe233ff27e259adc3fbe7d9ef9f",
+    "results\\summaries\\workflow_catalog_v2\\CAT-100-8c0bd4ab.jsonl": "b69eec24a2e5b0466f802f4114218945d2cec8373e2092eac8f503a01a9a0c6b",
+    "results\\summaries\\workflow_catalog_104\\CAT-101-50d978f0.jsonl": "ae71ab3f6cb53715298fffde95f45d1eb98cf63aa0dc815154acc9b0d79aa239",
+    "results\\summaries\\workflow_catalog_104\\CAT-102-50b6f81d.jsonl": "26e2983cda860b0c488b91b7c6edfa74571e1defcbdab4f3cc457cb8aa9781f7",
+    "results\\summaries\\workflow_catalog_104\\CAT-103-e540fc63.jsonl": "3456a2352ad929f950cda12e99c216e11f9e8ad7a0680d07c335ddc7a93e4dae",
+    "results\\summaries\\workflow_catalog_104\\CAT-104-f65db124.jsonl": "2ae375089ecf79c499a01236e75db8efc5c9ae9cf279ef52cb22fc3970485223"
+  },
+  "limits": "Replay equality is conditional on the recorded logical actions. Fresh LLM outcomes are unmeasured."
+}

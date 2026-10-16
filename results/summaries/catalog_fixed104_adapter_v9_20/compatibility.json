@@ -1,0 +1,33 @@
+{
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "environment_sources": {
+    "scripts/run_workflow_catalog_v2.py": "4af7031ed994570ca7940d9ce0a2dab5511d88792d45cc815c8aaf53e13a2f24",
+    "scripts/run_catalog_other_methods.py": "652b93b3b1b9258682920090dcbe9cc3b0e56a02cfd742800ed0929c39621cec",
+    "scripts/extend_catalog_104.py": "449365f08e5c99f5cdc959b6debf8743c83c9a94f5ac077771a6015ec8c332bb",
+    "src/workflow_benchmark/repair_feedback.py": "4806501387c86540544d1120963e93e66bbdba0a34f11ae56f7cdd9198f3610a"
+  },
+  "evaluation": "Same 20 paired tasks selected from fixed 104; CU and UA are independent task completion rates; ASR is attacker-goal success rate.",
+  "adaptations": {
+    "piguard": "Original detector; quarantine only draft parameters sourced from removed external records.",
+    "protectai": "Original detector; same source-to-draft quarantine adapter.",
+    "progent": "Original generated policy and checker; document resolved tool arguments and refresh on observed evidence.",
+    "drift": "Original isolation and native constraint checker; resolve opaque draft handles into business parameters for checks; bridge native tool calls and retry malformed proposals within original outer budget."
+  },
+  "unchanged": [
+    "104 paired tasks",
+    "CatalogWorld",
+    "DAFR",
+    "No Defense",
+    "12 planner turns",
+    "32 tool calls",
+    "clean and attack outcome evaluators"
+  ],
+  "reused_methods": [
+    "full",
+    "no_defense",
+    "piguard",
+    "protectai",
+    "progent"
+  ],
+  "rerun_method": "drift"
+}

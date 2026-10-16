@@ -1,0 +1,44 @@
+{
+  "pairs": 4,
+  "episodes": 48,
+  "seed": 2026101320,
+  "selection": "Four development pairs covering binding, joint risk, scope and recovery on unchanged 104-case environment",
+  "mix": {
+    "retry_recovery": 1,
+    "joint_risk": 1,
+    "scope_conflict": 1,
+    "cache_approval_mismatch": 1
+  },
+  "domains": {
+    "calendar": 1,
+    "payment": 1,
+    "crm": 1,
+    "documents": 1
+  },
+  "ids": [
+    "CAT-019-4870a1ba-clean",
+    "CAT-019-4870a1ba-attack",
+    "CAT-022-31045e5a-clean",
+    "CAT-022-31045e5a-attack",
+    "CAT-038-81ac9f95-clean",
+    "CAT-038-81ac9f95-attack",
+    "CAT-083-1b6d939c-clean",
+    "CAT-083-1b6d939c-attack"
+  ],
+  "methods": [
+    "no_defense",
+    "piguard",
+    "protectai",
+    "progent",
+    "drift",
+    "full"
+  ],
+  "data_sha256": "5c35f1124a476d8bf0c129b9a083959cfba7cfd6c35aa10daecfb4c4a6fef698",
+  "adapter_sha256": "f6087d44563ca5253bde955d615c02d6a69000f372f00d711f76db10359d6788",
+  "runner_sha256": "687c4c9718d0fc88389fd3fec7c3b4c44ebcd6d97654868a23653a57b55cd74a",
+  "model": "deepseek-v4-flash-0731",
+  "max_turns": 12,
+  "max_tool_calls": 32,
+  "planner_tokens": 650,
+  "defense_tokens": 2048
+}

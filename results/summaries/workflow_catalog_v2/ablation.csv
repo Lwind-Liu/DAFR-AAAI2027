@@ -1,0 +1,6 @@
+﻿arm,clean_n,attack_n,clean_successes,attack_successes_user,attacker_successes,CU,UA,ASR,total_tool_calls,total_llm_calls
+full,100,100,90,77,3,90.0,77.0,3.0,1310,1483
+no_projection,100,100,79,69,14,79.0,69.0,14.0,1197,1375
+no_lifting,100,100,75,64,25,75.0,64.0,25.0,1181,1362
+linear,100,100,79,54,26,79.0,54.0,26.0,1143,1318
+no_geometry,100,100,75,53,37,75.0,53.0,37.0,952,1152

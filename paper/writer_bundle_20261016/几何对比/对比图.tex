@@ -1,0 +1,14 @@
+% 使用 XeLaTeX 编译；对比图.png 与本文件放在同一目录。
+\documentclass[UTF8,11pt]{ctexart}
+\usepackage[a4paper,landscape,margin=15mm]{geometry}
+\usepackage{graphicx,caption}
+\captionsetup{font=small,justification=justified,singlelinecheck=false}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{对比图.png}
+\caption{几何建模与线性规则在合成数据集上的对比。浅蓝色为线性规则，珊瑚红色为 DAFR；三个子图分别展示 CU（干净任务完成率）、UA（攻击条件下原任务完成率）和 ASR（攻击者目标达成率）。CU、UA 越高越好，ASR 越低越好，均按环境状态独立判定。使用 DeepSeek-v4-flash-0731，每种配置在相同的 104 个任务上分别执行干净与攻击版本。Overall 按全部任务统计；支付、邮件、文档、日历、客户管理、云资源分别含 19、19、16、17、17、16 个任务。线性规则在相同动作—证据坐标上替代完整几何判别部分（半空间与联合风险曲面），证据投影、动作—证据绑定、反馈机制、工具及执行预算一致。}
+\label{fig:synthetic-geometry-comparison}
+\end{figure}
+\end{document}

@@ -1,0 +1,25 @@
+% XeLaTeX; editable table.
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{fontspec,booktabs,caption}
+\setmainfont{Times New Roman}\pagestyle{empty}
+\begin{document}\begin{table}[ht]\centering
+{\large Overview of the Synthetic Tool-Agent Dataset}\par\medskip
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular*}{.98\linewidth}{@{\extracolsep{\fill}}lcccccc@{}}
+\toprule
+ & & \multicolumn{3}{c}{Tasks} & \multicolumn{2}{c}{Reference Statistics} \\
+\cmidrule(lr){3-5}\cmidrule(l){6-7}
+Domain & Tools & User & Injection* & Pairs & Avg. Traj. & Avg. App. \\
+\midrule
+Payment & 6 & 19 & 3 & 19 & — & — \\
+Email & 6 & 19 & 2 & 19 & — & — \\
+Documents & 6 & 16 & 1 & 16 & — & — \\
+Calendar & 6 & 17 & 2 & 17 & — & — \\
+CRM & 6 & 17 & 2 & 17 & — & — \\
+Cloud & 6 & 16 & 3 & 16 & — & — \\
+\midrule
+Overall & 6.00 & 104 & 3 & 104 & — & — \\
+\bottomrule\end{tabular*}
+\caption{合成工具调用数据集概览。User 为不同用户任务数；Injection* 为独立攻击任务或模板数；Pairs 为实际评测的任务—攻击组合数。Avg. Traj. 为每个用户任务的参考工具调用步数；Avg. App. 为参考轨迹涉及的不同应用/服务数。Injection* 在此统计攻击模板类别：目标重定向、载荷替换和伪造审批，共三类；同类模板可跨领域使用，因此 Overall 去重计数。104 个用户任务各有一个干净场景和一个攻击场景。六个领域共用六个参数化工具接口。当前版本未定义独立于防御策略的标准参考轨迹及跨应用映射，两项参考统计标为“—”。}
+\end{table}\end{document}
